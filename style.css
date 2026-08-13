@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f8;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #e8a5b8;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+main {
+    padding: 3rem 1rem;
+}
+
+button {
+    background-color: #d87093;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #b55273;
+}
+
+/* Estilos para la sección de productos */
+.productos {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que en celulares se acomode uno debajo de otro */
+}
+
+.tarjeta-producto {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 220px;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #d87093;
+    font-size: 1.2rem;
+}
