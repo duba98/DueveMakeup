@@ -64,3 +64,17 @@ button:hover {
     color: #d87093;
     font-size: 1.2rem;
 }
+/* Tamaño y bordes para el logo */
+.logo {
+    width: 120px;         /* Ajusta el ancho según lo necesites */
+    height: auto;        /* Mantiene la proporción original */
+    margin-bottom: 10px;
+}
+
+/* Ajuste automático para las imágenes de productos */
+.tarjeta-producto img {
+    width: 100%;         /* Se adapta al ancho de la tarjeta */
+    height: 200px;       /* Altura fija para que todas se vean uniformes */
+    object-fit: cover;   /* Evita que la imagen se deforme o estire */
+    border-radius: 8px;  /* Bordes redondeados */
+}
