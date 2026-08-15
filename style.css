@@ -79,26 +79,24 @@ button:hover {
     border-radius: 8px;  /* Bordes redondeados */
 }
 
-/* Quita viñetas y alinea los elementos en una fila horizontal */
-.menu-navegacion ul {
-  display: flex;             /* Pone los elementos uno al lado del otro */
-  justify-content: center;   /* Centra el menú horizontalmente */
-  gap: 20px;                 /* Espacio entre cada categoría */
-  list-style: none;          /* Elimina los puntos de la lista */
+/.menu ul {
+  display: flex;            /* Cambia la orientación de vertical a horizontal */
+  flex-direction: row;      /* Fuerza a que los elementos estén en una sola línea horizontal */
+  justify-content: center;  /* Centra horizontalmente todo el menú en la pantalla */
+  gap: 25px;                /* Espaciado horizontal entre cada palabra */
+  list-style: none;         /* Elimina las viñetas (puntos) de la lista */
   padding: 0;
   margin: 0;
 }
 
-/* Estilo para los enlaces */
-.menu-navegacion a {
-  text-decoration: none;     /* Quita el subrayado por defecto */
-  color: #333;               /* Color del texto */
-  font-family: sans-serif;
+.menu a {
+  text-decoration: none;    /* Quita el subrayado azúl predeterminado */
+  color: #333333;           /* Color del texto */
   font-size: 14px;
 }
 
-/* Línea inferior para el elemento activo (como "Inicio" en la foto) */
-.menu-navegacion a.activo {
-  border-bottom: 2px solid #333;
-  padding-bottom: 3px;
+/* Subrayado negro del elemento seleccionado ("Inicio") */
+.menu a.activo {
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
 }
