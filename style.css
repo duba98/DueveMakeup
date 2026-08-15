@@ -78,3 +78,27 @@ button:hover {
     object-fit: cover;   /* Evita que la imagen se deforme o estire */
     border-radius: 8px;  /* Bordes redondeados */
 }
+
+/* Quita viñetas y alinea los elementos en una fila horizontal */
+.menu-navegacion ul {
+  display: flex;             /* Pone los elementos uno al lado del otro */
+  justify-content: center;   /* Centra el menú horizontalmente */
+  gap: 20px;                 /* Espacio entre cada categoría */
+  list-style: none;          /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para los enlaces */
+.menu-navegacion a {
+  text-decoration: none;     /* Quita el subrayado por defecto */
+  color: #333;               /* Color del texto */
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* Línea inferior para el elemento activo (como "Inicio" en la foto) */
+.menu-navegacion a.activo {
+  border-bottom: 2px solid #333;
+  padding-bottom: 3px;
+}
