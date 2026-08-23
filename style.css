@@ -100,3 +100,27 @@ button:hover {
   border-bottom: 2px solid #000;
   padding-bottom: 2px;
 }
+
+/* Quita los puntos de lista y alinea horizontalmente */
+.menu-navegacion ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;            /* Espacio entre cada opción */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centra las opciones horizontalmente */
+}
+
+/* Estilo para los enlaces */
+.menu-navegacion a {
+  text-decoration: none;
+  color: #333333;       /* Color del texto */
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Subrayado solo para el elemento activo (Inicio) */
+.menu-navegacion a.activo {
+  border-bottom: 2px solid #333333;
+  padding-bottom: 4px;
+}
