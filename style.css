@@ -141,3 +141,22 @@ ul {
 ul li {
   white-space: nowrap; /* Evita que el nombre de una marca se rompa en dos líneas */
 }
+
+.marcas-lista {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 15px !important; /* Espacio horizontal entre cada marca */
+}
+
+.marcas-lista li {
+    list-style: none !important;
+}
+
+.marcas-lista li a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Mantiene el color del texto */
+}
