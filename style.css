@@ -158,5 +158,5 @@ ul li {
 
 .marcas-lista li a {
     text-decoration: none; /* Quita el subrayado del enlace */
-    color: inherit; /* Mantiene el color del texto */
+    color: #333; /* Mantiene el color del texto */
 }
