@@ -124,3 +124,20 @@ button:hover {
   border-bottom: 2px solid #333333;
   padding-bottom: 4px;
 }
+
+
+/* Quita viñetas, alinea horizontalmente y centra los elementos */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que pasen a la siguiente línea si no caben en pantalla */
+  justify-content: center; /* Centra la lista horizontalmente */
+  gap: 15px; /* Espaciado entre cada marca */
+}
+
+/* Opcional: estilo para los elementos individuales */
+ul li {
+  white-space: nowrap; /* Evita que el nombre de una marca se rompa en dos líneas */
+}
