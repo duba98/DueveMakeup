@@ -66,7 +66,7 @@ button:hover {
 }
 /* Tamaño y bordes para el logo */
 .logo {
-    width: 120px;         /* Ajusta el ancho según lo necesites */
+    width: 200px;         /* Ajusta el ancho según lo necesites */
     height: auto;        /* Mantiene la proporción original */
     margin-bottom: 10px;
 }
