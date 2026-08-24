@@ -3,100 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <header>
-        <h1>DueveMakeup</h1>
-    </header>
-
-    <header>
-    <!-- Logo de la marca -->
-    <img src="imagenes/logo.png" alt="Logo DueveMakeup" class="logo">
-</header>
-
-   <nav>
-  <ul class="nav-principal">
-    <li><a href="#">Inicio</a></li>
-
-    <!-- Elemento con submenú desplegable -->
-    <li class="dropdown">
-      <a href="#">Maquillaje</a>
-      
-      <!-- Lista de marcas dentro de Maquillaje -->
-      <ul class="submenu">
-        <li><a href="maquillaje/BLOOMSHELL.HTML">BLOOMSHELL</a></li>
-        <li><a href="maquillaje/ATENEA.HTML">ATENEA</a></li>
-        <li><a href="maquillaje/RUBI ROSE.HTML">RUBI ROSE</a></li>
-        <li><a href="#"></a></li>
-        <li><a href="maquillaje/AN-K.HTML">ANI-K</a></li>
-        <li><a href="maquillaje/GIRLY.HTML">GIRLY</a></li>
-        <li><a href="maquillaje/MAYBELLINE.HTML">MAYBELLINE</a></li>
-        <li><a href="maquillaje/PROSA.HTML">PROSA</a></li>
-        <li><a href="maquillaje/SAGUI.HTML">SAGUI</a></li>
-        <li><a href="maquillaje/MYK.HTML">MYK</a></li>
-        <li><a href="maquillaje/ELAYA.HTML">ELAYA</a></li>
-        <li><a href="maquillaje/VOGUE.HTML">VOGUE</a></li>
-        <li><a href="maquillaje/NAILEN.HTML">NAILEN</a></li>
-        <li><a href="maquillaje/RAQUEL.HTML">RAQUEL</a></li>
-        <li><a href="maquillaje/SAMY.HTML">SAMY</a></li>
-        <li><a href="maquillaje/BONSHIK.HTML">BONSHIK</a></li>
-      </ul>
-    </li>
-
-    <li><a href="#">Accesorios</a></li>
-    <li><a href="#">Capilares</a></li>
-    <li><a href="#">Skin Care</a></li>
-    <li><a href="#">Corporales</a></li>
-  </ul>
-</nav>
-
+    <title>DueveMakeup</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <header>
+        <!-- Logo de la marca -->
+        <img src="imagenes/logo.png" alt="Logo DueveMakeup" class="logo">
+        <h1>DueveMakeup</h1>
+    </header>
+
+    <nav>
+      <ul class="nav-principal">
+        <li><a href="#">Inicio</a></li>
+
+        <!-- Elemento con submenú desplegable -->
+        <li class="dropdown">
+          <a href="#">Maquillaje</a>
+          <!-- Lista de marcas dentro de Maquillaje -->
+          <ul class="submenu">
+            <li><a href="#" class="btn-marca" data-marca="bloomshell">BLOOMSHELL</a></li>
+            <li><a href="#" class="btn-marca" data-marca="atenea">ATENEA</a></li>
+            <li><a href="#" class="btn-marca" data-marca="rubi-rose">RUBI ROSE</a></li>
+            <li><a href="#" class="btn-marca" data-marca="ani-k">ANI-K</a></li>
+            <li><a href="#" class="btn-marca" data-marca="girly">GIRLY</a></li>
+            <li><a href="#" class="btn-marca" data-marca="maybelline">MAYBELLINE</a></li>
+            <li><a href="#" class="btn-marca" data-marca="prosa">PROSA</a></li>
+            <li><a href="#" class="btn-marca" data-marca="sagui">SAGUI</a></li>
+            <li><a href="#" class="btn-marca" data-marca="myk">MYK</a></li>
+            <li><a href="#" class="btn-marca" data-marca="elaya">ELAYA</a></li>
+            <li><a href="#" class="btn-marca" data-marca="vogue">VOGUE</a></li>
+            <li><a href="#" class="btn-marca" data-marca="nailen">NAILEN</a></li>
+            <li><a href="#" class="btn-marca" data-marca="raquel">RAQUEL</a></li>
+            <li><a href="#" class="btn-marca" data-marca="samy">SAMY</a></li>
+            <li><a href="#" class="btn-marca" data-marca="bonshik">BONSHIK</a></li>
+            <li><a href="#" class="btn-marca" data-marca="todos">VER TODOS</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Capilares</a></li>
+        <li><a href="#">Skin Care</a></li>
+        <li><a href="#">Corporales</a></li>
+      </ul>
+    </nav>
 
     <main>
         <section class="hero">
-            
+            <!-- Espacio para banner principal o promociones -->
+        </section>
+
+        <section class="productos">
+            <h2>Nuestros Productos Destacados</h2>
+
+            <div class="grid-productos">
+                <!-- ATENEA -->
+                <article class="tarjeta-producto" data-marca="atenea">
+                    <img src="imagenes/atenea/base liquida.png" alt="Base Líquida Atenea">
+                    <h3>Base Líquida Atenea</h3>
+                    <p class="precio">$28.000</p>
+                    <button class="btn-comprar">Añadir al carrito</button>
+                </article>
+
+                <article class="tarjeta-producto" data-marca="atenea">
+                    <img src="https://via.placeholder.com/200" alt="Labial Matte Atenea">
+                    <h3>Labial Matte Rose</h3>
+                    <p class="precio">$15.000</p>
+                    <button class="btn-comprar">Añadir al carrito</button>
+                </article>
+
+                <!-- BLOOMSHELL -->
+                <article class="tarjeta-producto" data-marca="bloomshell">
+                    <img src="https://via.placeholder.com/200" alt="Base Bloomshell">
+                    <h3>Base Líquida Glow</h3>
+                    <p class="precio">$25.000</p>
+                    <button class="btn-comprar">Añadir al carrito</button>
+                </article>
+            </div>
+        </section>
     </main>
-<section class="productos">
-    <h2>Nuestros Productos Destacados</h2>
-<article class="tarjeta-producto">
-    <img src="imagenes/labial-matte.png" alt="Labial Matte Rose">
-    <h3>Labial Matte Rose</h3>
-    <p class="precio">$15.000</p>
-    <button class="btn-comprar">Añadir al carrito</button>
-    </article>
-    
-
-    <header>
-        <!-- base Liquida -->
-        <img src="imagenes/atenea/base liquida.png" alt="base liquida" class="ATENEA">
-    </header>
-
-    
-    <div class="grid-productos">
-        <!-- ATENEA -->
-        <article class="tarjeta-producto">
-            <img src="https://via.placeholder.com/200" alt="Labial Matte">
-            <h3>Labial Matte Rose</h3>
-            <p class="precio">$15.000</p>
-            <button class="btn-comprar">Añadir al carrito</button>
-        </article>
-
-        <!-- BLOOMSHELL -->
-        <article class="tarjeta-producto">
-            <img src="https://via.placeholder.com/200" alt="Base de Maquillaje">
-            <h3>Base Liquida Glow</h3>
-            <p class="precio">$25.000</p>
-            <button class="btn-comprar">Añadir al carrito</button>
-        </article>
-    </div>
-</section>
-
 
     <footer>
         <p>whatsapp +57 3043127283</p>
         <p>instagram @DueveMakeup</p>
         <p>&copy; 2026 DueveMakeup - Todos los derechos reservados</p>
     </footer>
+
+    <!-- Archivo JavaScript para hacer funcionar los filtros -->
+    <script src="script.js"></script>
 </body>
 </html>
