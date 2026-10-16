@@ -1,202 +1,367 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fdf6f8;
-    color: #333;
+ 
+        :root {
+            --primary: #d46a84;
+            --primary-dark: #b8526c;
+            --accent: #f59e0b;
+            --text-dark: lch(2.47% 0 296.81 / 0.997);
+            --text-light: #6b7280;
+            --bg-light: hwb(0 94% 4%);
+            --white: hwb(hsl(0, 6%, 93%));
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.75rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cart-btn {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+            position: relative;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .cart-btn:hover {
+            color: var(--primary);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background-color: var(--accent);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 50%;
+        }
+
+        /* HERO SECTION CON LOGO HORIZONTAL */
+        /* NUEVO CÓDIGO CORREGIDO */
+.hero {
+    /* Se eliminó el linear-gradient, ahora solo queda la imagen limpia */
+    background-image: url('imagenes/Gemini_Generated_Image_kyaol5kyaol5kyao.jpg'); /* Asegúrate de poner aquí EL NOMBRE EXACTO de tu imagen */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    color: var(--text-dark); /* CAMBIO IMPORTANTE: Texto oscuro para que se lea sobre fondo rosa */
     text-align: center;
+    padding: 10rem 2rem 6rem;
+    margin-top: 65px;
 }
 
-header {
-    background-color: #e8a5b8;
-    color: white;
-    padding: 2rem 1rem;
-}
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
 
-main {
-    padding: 3rem 1rem;
-}
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
 
-button {
-    background-color: #d87093;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 1rem;
-}
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
 
-button:hover {
-    background-color: #b55273;
-}
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
 
-/* Estilos para la sección de productos */
-.productos {
-    padding: 2rem 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+        /* FILTROS Y PRODUCTOS */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
 
-.grid-productos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Para que en celulares se acomode uno debajo de otro */
-}
+        .section-title {
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
 
-.tarjeta-producto {
-    background-color: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    width: 220px;
-}
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
 
-.tarjeta-producto img {
-    width: 100%;
-    border-radius: 8px;
-}
+        .filter-btn {
+            background-color: var(--white);
+            border: 1px solid #d1d5db;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+        }
 
-.precio {
-    font-weight: bold;
-    color: #d87093;
-    font-size: 1.2rem;
-}
-/* Tamaño y bordes para el logo */
-.logo {
-    width: 200px;         /* Ajusta el ancho según lo necesites */
-    height: auto;        /* Mantiene la proporción original */
-    margin-bottom: 10px;
-}
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
 
-/* Ajuste automático para las imágenes de productos */
-.tarjeta-producto img {
-    width: 100%;         /* Se adapta al ancho de la tarjeta */
-    height: 200px;       /* Altura fija para que todas se vean uniformes */
-    object-fit: cover;   /* Evita que la imagen se deforme o estire */
-    border-radius: 8px;  /* Bordes redondeados */
-}
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
 
-/.menu ul {
-  display: flex;            /* Cambia la orientación de vertical a horizontal */
-  flex-direction: row;      /* Fuerza a que los elementos estén en una sola línea horizontal */
-  justify-content: center;  /* Centra horizontalmente todo el menú en la pantalla */
-  gap: 25px;                /* Espaciado horizontal entre cada palabra */
-  list-style: none;         /* Elimina las viñetas (puntos) de la lista */
-  padding: 0;
-  margin: 0;
-}
+        .product-card {
+            background-color: var(--white);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
 
-.menu a {
-  text-decoration: none;    /* Quita el subrayado azúl predeterminado */
-  color: #333333;           /* Color del texto */
-  font-size: 14px;
-}
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
 
-/* Subrayado negro del elemento seleccionado ("Inicio") */
-.menu a.activo {
-  border-bottom: 2px solid #000;
-  padding-bottom: 2px;
-}
+        .product-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
 
-/* Quita los puntos de lista y alinea horizontalmente */
-.menu-navegacion ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;            /* Espacio entre cada opción */
-  padding: 0;
-  margin: 0;
-  justify-content: center; /* Centra las opciones horizontalmente */
-}
+        .product-info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
 
-/* Estilo para los enlaces */
-.menu-navegacion a {
-  text-decoration: none;
-  color: #333333;       /* Color del texto */
-  font-family: sans-serif;
-  font-size: 16px;
-}
+        .product-title {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
 
-/* Subrayado solo para el elemento activo (Inicio) */
-.menu-navegacion a.activo {
-  border-bottom: 2px solid #333333;
-  padding-bottom: 4px;
-}
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
 
+        /* CARRITO LATERAL (DRAWER) */
+        .cart-drawer {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 380px;
+            height: 100%;
+            background-color: var(--white);
+            box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+            z-index: 1100;
+            transition: right 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
 
-/* Quita viñetas, alinea horizontalmente y centra los elementos */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap; /* Permite que pasen a la siguiente línea si no caben en pantalla */
-  justify-content: center; /* Centra la lista horizontalmente */
-  gap: 15px; /* Espaciado entre cada marca */
-}
+        .cart-drawer.open {
+            right: 0;
+        }
 
-/* Opcional: estilo para los elementos individuales */
-ul li {
-  white-space: nowrap; /* Evita que el nombre de una marca se rompa en dos líneas */
-}
+        .cart-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.marcas-lista {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    gap: 15px !important; /* Espacio horizontal entre cada marca */
-}
+        .close-cart {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
 
-.marcas-lista li {
-    list-style: none !important;
-}
+        .cart-items {
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
 
-.marcas-lista li a {
-    text-decoration: none; /* Quita el subrayado del enlace */
-    color: #333; /* Mantiene el color del texto */
-}
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
 
-/* Posicionamiento del contenedor del submenú */
-.dropdown {
-  position: relative;
-}
+        .cart-item-info h4 {
+            font-size: 0.95rem;
+        }
 
-/* Oculta el submenú inicialmente */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #ffffff;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  padding: 10px 0;
-  margin: 0;
-  list-style: none;
-  min-width: 180px;
-  z-index: 1000;
-}
+        .cart-item-info p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
 
-/* Muestra el submenú al pasar el ratón por Maquillaje */
-.dropdown:hover .submenu {
-  display: block;
-}
+        .remove-btn {
+            background: none;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-size: 1rem;
+        }
 
-/* Estilos de los enlaces del submenú */
-.submenu li a {
-  display: block;
-  padding: 8px 16px;
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  text-align: left;
-}
+        .cart-footer {
+            padding: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+            background-color: var(--bg-light);
+        }
 
-.submenu li a:hover {
-  background-color: #fce4ec; /* Color rosado suave al pasar el cursor sobre la marca */
-}
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.15rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #10b981;
+        }
+
+        .checkout-btn:hover {
+            background-color: #059669;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+            z-index: 1050;
+            display: none;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+        /* PIE DE PÁGINA Y CONTACTO */
+        footer {
+            background-color: #1f2937;
+            color: #ffffff;
+            padding: 4rem 2rem 2rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        footer a:hover {
+            color: var(--white);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .cart-drawer {
+                width: 100%;
+                right: -100%;
+            }
+        }
+    
