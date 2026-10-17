@@ -113,15 +113,36 @@
     closeCart.addEventListener('click', closeCartDrawer);
     overlay.addEventListener('click', closeCartDrawer);
 
-    function checkout() {
-        if (cart.length === 0) {
-            alert('Tu carrito está vacío.');
-            return;
-        }
-        alert('¡Gracias por tu compra!');
-        cart = [];
-        updateCartUI();
-        closeCartDrawer();
+   function checkout() {
+    if (cart.length === 0) {
+        alert('Tu carrito está vacío.');
+        return;
     }
+
+    // 1. Armamos el mensaje del pedido para WhatsApp
+    let mensaje = "¡Hola! Quiero confirmar un pedido hecho en la tienda:\n\n";
+    let total = 0;
+
+    cart.forEach(item => {
+        mensaje += `• ${item.name} (${item.quantity}x) - $${(item.price * item.quantity).toFixed(2)}\n`;
+        total += item.price * item.quantity;
+    });
+
+    mensaje += `\n*Total estimado: $${total.toFixed(2)}*\n`;
+    mensaje += `\nVoy a proceder con el pago a través del portal de Wompi.`;
+
+    // 2. Tu número de WhatsApp (Pon el tuyo con código de país, por ej: 573001234567)
+    let telefonoWhatsApp = "57304 3127283"; 
+    let urlWhatsApp = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+
+    // 3. Tu Link Oficial de Wompi que aparece en tu pantalla
+    let urlWompi = "https://checkout.wompi.co/l/VPOS_gtQ9MI";
+
+    // 4. Abrimos WhatsApp en una nueva pestaña para recibir la orden
+    window.open(urlWhatsApp, '_blank');
+
+    // 5. Redirigimos la pantalla actual al portal de pagos de Wompi para que paguen por PSE
+    window.location.href = urlWompi;
+}
 
     renderProducts();
