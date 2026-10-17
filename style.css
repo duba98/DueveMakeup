@@ -614,3 +614,26 @@
   cursor: pointer;
   color: #a23f60;
 }
+
+/* Estilo de las categorías */
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid #e8dfe4;
+  border-radius: 25px;
+  background: #fff;
+  color: #222;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #d1516e;
+  color: #fff;
+  border-color: #d1516e;
+}
