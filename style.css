@@ -364,4 +364,72 @@
                 right: -100%;
             }
         }
-    
+    /* Panel lateral del carrito */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Oculto por defecto a la derecha */
+  width: 350px;
+  max-width: 90vw;
+  height: 100vh;
+  background-color: #ffffff; /* Fondo blanco */
+  border-left: 3px solid #e25882; /* Borde rosa (puedes cambiar este código de color) */
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+}
+
+/* Clase para mostrar el carrito mediante JavaScript */
+.cart-sidebar.open {
+  right: 0;
+}
+
+/* Cabecera del carrito */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f0d5e1; /* Línea divisoria en tono rosa suave */
+}
+
+.cart-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+/* Botón 'X' para cerrar */
+.close-cart-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e25882; /* Color rosa para la X */
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 5px;
+  border-radius: 50%;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.close-cart-btn:hover {
+  color: #b8335f; /* Rosa más oscuro al pasar el cursor */
+  transform: scale(1.1);
+}
+
+/* Cuerpo del carrito con desplazador suave */
+.cart-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Pie del carrito */
+.cart-footer {
+  padding: 20px;
+  border-top: 1px solid #f0d5e1;
+  background-color: #fafafa;
+}

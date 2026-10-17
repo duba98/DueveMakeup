@@ -125,3 +125,11 @@
         }
 
         renderProducts();
+
+        const cartModal = document.getElementById('cartModal');
+const closeCartBtn = document.getElementById('closeCart');
+
+// Evento para cerrar el carrito con la "X"
+closeCartBtn.addEventListener('click', () => {
+  cartModal.classList.remove('open');
+});

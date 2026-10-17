@@ -52,24 +52,26 @@
         </div>
     </main>
 
-    <!-- CARRITO LATERAL -->
-    <div class="overlay" id="overlay"></div>
-    <div class="cart-drawer" id="cartDrawer">
-        <div class="cart-header">
-            <h3>Tu Carrito</h3>
-            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="cart-items" id="cartItems">
-            <p style="text-align: center; color: var(--text-light);">El carrito está vacío</p>
-        </div>
-        <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total:</span>
-                <span id="cartTotal">$0.00</span>
-            </div>
-            <button class="btn checkout-btn" onclick="checkout()">Finalizar Compra</button>
-        </div>
+    <!-- Panel del Carrito -->
+<div id="cartModal" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Tu Carrito <span id="cartCount" class="cart-badge">5</span></h2>
+    <!-- Botón de cierre "X" -->
+    <button class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
+  </div>
+
+  <div class="cart-body" id="cartItems">
+    <!-- Aquí se cargan dinámicamente los productos -->
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">$0.00</span>
     </div>
+    <button class="btn-checkout">Finalizar Compra</button>
+  </div>
+</div>
 
     <!-- SECCIÓN DE CONTACTO Y PIE DE PÁGINA -->
     <footer id="contacto">
