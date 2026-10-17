@@ -119,28 +119,34 @@
         return;
     }
 
-    // 1. Calculamos el total de la compra
+    // 1. Calculamos el total real de los productos en el carrito
     let totalCOP = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-    // Wompi procesa el monto en centavos (ejemplo: $10.000 COP = 1000000 centavos)
+    // Si por alguna razón el total sigue en 0, evitamos el error de Wompi alertando al usuario
+    if (totalCOP <= 0) {
+        alert('Por favor, asegúrate de que los productos tengan un precio válido antes de pagar.');
+        return;
+    }
+
+    // Wompi requiere el monto estrictamente en centavos (Ej: $35.000 COP = 3500000 centavos)
     let amountInCents = Math.round(totalCOP * 100);
 
-    // 2. Creamos una referencia única para la orden de compra
+    // 2. Generamos una referencia única para cada orden
     let reference = 'DUEVE-' + Date.now();
 
-    // 3. Configuramos e inicializamos el Widget Oficial de Wompi
+    // 3. Inicializamos el Widget oficial de Wompi con tus datos
     var checkout = new WidgetCheckout({
         currency: 'COP',
         amountInCents: amountInCents,
         reference: reference,
         publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0', // Tu llave pública de Wompi
-        redirectUrl: window.location.href // Redirige a la misma página tras completar el pago
+        redirectUrl: window.location.href
     });
 
-    // 4. Abrimos la pasarela de pagos integrada
+    // 4. Abrimos la ventana de pagos segura
     checkout.open(function (result) {
         var transaction = result.transaction;
-        if (transaction.status === 'APPROVED') {
+        if (transaction && transaction.status === 'APPROVED') {
             alert('¡Pago aprobado con éxito! Gracias por tu compra.');
             cart = [];
             updateCartUI();
