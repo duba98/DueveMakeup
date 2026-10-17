@@ -119,23 +119,11 @@
         return;
     }
 
-    // 1. Calculamos el total real de la compra
-    let totalCOP = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    // Tu nuevo enlace permanente y seguro de Wompi
+    const urlWompiFija = "https://checkout.wompi.co/l/XFNo90";
 
-    if (totalCOP <= 0) {
-        alert('Por favor, añade productos con precio válido.');
-        return;
-    }
-
-    // 2. Wompi calcula el monto en centavos
-    let amountInCents = Math.round(totalCOP * 100);
-
-    // 3. Enlace directo oficial de tu pasarela pasando el valor dinámico del carrito
-    // (Asegúrate de usar tu base del link de pago que sí genera pasarela)
-    let urlWompi = `https://checkout.wompi.co/l/VPOS_gtQ9MI?amount-in-cents=${amountInCents}&currency=COP`;
-
-    // 4. Redirigimos directamente al checkout seguro de Wompi
-    window.location.href = urlWompi;
+    // Redirige directamente al portal de pagos
+    window.location.href = urlWompiFija;
 }
 
     renderProducts();
