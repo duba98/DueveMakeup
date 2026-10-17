@@ -113,16 +113,25 @@
     closeCart.addEventListener('click', closeCartDrawer);
     overlay.addEventListener('click', closeCartDrawer);
 
-  function checkout() {
+ function checkout() {
     if (cart.length === 0) {
         alert('Tu carrito está vacío.');
         return;
     }
 
-    // Dirección completa con https:// para evitar el error de Wompi
-    const urlWompi = "https://checkout.wompi.co/l/VPOS_gtQ9MI";
+    // Calculamos el total en centavos (Wompi suele recibir el valor en centavos, ej: $10.000 = 1000000)
+    let total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    
+    // Si tus productos tienen precio $0 en el código, asignamos un valor de prueba o el total real
+    let montoEnCentavos = Math.round(total * 100);
 
-    // Redirección inmediata a la pasarela de pago
+    // Intentamos pasar el valor como parámetro al link
+    let urlWompi = `https://checkout.wompi.co/l/VPOS_gtQ9MI`;
+    
+    if (montoEnCentavos > 0) {
+        urlWompi += `?amount-in-cents=${montoEnCentavos}&currency=COP`;
+    }
+
     window.location.href = urlWompi;
 }
 
