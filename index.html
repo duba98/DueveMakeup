@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dueve Makeup</title>
     <link rel="stylesheet" href="style.css">
-  
+    
+    <!-- ⬇️ AGREGA ESTA LÍNEA PARA LOS ICONOS (COMO EL CARRITO Y LA BASURA) ⬇️ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -20,10 +22,10 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button class="cart-btn" id="cartButton">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count" id="cartCount">0</span>
-            </button>
+            <button class="cart-btn" id="cartBtn" aria-label="Ver carrito">
+  <i class="fas fa-shopping-bag"></i>
+  <span class="cart-count" id="cartCount">1</span>
+</button>
         </div>
     </header>
 
