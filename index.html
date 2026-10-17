@@ -36,34 +36,40 @@
         <a href="#productos" class="btn">Ver Catálogo</a>
     </section>
 
-    <!-- CATÁLOGO DE PRODUCTOS -->
-    <main class="container" id="productos">
-        <h2 class="section-title">Productos Destacados</h2>
-        
-        <!-- Filtros -->
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-           <div class="dropdown">
-    <button class="filter-btn">maquillaje ▾</button>
-    <div class="dropdown-content">
-      <button class="filter-btn">atenea</button>
-      <button class="filter-btn">ani-k</button>
-      <button class="filter-btn">bloomshell</button>
-      <button class="filter-btn">bonshik</button>
-      <button class="filter-btn">maybelline</button>
-      <button class="filter-btn">raquel</button>
-      <button class="filter-btn">ruby rose</button>
-      <button class="filter-btn">samy</button>
-      <button class="filter-btn">vogue</button>
-      <button class="filter-btn">elaya</button>
-      <button class="filter-btn">girly</button>
-      <button class="filter-btn">myk</button>
-      <button class="filter-btn">nailen</button>
-      <button class="filter-btn">prosa</button>
-      <button class="filter-btn">sagui</button>
-      <!-- Agrega el resto de marcas -->
+    <!-- Botones Principales -->
+<div class="category-bar">
+  <button class="filter-btn active">Todos</button>
+  <button class="filter-btn highlight" id="btnMaquillaje">maquillaje ▾</button>
+  <button class="filter-btn">capilar</button>
+  <button class="filter-btn">lociones</button>
+</div>
+
+<!-- Ventana Flotante (Modal) de Marcas de Maquillaje -->
+<div id="modalMaquillaje" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Marcas de Maquillaje</h3>
+      <button id="closeModal" class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <button class="brand-btn" data-brand="atenea">atenea</button>
+      <button class="brand-btn" data-brand="ani-k">ani-k</button>
+      <button class="brand-btn" data-brand="bloomshell">bloomshell</button>
+      <button class="brand-btn" data-brand="bonshik">bonshik</button>
+      <button class="brand-btn" data-brand="maybelline">maybelline</button>
+      <button class="brand-btn" data-brand="raquel">raquel</button>
+      <button class="brand-btn" data-brand="ruby-rose">ruby rose</button>
+      <button class="brand-btn" data-brand="samy">samy</button>
+      <button class="brand-btn" data-brand="vogue">vogue</button>
+      <button class="brand-btn" data-brand="elaya">elaya</button>
+      <button class="brand-btn" data-brand="girly">girly</button>
+      <button class="brand-btn" data-brand="myk">myk</button>
+      <button class="brand-btn" data-brand="nailen">nailen</button>
+      <button class="brand-btn" data-brand="prosa">prosa</button>
+      <button class="brand-btn" data-brand="sagui">sagui</button>
     </div>
   </div>
+</div>
             <button class="filter-btn" data-filter="capilar">capilar</button>
             <button class="filter-btn">milagros</button>
             <button class="filter-btn">mariana zapata</button>

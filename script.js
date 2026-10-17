@@ -177,5 +177,38 @@ async function checkout() {
         alert('Ocurrió un error al iniciar el proceso de pago. Inténtalo de nuevo.');
     }
 }
+const btnMaquillaje = document.getElementById('btnMaquillaje');
+const modalMaquillaje = document.getElementById('modalMaquillaje');
+const closeModal = document.getElementById('closeModal');
+
+// Abrir la ventana flotante al hacer clic en Maquillaje
+btnMaquillaje.addEventListener('click', () => {
+  modalMaquillaje.classList.add('active');
+});
+
+// Cerrar la ventana al hacer clic en la X
+closeModal.addEventListener('click', () => {
+  modalMaquillaje.classList.remove('active');
+});
+
+// Cerrar la ventana si hacen clic fuera del cuadro blanco
+modalMaquillaje.addEventListener('click', (e) => {
+  if (e.target === modalMaquillaje) {
+    modalMaquillaje.classList.remove('active');
+  }
+});
+
+// Filtrar al hacer clic en cualquier marca dentro del modal
+document.querySelectorAll('.brand-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const brand = e.target.getAttribute('data-brand');
+    console.log('Filtrar por marca:', brand);
+    
+    // Opcional: Cerrar el modal al seleccionar marca
+    modalMaquillaje.classList.remove('active');
+    
+    // Aquí ejecutas tu función para filtrar los productos en pantalla
+  });
+});
 
     renderProducts();
