@@ -119,11 +119,22 @@
         return;
     }
 
-    // Tu nuevo enlace permanente y seguro de Wompi
-    const urlWompiFija = "https://checkout.wompi.co/l/XFNo90";
+    // 1. Calculamos el total de los productos añadidos al carrito
+    let totalCOP = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-    // Redirige directamente al portal de pagos
-    window.location.href = urlWompiFija;
+    if (totalCOP <= 0) {
+        alert('Por favor, asegúrate de añadir productos con un precio válido.');
+        return;
+    }
+
+    // 2. Wompi recibe los precios en centavos (ejemplo: $35.000 COP = 3500000)
+    let amountInCents = Math.round(totalCOP * 100);
+
+    // 3. Enviamos el valor exacto del carrito en el link
+    let urlWompi = `https://checkout.wompi.co/l/XFNo90?amount-in-cents=${amountInCents}&currency=COP`;
+
+    // 4. Redirigimos al cliente a pagar el monto fijado
+    window.location.href = urlWompi;
 }
 
     renderProducts();
