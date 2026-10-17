@@ -1,7 +1,7 @@
 
        const products = [
-        { id: 1, name: "Base Líquida Atenea", price: 0, category: "atenea", image: "imagenes/atenea/BASE LIQUIDA CREAM ATENEA 1ST X 30 ml.png" },
-        { id: 2, name: "Fijador de Cejas", price: 0, category: "atenea", image: "imagenes/atenea/GEL FIJADOR DE CEJAS.png" },
+        { id: 1, name: "Base Líquida Atenea", price: 1500, category: "atenea", image: "imagenes/atenea/BASE LIQUIDA CREAM ATENEA 1ST X 30 ml.png" },
+        { id: 2, name: "Fijador de Cejas", price: 1000, category: "atenea", image: "imagenes/atenea/GEL FIJADOR DE CEJAS.png" },
         { id: 3, name: "Iluminador Atenea Sublime", price: 0, category: "atenea", image: "imagenes/atenea/ILUMINADOR ATENEA SUBLIME.png" },
         { id: 4, name: "Polvo Suelto", price: 0, category: "atenea", image: "imagenes/atenea/POLVO SUELTO ATENEA TRASLUCIDO 1ST SCENE X 35 g.png" },
         { id: 5, name: "Rubor Dúo Atenea Pink Crush", price: 0, category: "atenea", image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png" }
