@@ -119,20 +119,34 @@
         return;
     }
 
-    // Calculamos el total en centavos (Wompi suele recibir el valor en centavos, ej: $10.000 = 1000000)
-    let total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    
-    // Si tus productos tienen precio $0 en el código, asignamos un valor de prueba o el total real
-    let montoEnCentavos = Math.round(total * 100);
+    // 1. Calculamos el total de la compra
+    let totalCOP = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-    // Intentamos pasar el valor como parámetro al link
-    let urlWompi = `https://checkout.wompi.co/l/VPOS_gtQ9MI`;
-    
-    if (montoEnCentavos > 0) {
-        urlWompi += `?amount-in-cents=${montoEnCentavos}&currency=COP`;
-    }
+    // Wompi procesa el monto en centavos (ejemplo: $10.000 COP = 1000000 centavos)
+    let amountInCents = Math.round(totalCOP * 100);
 
-    window.location.href = urlWompi;
+    // 2. Creamos una referencia única para la orden de compra
+    let reference = 'DUEVE-' + Date.now();
+
+    // 3. Configuramos e inicializamos el Widget Oficial de Wompi
+    var checkout = new WidgetCheckout({
+        currency: 'COP',
+        amountInCents: amountInCents,
+        reference: reference,
+        publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0', // Tu llave pública de Wompi
+        redirectUrl: window.location.href // Redirige a la misma página tras completar el pago
+    });
+
+    // 4. Abrimos la pasarela de pagos integrada
+    checkout.open(function (result) {
+        var transaction = result.transaction;
+        if (transaction.status === 'APPROVED') {
+            alert('¡Pago aprobado con éxito! Gracias por tu compra.');
+            cart = [];
+            updateCartUI();
+            closeCartDrawer();
+        }
+    });
 }
 
     renderProducts();
