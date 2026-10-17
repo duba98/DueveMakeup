@@ -100,7 +100,7 @@
         /* NUEVO CÓDIGO CORREGIDO */
 .hero {
     /* Se eliminó el linear-gradient, ahora solo queda la imagen limpia */
-    background-image: url('imagenes/Gemini_Generated_Image_kyaol5kyaol5kyao.jpg'); /* Asegúrate de poner aquí EL NOMBRE EXACTO de tu imagen */
+    background-image: url('imagenes/duevemakeuphorizontal.png'); /* Asegúrate de poner aquí EL NOMBRE EXACTO de tu imagen */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
