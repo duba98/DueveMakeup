@@ -447,3 +447,61 @@
   border-top: 1px solid #f0d5e1;
   background-color: #fafafa;
 }
+/* ==========================================
+   ESTILOS DEL BOTÓN DE PAGAR Y PIE DEL CARRITO
+   ========================================== */
+
+/* Asegura que el contenedor del pie ordene todo centrado */
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #f0d5e1;
+    background-color: #ffffff;
+}
+
+/* Estilo para el contenedor del total */
+.cart-total, 
+.cart-total-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Botón de Pagar centrado, grande y rosa */
+.btn-checkout {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #e25882; /* Color rosa principal */
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.15s ease;
+    box-shadow: 0 4px 10px rgba(226, 88, 130, 0.3);
+}
+
+.btn-checkout:hover {
+    background-color: #c9446d;
+    transform: translateY(-2px);
+}
+
+.btn-checkout:active {
+    transform: translateY(0);
+}
