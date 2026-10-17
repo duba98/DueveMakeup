@@ -119,10 +119,10 @@
         return;
     }
 
-    // Tu enlace de pago directo en Wompi
+    // Dirección completa con https:// para evitar el error de Wompi
     const urlWompi = "https://checkout.wompi.co/l/VPOS_gtQ9MI";
 
-    // Redirige directamente a Wompi para pagar
+    // Redirección inmediata a la pasarela de pago
     window.location.href = urlWompi;
 }
 
