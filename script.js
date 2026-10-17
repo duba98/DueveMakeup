@@ -114,27 +114,43 @@
     overlay.addEventListener('click', closeCartDrawer);
 
  function checkout() {
-    if (cart.length === 0) {
+    if (!cart || cart.length === 0) {
         alert('Tu carrito está vacío.');
         return;
     }
 
-    // 1. Calculamos el total de los productos añadidos al carrito
+    // 1. Calculamos el total de los productos en el carrito
     let totalCOP = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
     if (totalCOP <= 0) {
-        alert('Por favor, asegúrate de añadir productos con un precio válido.');
+        alert('El total del carrito debe ser mayor a $0.');
         return;
     }
 
-    // 2. Wompi recibe los precios en centavos (ejemplo: $35.000 COP = 3500000)
+    // 2. Wompi exige el monto en centavos como un número entero (ej: $50.000 COP = 5000000)
     let amountInCents = Math.round(totalCOP * 100);
+    
+    // Generamos una referencia única de pedido para tu control
+    let reference = 'DUEVE-' + Date.now();
 
-    // 3. Enviamos el valor exacto del carrito en el link
-    let urlWompi = `https://checkout.wompi.co/l/XFNo90?amount-in-cents=${amountInCents}&currency=COP`;
+    // 3. Abrimos la pasarela oficial de Wompi con el valor del carrito
+    var checkoutWidget = new WidgetCheckout({
+        currency: 'COP',
+        amountInCents: amountInCents,
+        reference: reference,
+        publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0',
+        redirectUrl: window.location.href
+    });
 
-    // 4. Redirigimos al cliente a pagar el monto fijado
-    window.location.href = urlWompi;
+    checkoutWidget.open(function (result) {
+        var transaction = result.transaction;
+        if (transaction && transaction.status === 'APPROVED') {
+            alert('¡Gracias por tu compra! Tu pago ha sido aprobado.');
+            cart = [];
+            if (typeof updateCartUI === 'function') updateCartUI();
+            if (typeof closeCartDrawer === 'function') closeCartDrawer();
+        }
+    });
 }
 
     renderProducts();
