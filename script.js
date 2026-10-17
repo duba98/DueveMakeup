@@ -119,33 +119,43 @@
         return;
     }
 
-    // 1. Calculamos el total de los productos en el carrito
-    let totalCOP = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    // 1. Convertimos y limpiamos los precios para asegurarnos de que sean números reales
+    let totalCOP = cart.reduce((sum, item) => {
+        // Elimina símbolos de peso, comas o puntos que puedan venir en la propiedad price
+        let priceNum = typeof item.price === 'string' 
+            ? parseFloat(item.price.replace(/[^0-9.-]+/g, "")) 
+            : Number(item.price);
+        
+        let qtyNum = Number(item.quantity) || 1;
+        return sum + (priceNum * qtyNum);
+    }, 0);
 
-    if (totalCOP <= 0) {
-        alert('El total del carrito debe ser mayor a $0.');
+    // Si el total no es un número válido o es menor al mínimo permitido por Wompi ($1.000 COP)
+    if (isNaN(totalCOP) || totalCOP < 1000) {
+        alert('El monto mínimo para procesar el pago con Wompi es de $1.000 COP.');
         return;
     }
 
-    // 2. Wompi exige el monto en centavos como un número entero (ej: $50.000 COP = 5000000)
+    // 2. Wompi requiere el valor exacto en centavos (ej: $2.500 COP = 250000 centavos)
     let amountInCents = Math.round(totalCOP * 100);
-    
-    // Generamos una referencia única de pedido para tu control
+
+    // 3. Generamos una referencia única
     let reference = 'DUEVE-' + Date.now();
 
-    // 3. Abrimos la pasarela oficial de Wompi con el valor del carrito
+    // 4. Instanciamos el Widget de Wompi
     var checkoutWidget = new WidgetCheckout({
         currency: 'COP',
         amountInCents: amountInCents,
         reference: reference,
-        publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0',
+        publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0', // Tu llave pública de producción
         redirectUrl: window.location.href
     });
 
+    // 5. Abrimos la pasarela
     checkoutWidget.open(function (result) {
         var transaction = result.transaction;
         if (transaction && transaction.status === 'APPROVED') {
-            alert('¡Gracias por tu compra! Tu pago ha sido aprobado.');
+            alert('¡Gracias por tu compra! Pago aprobado con éxito.');
             cart = [];
             if (typeof updateCartUI === 'function') updateCartUI();
             if (typeof closeCartDrawer === 'function') closeCartDrawer();
