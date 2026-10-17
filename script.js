@@ -113,54 +113,69 @@
     closeCart.addEventListener('click', closeCartDrawer);
     overlay.addEventListener('click', closeCartDrawer);
 
- function checkout() {
+ // Función para generar la firma SHA-256 exigida por Wompi
+async function generateIntegritySignature(reference, amountInCents, currency, secret) {
+    const chain = `${reference}${amountInCents}${currency}${secret}`;
+    const encoder = new TextEncoder();
+    const data = encoder.encode(chain);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function checkout() {
     if (!cart || cart.length === 0) {
         alert('Tu carrito está vacío.');
         return;
     }
 
-    // 1. Convertimos y limpiamos los precios para asegurarnos de que sean números reales
+    // 1. Limpiamos y calculamos el total numérico exacto
     let totalCOP = cart.reduce((sum, item) => {
-        // Elimina símbolos de peso, comas o puntos que puedan venir en la propiedad price
         let priceNum = typeof item.price === 'string' 
             ? parseFloat(item.price.replace(/[^0-9.-]+/g, "")) 
             : Number(item.price);
-        
-        let qtyNum = Number(item.quantity) || 1;
-        return sum + (priceNum * qtyNum);
+        return sum + (priceNum * (Number(item.quantity) || 1));
     }, 0);
 
-    // Si el total no es un número válido o es menor al mínimo permitido por Wompi ($1.000 COP)
     if (isNaN(totalCOP) || totalCOP < 1000) {
         alert('El monto mínimo para procesar el pago con Wompi es de $1.000 COP.');
         return;
     }
 
-    // 2. Wompi requiere el valor exacto en centavos (ej: $2.500 COP = 250000 centavos)
+    // 2. Parámetros para la transacción en Wompi
     let amountInCents = Math.round(totalCOP * 100);
-
-    // 3. Generamos una referencia única
     let reference = 'DUEVE-' + Date.now();
+    let currency = 'COP';
+    let integritySecret = 'prod_integrity_MSdS1nV2Mfn64gh7XirtCIkzKMTCo0cB';
 
-    // 4. Instanciamos el Widget de Wompi
-    var checkoutWidget = new WidgetCheckout({
-        currency: 'COP',
-        amountInCents: amountInCents,
-        reference: reference,
-        publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0', // Tu llave pública de producción
-        redirectUrl: window.location.href
-    });
+    try {
+        // 3. Calculamos la firma de integridad en tiempo real
+        let signature = await generateIntegritySignature(reference, amountInCents, currency, integritySecret);
 
-    // 5. Abrimos la pasarela
-    checkoutWidget.open(function (result) {
-        var transaction = result.transaction;
-        if (transaction && transaction.status === 'APPROVED') {
-            alert('¡Gracias por tu compra! Pago aprobado con éxito.');
-            cart = [];
-            if (typeof updateCartUI === 'function') updateCartUI();
-            if (typeof closeCartDrawer === 'function') closeCartDrawer();
-        }
-    });
+        // 4. Instanciamos e inicializamos el Widget de Wompi con la firma
+        var checkoutWidget = new WidgetCheckout({
+            currency: currency,
+            amountInCents: amountInCents,
+            reference: reference,
+            publicKey: 'pub_prod_eambP8bNy1zXLL3pHa30peUhYgtqat0',
+            signature: { integrity: signature },
+            redirectUrl: window.location.href
+        });
+
+        // 5. Abrimos la pasarela de pago
+        checkoutWidget.open(function (result) {
+            var transaction = result.transaction;
+            if (transaction && transaction.status === 'APPROVED') {
+                alert('¡Gracias por tu compra! Tu pago ha sido aprobado.');
+                cart = [];
+                if (typeof updateCartUI === 'function') updateCartUI();
+                if (typeof closeCartDrawer === 'function') closeCartDrawer();
+            }
+        });
+    } catch (error) {
+        console.error('Error al generar la firma o iniciar Wompi:', error);
+        alert('Ocurrió un error al iniciar el proceso de pago. Inténtalo de nuevo.');
+    }
 }
 
     renderProducts();
