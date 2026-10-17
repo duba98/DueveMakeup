@@ -113,21 +113,16 @@
     closeCart.addEventListener('click', closeCartDrawer);
     overlay.addEventListener('click', closeCartDrawer);
 
-   function checkout() {
+  function checkout() {
     if (cart.length === 0) {
         alert('Tu carrito está vacío.');
         return;
     }
 
-    // Tu enlace oficial de pago en Wompi
-    let urlWompi = "https://checkout.wompi.co/l/VPOS_gtQ9MI";
+    // Tu enlace de pago directo en Wompi
+    const urlWompi = "https://checkout.wompi.co/l/VPOS_gtQ9MI";
 
-    // Limpiamos y cerramos el carrito en la web
-    cart = [];
-    updateCartUI();
-    closeCartDrawer();
-
-    // Redirección directa e inmediata al portal de pagos de Wompi
+    // Redirige directamente a Wompi para pagar
     window.location.href = urlWompi;
 }
 
