@@ -403,7 +403,7 @@ async function checkout() {
     });
   } catch (error) {
     console.error("Error al iniciar Wompi:", error);
-    alert("No se pudo iniciar el pago. Revisa las variables de entorno de Vercel y la configuración de Wompi.");
+    alert("error al realizar el pago.");
   } finally {
     checkoutButton.disabled = cart.length === 0;
     checkoutButton.textContent = "Finalizar compra con Wompi";
