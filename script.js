@@ -186,9 +186,27 @@ const closeModal = document.getElementById('closeModal');
 if (btnMaquillaje && modalMaquillaje && closeModal) {
 
   // Abrir el modal de marcas
-  btnMaquillaje.addEventListener('click', () => {
-    modalMaquillaje.classList.add('active');
+  
+const btnMaquillaje = document.getElementById('btnMaquillaje');
+const modalMaquillaje = document.getElementById('modalMaquillaje');
+
+console.log('Botón maquillaje:', btnMaquillaje);
+console.log('Modal maquillaje:', modalMaquillaje);
+
+if (btnMaquillaje && modalMaquillaje) {
+  btnMaquillaje.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    modalMaquillaje.classList.toggle('active');
+
+    console.log(
+      'Modal visible:',
+      modalMaquillaje.classList.contains('active')
+    );
   });
+}
+
 
   // Cerrar con la X
   closeModal.addEventListener('click', () => {
