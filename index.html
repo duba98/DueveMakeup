@@ -1,152 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dueve Makeup</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- ⬇️ AGREGA ESTA LÍNEA PARA LOS ICONOS (COMO EL CARRITO Y LA BASURA) ⬇️ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dueve Makeup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="Dueve Makeup - inicio">
+        <img src="imagenes/logo.png" alt="Dueve Makeup Logo" class="logo-img">
+      </a>
 
-    <!-- CABECERA CON TU LOGO -->
-    <header>
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="imagenes/logo.png" alt="Dueve Makeup Logo" class="logo-img">
-            </a>
-            
-<ul class="nav-links">
-    <button type="button" class="filter-btn active" data-filter="all">
-        Todos
-    </button>
+      <nav class="nav-links" aria-label="Categorías de productos">
+        <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+        <button type="button" class="filter-btn highlight" id="btnMaquillaje" aria-haspopup="dialog" aria-controls="modalMaquillaje">Maquillaje ▾</button>
+        <button type="button" class="filter-btn" data-filter="capilar">Capilar</button>
+        <button type="button" class="filter-btn" data-filter="lociones">Lociones</button>
+      </nav>
 
-    <button type="button" class="filter-btn highlight" id="btnMaquillaje">
-        Maquillaje ▾
-    </button>
-
-    <button type="button" class="filter-btn" data-filter="capilar">
-        Capilar
-    </button>
-
-    <button type="button" class="filter-btn" data-filter="lociones">
-        Lociones
-    </button>
-</ul>
-
-           <button class="cart-btn" id="cartButton" aria-label="Ver carrito">
-  <i class="fas fa-shopping-bag"></i>
-  <span class="cart-count" id="cartCount">0</span>
-</button>
-        </div>
-    </header>
-
-    <!-- SECCIÓN HERO -->
-    <section class="hero">
-        <h1></h1>
-        <p class="hero-test">Admirando la belleza y la personalidad de las mujeres ofrecemos productos de las mejores marcas reconocidas para que se mantengan hermosas llevándolos hasta sus domicilios.</p>
-        <a href="#productos" class="btn">Ver Catálogo</a>
-    </section>
-
-
-<!-- Ventana Flotante (Modal) de Marcas de Maquillaje -->
-<div id="modalMaquillaje" class="modal-overlay">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Marcas de Maquillaje</h3>
-      <button id="closeModal" class="close-btn">&times;</button>
+      <button class="cart-btn" id="cartButton" aria-label="Ver carrito">
+        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
     </div>
-    
-<div class="modal-body">
-  <button type="button" class="brand-btn" data-brand="atenea">Atenea</button>
-  <button type="button" class="brand-btn" data-brand="ani-k">Ani-K</button>
-  <button type="button" class="brand-btn" data-brand="bloomshell">Bloomshell</button>
-  <button type="button" class="brand-btn" data-brand="bonshik">Bonshik</button>
-  <button type="button" class="brand-btn" data-brand="maybelline">Maybelline</button>
-  <button type="button" class="brand-btn" data-brand="raquel">Raquel</button>
-  <button type="button" class="brand-btn" data-brand="ruby-rose">Ruby Rose</button>
-  <button type="button" class="brand-btn" data-brand="samy">Samy</button>
-  <button type="button" class="brand-btn" data-brand="vogue">Vogue</button>
-  <button type="button" class="brand-btn" data-brand="elaya">Elaya</button>
-  <button type="button" class="brand-btn" data-brand="girly">Girly</button>
-  <button type="button" class="brand-btn" data-brand="myk">MyK</button>
-  <button type="button" class="brand-btn" data-brand="nailen">Nailen</button>
-  <button type="button" class="brand-btn" data-brand="prosa">Prosa</button>
-  <button type="button" class="brand-btn" data-brand="sagui">Sagui</button>
-</div>
+    <nav class="mobile-categories" aria-label="Categorías para móvil">
+      <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+      <button type="button" class="filter-btn" id="btnMaquillajeMobile" aria-haspopup="dialog" aria-controls="modalMaquillaje">Maquillaje ▾</button>
+      <button type="button" class="filter-btn" data-filter="capilar">Capilar</button>
+      <button type="button" class="filter-btn" data-filter="lociones">Lociones</button>
+    </nav>
+  </header>
 
-  </div>
-</div>
-
-        <!-- Cuadrícula de Productos -->
-         <main id="productos">
-        <div class="products-grid" id="productsGrid">
-            <!-- Se carga mediante JS -->
-        </div>
-    </main>
-
-    <!-- Panel del Carrito -->
-<div id="cartDrawer" class="cart-sidebar">
-  <div class="cart-header">
-    <h2>Tu Carrito <span id="cartCountDrawer" class="cart-badge">0</span></h2>
-    <!-- Botón de cierre "X" -->
-    <button class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
-  </div>
-
-  
-<!-- Fondo oscuro del carrito -->
-<div id="overlay" class="overlay"></div>
-
-  <div class="cart-body" id="cartItems">
-    <!-- Aquí se cargan dinámicamente los productos -->
-  </div>
-
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>Total:</span>
-      <span id="cartTotal">$0.00</span>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Dueve Makeup</h1>
+      <p class="hero-test">Admirando la belleza y la personalidad de las mujeres, ofrecemos productos de marcas reconocidas para que se mantengan hermosas, llevándolos hasta sus domicilios.</p>
+      <a href="#productos" class="btn">Ver catálogo</a>
     </div>
-    <button class="btn-checkout" onclick="checkout()">Finalizar Compra / Pagar con wompi</button>
+  </section>
+
+  <div id="modalMaquillaje" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Marcas de maquillaje</h2>
+        <button type="button" id="closeModal" class="close-btn" aria-label="Cerrar marcas">&times;</button>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="brand-btn" data-brand="atenea">Atenea</button>
+        <button type="button" class="brand-btn" data-brand="ani-k">Ani-K</button>
+        <button type="button" class="brand-btn" data-brand="bloomshell">Bloomshell</button>
+        <button type="button" class="brand-btn" data-brand="bonshik">Bonshik</button>
+        <button type="button" class="brand-btn" data-brand="maybelline">Maybelline</button>
+        <button type="button" class="brand-btn" data-brand="raquel">Raquel</button>
+        <button type="button" class="brand-btn" data-brand="ruby-rose">Ruby Rose</button>
+        <button type="button" class="brand-btn" data-brand="samy">Samy</button>
+        <button type="button" class="brand-btn" data-brand="vogue">Vogue</button>
+        <button type="button" class="brand-btn" data-brand="elaya">Elaya</button>
+        <button type="button" class="brand-btn" data-brand="girly">Girly</button>
+        <button type="button" class="brand-btn" data-brand="myk">MyK</button>
+        <button type="button" class="brand-btn" data-brand="nailen">Nailen</button>
+        <button type="button" class="brand-btn" data-brand="prosa">Prosa</button>
+        <button type="button" class="brand-btn" data-brand="sagui">Sagui</button>
+      </div>
+    </div>
   </div>
-</div>
 
-    <!-- SECCIÓN DE CONTACTO Y PIE DE PÁGINA -->
-    <footer id="contacto">
-        <div style="max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem; text-align: left;">
-            
-            <!-- Columna 1: Info del negocio -->
-            <div style="flex: 1; min-width: 250px;">
-                <h3 style="color: #ffffff; margin-bottom: 1rem; font-size: 1.5rem;">Dueve Makeup</h3>
-                <p style="color: #9ca3af; font-size: 0.95rem; line-height: 1.6;">
-                    Brindándote los mejores productos de maquillaje de marcas reconocidas para resaltar tu belleza natural directo a tu hogar.
-                </p>
-            </div>
+  <main id="productos" class="container">
+    <div class="catalog-heading">
+      <h2 id="catalogTitle">Todos los productos</h2>
+      <p id="catalogSubtitle">Encuentra tus favoritos en Dueve Makeup.</p>
+    </div>
+    <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+  </main>
 
-            <!-- Columna 2: Redes / Contacto con tus datos reales -->
-            <div style="flex: 1; min-width: 250px;">
-                <h4 style="color: #ffffff; margin-bottom: 1rem; font-size: 1.2rem;">Contáctanos</h4>
-                <p style="color: #9ca3af; margin-bottom: 0.75rem;">
-                    <i class="fab fa-whatsapp" style="color: #25d366; margin-right: 8px; font-size: 1.2rem;"></i> 
-                    <a href="https://wa.me/573043127283" target="_blank">+57 304 3127283</a>
-                </p>
-                <p style="color: #9ca3af; margin-bottom: 0.5rem;">
-                    <i class="fab fa-instagram" style="color: #e1306c; margin-right: 8px; font-size: 1.2rem;"></i> 
-                    <a href="https://www.instagram.com/duevemakeup/" target="_blank">@duevemakeup</a>
-                </p>
-            </div>
+  <div id="overlay" class="overlay"></div>
+  <aside id="cartDrawer" class="cart-sidebar" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Tu carrito <span id="cartCountDrawer" class="cart-badge">0</span></h2>
+      <button class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="cart-body" id="cartItems">
+      <p class="empty-cart">El carrito está vacío.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><span id="cartTotal">$0 COP</span></div>
+      <p class="payment-note">El total se calculará según los productos y cantidades de tu carrito.</p>
+      <button class="btn-checkout" id="checkoutButton" type="button">Finalizar compra con Wompi</button>
+    </div>
+  </aside>
 
-        </div>
+  <footer id="contacto">
+    <div class="footer-content">
+      <div>
+        <h3>Dueve Makeup</h3>
+        <p>Brindándote productos de maquillaje de marcas reconocidas para resaltar tu belleza natural, directo a tu hogar.</p>
+      </div>
+      <div>
+        <h4>Contáctanos</h4>
+        <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/573043127283" target="_blank" rel="noopener noreferrer">+57 304 3127283</a></p>
+        <p><i class="fab fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/duevemakeup/" target="_blank" rel="noopener noreferrer">@duevemakeup</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Dueve Makeup. Todos los derechos reservados.</p></div>
+  </footer>
 
-        <!-- Línea inferior de derechos -->
-        <div style="border-top: 1px solid #374151; padding-top: 1.5rem; text-align: center;">
-            <p style="color: #9ca3af; font-size: 0.9rem;">&copy; 2026 Dueve Makeup. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-    
-<script src="script.js"></script>
-<script type="text/javascript" src="https://checkout.wompi.co/widget.js"></script>
-    
+  <script src="https://checkout.wompi.co/widget.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
