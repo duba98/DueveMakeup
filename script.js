@@ -1,11 +1,47 @@
 
-       const products = [
-        { id: 1, name: "Base Líquida Atenea", price: 1500, category: "atenea", image: "imagenes/atenea/BASE LIQUIDA CREAM ATENEA 1ST X 30 ml.png" },
-        { id: 2, name: "Fijador de Cejas", price: 1000, category: "atenea", image: "imagenes/atenea/GEL FIJADOR DE CEJAS.png" },
-        { id: 3, name: "Iluminador Atenea Sublime", price: 0, category: "atenea", image: "imagenes/atenea/ILUMINADOR ATENEA SUBLIME.png" },
-        { id: 4, name: "Polvo Suelto", price: 0, category: "atenea", image: "imagenes/atenea/POLVO SUELTO ATENEA TRASLUCIDO 1ST SCENE X 35 g.png" },
-        { id: 5, name: "Rubor Dúo Atenea Pink Crush", price: 0, category: "atenea", image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png" }
-    ];
+       
+const products = [
+  {
+    id: 1,
+    name: "Base Líquida Atenea",
+    price: 1500,
+    category: "maquillaje",
+    brand: "atenea",
+    image: "imagenes/atenea/BASE LIQUIDA CREAM ATENEA 1ST X 30 ml.png"
+  },
+  {
+    id: 2,
+    name: "Fijador de Cejas",
+    price: 1000,
+    category: "maquillaje",
+    brand: "atenea",
+    image: "imagenes/atenea/GEL FIJADOR DE CEJAS.png"
+  },
+  {
+    id: 3,
+    name: "Iluminador Atenea Sublime",
+    price: 0,
+    category: "maquillaje",
+    brand: "atenea",
+    image: "imagenes/atenea/ILUMINADOR ATENEA SUBLIME.png"
+  },
+  {
+    id: 4,
+    name: "Polvo Suelto",
+    price: 0,
+    category: "maquillaje",
+    brand: "atenea",
+    image: "imagenes/atenea/POLVO SUELTO ATENEA TRASLUCIDO 1ST SCENE X 35 g.png"
+  },
+  {
+    id: 5,
+    name: "Rubor Dúo Atenea Pink Crush",
+    price: 0,
+    category: "maquillaje",
+    brand: "atenea",
+    image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
+  }
+];
 
     let cart = [];
 
@@ -19,28 +55,76 @@
     const cartTotal = document.getElementById('cartTotal');
     const filterButtons = document.querySelectorAll('.filter-btn');
 
-    function renderProducts(filter = 'all') {
-        productsGrid.innerHTML = '';
-        const filteredProducts = filter === 'all' 
-            ? products 
-            : products.filter(p => p.category === filter);
+    
+function renderProducts(filter = 'all', brand = null) {
+    productsGrid.innerHTML = '';
 
-        filteredProducts.forEach(product => {
-            const card = document.createElement('div');
-            card.classList.add('product-card');
-            card.innerHTML = `
-                <img src="${product.image}" alt="${product.name}" class="product-img" onerror="this.src='https://previews.123rf.com/images/koblizeek/koblizeek2208/koblizeek220800254/190563481-no-image-vector-symbol-missing-available-icon-no-gallery-for-this-moment-placeholder.jpg?_gl=1*1bdftwn*_gcl_au*Nzg5NTE2NTE2LjE3OTIxOTAxMTg.*_ga*MTc1Nzc2NDg2MS4xNzkyMTkwMTE4*_ga_Y8798Z0549*czE3OTIxOTAxMTgkbzEkZzEkdDE3OTIxOTAxMTgkajYwJGwwJGgw'">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">${product.name}</h3>
-                        <div class="product-price">$${product.price.toFixed(2)}</div>
-                    </div>
-                    <button class="btn" onclick="addToCart(${product.id})">Añadir al Carrito</button>
-                </div>
-            `;
-            productsGrid.appendChild(card);
-        });
+    const filteredProducts = products.filter(product => {
+        // Todos muestra absolutamente todas las categorías
+        if (filter === 'all') {
+            return true;
+        }
+
+        // Filtrar por marca dentro de maquillaje
+        if (brand) {
+            return product.category === 'maquillaje'
+                && product.brand === brand;
+        }
+
+        // Filtrar por categoría
+        return product.category === filter;
+    });
+
+    if (filteredProducts.length === 0) {
+        productsGrid.innerHTML = `
+            <p class="no-products">
+                No hay productos disponibles en esta categoría todavía.
+            </p>
+        `;
+        return;
     }
+
+    filteredProducts.forEach(product => {
+        const card = document.createElement('div');
+        card.classList.add('product-card');
+
+        card.innerHTML = `
+            <img
+                src="${product.image}"
+                alt="${product.name}"
+                class="product-img"
+                onerror="this.onerror=null; this.src='imagenes/sin-imagen.png';"
+            >
+            <div class="product-info">
+                <div>
+                    <h3 class="product-title">${product.name}</h3>
+                    <div class="product-price">
+                        $${Number(product.price).toFixed(2)}
+                    </div>
+                </div>
+                <button class="btn" onclick="addToCart(${product.id})">
+                    Añadir al Carrito
+                </button>
+            </div>
+        `;
+
+        productsGrid.appendChild(card);
+    });
+}
+
+// Filtros principales: Todos, Capilar y Lociones
+filterButtons.forEach(btn => {
+    // Maquillaje abre el modal, no filtra directamente
+    if (btn.id === 'btnMaquillaje') return;
+
+    btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        renderProducts(btn.dataset.filter || 'all');
+    });
+});
+
 
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -178,17 +262,55 @@ async function checkout() {
     }
 }
 
+
 const btnMaquillaje = document.getElementById('btnMaquillaje');
 const modalMaquillaje = document.getElementById('modalMaquillaje');
 const closeModal = document.getElementById('closeModal');
+
+if (btnMaquillaje && modalMaquillaje && closeModal) {
+
+    // Abrir la ventana de marcas
+    btnMaquillaje.addEventListener('click', () => {
+        modalMaquillaje.classList.add('active');
+    });
+
+    // Cerrar con la X
+    closeModal.addEventListener('click', () => {
+        modalMaquillaje.classList.remove('active');
+    });
+
+    // Cerrar al pulsar fuera de la ventana
+    modalMaquillaje.addEventListener('click', event => {
+        if (event.target === modalMaquillaje) {
+            modalMaquillaje.classList.remove('active');
+        }
+    });
+
+    // Filtrar por marca
+    modalMaquillaje.querySelectorAll('.brand-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const brand = btn.dataset.brand.toLowerCase();
+
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btnMaquillaje.classList.add('active');
+
+            renderProducts('maquillaje', brand);
+
+            modalMaquillaje.classList.remove('active');
+        });
+    });
+}
+
+// Mostrar todo el catálogo al cargar la página
+
+
 
 // Comprobar que los elementos existen
 if (btnMaquillaje && modalMaquillaje && closeModal) {
 
   // Abrir el modal de marcas
   
-const btnMaquillaje = document.getElementById('btnMaquillaje');
-const modalMaquillaje = document.getElementById('modalMaquillaje');
+
 
 console.log('Botón maquillaje:', btnMaquillaje);
 console.log('Modal maquillaje:', modalMaquillaje);
@@ -234,6 +356,4 @@ if (btnMaquillaje && modalMaquillaje) {
       });
     });
 }
-
-
-    renderProducts();
+renderProducts('all');

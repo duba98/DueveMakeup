@@ -17,12 +17,25 @@
             <a href="#" class="logo">
                 <img src="imagenes/logo.png" alt="Dueve Makeup Logo" class="logo-img">
             </a>
-            <ul class="nav-links">
-                <button class="filter-btn active">Todos</button>
-  <button class="filter-btn highlight" id="btnMaquillaje">maquillaje ▾</button>
-  <button class="filter-btn">capilar</button>
-  <button class="filter-btn">lociones</button>
-            </ul>
+            
+<ul class="nav-links">
+    <button type="button" class="filter-btn active" data-filter="all">
+        Todos
+    </button>
+
+    <button type="button" class="filter-btn highlight" id="btnMaquillaje">
+        Maquillaje ▾
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="capilar">
+        Capilar
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="lociones">
+        Lociones
+    </button>
+</ul>
+
            <button class="cart-btn" id="cartButton" aria-label="Ver carrito">
   <i class="fas fa-shopping-bag"></i>
   <span class="cart-count" id="cartCount">0</span>
@@ -37,10 +50,6 @@
         <a href="#productos" class="btn">Ver Catálogo</a>
     </section>
 
-    <!-- Botones Principales -->
-<div class="category-bar">
-  >
-</div>
 
 <!-- Ventana Flotante (Modal) de Marcas de Maquillaje -->
 <div id="modalMaquillaje" class="modal-overlay">
@@ -70,17 +79,9 @@
 
   </div>
 </div>
-            <button type="filter-btn" data-filter="capilar"></button>
-            <button type="filter-btn"></button>
-            <button type="filter-btn"></button>
-            <button type="filter-btn" data-filter="lociones"></button>
-            <button type="filter-btn"></button>
-            <button type="filter-btn"></button>
-            
-
-        </div>
 
         <!-- Cuadrícula de Productos -->
+         <main id="productos">
         <div class="products-grid" id="productsGrid">
             <!-- Se carga mediante JS -->
         </div>
@@ -89,7 +90,7 @@
     <!-- Panel del Carrito -->
 <div id="cartDrawer" class="cart-sidebar">
   <div class="cart-header">
-    <h2>Tu Carrito <span id="cartCount" class="cart-badge">5</span></h2>
+    <h2>Tu Carrito <span id="cartCountDrawer" class="cart-badge">0</span></h2>
     <!-- Botón de cierre "X" -->
     <button class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
   </div>
