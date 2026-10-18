@@ -380,13 +380,13 @@ async function checkout() {
     }
 
     const checkoutWidget = new WidgetCheckout({
-      currency: "COP",
-      amountInCents: data.amountInCents,
-      reference: data.reference,
-      publicKey: data.publicKey,
-      signature: { integrity: data.signature },
-      redirectUrl: window.location.href
-    });
+  currency: data.currency,
+  amountInCents: data.amountInCents,
+  reference: data.reference,
+  publicKey: data.publicKey,
+  signature: { integrity: data.signature },
+  redirectUrl: window.location.href
+});
 
     checkoutWidget.open(result => {
       const transaction = result && result.transaction;
