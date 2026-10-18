@@ -401,13 +401,17 @@ async function checkout() {
         alert(`Estado del pago: ${transaction.status}.`);
       }
     });
-  } catch (error) {
+  } 
+catch (error) {
     console.error("Error al iniciar Wompi:", error);
-    alert("error al realizar el pago.");
+
+    const detalle = error?.message || String(error);
+    alert("Error al iniciar el pago: " + detalle);
   } finally {
     checkoutButton.disabled = cart.length === 0;
     checkoutButton.textContent = "Finalizar compra con Wompi";
   }
+
 }
 checkoutButton.addEventListener("click", checkout);
 
