@@ -342,6 +342,10 @@ overlay.addEventListener("click", closeCartDrawer);
   3) El servidor devuelve la firma sin exponer la clave secreta.
   Configura en server.js la clave pública de tu comercio y la URL del servidor.
 */
+
+let checkoutInProgress = false;
+
+
 async function checkout() {
   if (cart.length === 0) {
     alert("Tu carrito está vacío.");
@@ -360,6 +364,8 @@ async function checkout() {
 
   checkoutButton.disabled = true;
   checkoutButton.textContent = "Preparando pago...";
+
+  checkoutInProgress = true;
 
   try {
     // El servidor valida IDs/cantidades y calcula el importe con precios propios.
@@ -408,9 +414,10 @@ catch (error) {
     const detalle = error?.message || String(error);
     alert("Error al iniciar el pago: " + detalle);
   } finally {
-    checkoutButton.disabled = cart.length === 0;
-    checkoutButton.textContent = "Finalizar compra con Wompi";
-  }
+  checkoutInProgress = false;
+  checkoutButton.disabled = cart.length === 0;
+  checkoutButton.textContent = "Finalizar compra con Wompi";
+}
 
 }
 checkoutButton.addEventListener("click", checkout);
