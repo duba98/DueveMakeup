@@ -1,10 +1,19 @@
 /*
-  Dueve Makeup - catálogo, filtros, carrito y Wompi.
-  IMPORTANTE: la firma de integridad se solicita al backend /api/wompi-signature.
-  Nunca coloques la clave secreta de Wompi en este archivo.
-*/
---productos maquillaje
+ * Dueve Makeup - catálogo, filtros, carrito y Wompi.
+ *
+ * PARA AGREGAR PRODUCTOS:
+ * 1. Añade un objeto dentro del arreglo products, separado por coma.
+ * 2. Usa un id numérico único.
+ * 3. category debe ser "maquillaje", "capilar" o "lociones".
+ * 4. brand debe coincidir exactamente (sin importar mayúsculas) con data-brand
+ *    del botón correspondiente en index.html.
+ * 5. image debe ser la ruta real de la imagen dentro del proyecto.
+ *
+ * No pongas la clave secreta de Wompi en este archivo.
+ */
+
 const products = [
+  // ==================== MAQUILLAJE ====================
   {
     id: 1,
     name: "Base Líquida Atenea",
@@ -44,115 +53,91 @@ const products = [
     category: "maquillaje",
     brand: "atenea",
     image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
-  }
-];
+  },
 
-
---productos capilares
-
-const products = [
-   {
-    id: 01,
-    name: "shampoo mariana zapata",
+  // ==================== CAPILAR ====================
+  // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
+  {
+    id: 101,
+    name: "Shampoo Mariana Zapata (completar)",
     price: 0,
     category: "capilar",
     brand: "mariana zapata",
-    image: ""
-  }
-  {id: 02,
-    name: "",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 102,
+    name: "Producto Anyeluz (completar)",
     price: 0,
     category: "capilar",
     brand: "anyeluz",
-    image: ""
-  }
-  {id: 03,
-    name: "",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 103,
+    name: "Producto Milagros (completar)",
     price: 0,
     category: "capilar",
     brand: "milagros",
-    image: ""
-  }
-  {id: 02,
-    name: "",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 104,
+    name: "Producto Ritual Botánico (completar)",
     price: 0,
     category: "capilar",
     brand: "ritual botanico",
-    image: ""
-  }
-  {id: 02,
-    name: "",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 105,
+    name: "Producto Click Hair (completar)",
     price: 0,
     category: "capilar",
     brand: "click hair",
-    image: ""
-  }
-  {id: 02,
-    name: "",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 106,
+    name: "Producto Kaba (completar)",
     price: 0,
     category: "capilar",
     brand: "kaba",
-    image: ""
-  }
-];
+    image: "imagenes/sin-imagen.png"
+  },
 
---productos lociones
-
-const products = [
-  
+  // ==================== LOCIONES ====================
+  // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
   {
-    id: 001,
-    name: "",
+    id: 201,
+    name: "Loción para hombre (completar)",
     price: 0,
     category: "lociones",
     brand: "hombre",
-    image: ""
-  }
-   {
-    id: 002,
-    name: "",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 202,
+    name: "Loción para mujer (completar)",
     price: 0,
     category: "lociones",
     brand: "mujer",
-    image: ""
+    image: "imagenes/sin-imagen.png"
   }
+
+  /*
+   * COPIA ESTE MODELO PARA CADA PRODUCTO NUEVO:
+   * ,
+   * {
+   *   id: 203,
+   *   name: "Nombre del producto",
+   *   price: 25000,
+   *   category: "lociones",
+   *   brand: "mujer",
+   *   image: "imagenes/lociones/nombre-imagen.png"
+   * }
+   */
 ];
-
-document.addEventListener("DOMContentLoaded", () => {
-    const btnCapilar = document.getElementById("btnCapilar");
-    const btnLociones = document.getElementById("btnLociones");
-
-    const modalCapilar = document.getElementById("modalcapilar");
-    const modalLociones = document.getElementById("modallociones");
-
-    function abrirModal(modal) {
-        if (!modal) return;
-
-        modal.classList.add("active");
-        modal.setAttribute("aria-hidden", "false");
-    }
-
-    function cerrarModal(modal) {
-        if (!modal) return;
-
-        modal.classList.remove("active");
-        modal.setAttribute("aria-hidden", "true");
-    }
-
-    btnCapilar?.addEventListener("click", () => {
-        abrirModal(modalCapilar);
-    });
-
-    btnLociones?.addEventListener("click", () => {
-        abrirModal(modalLociones);
-    });
-
-    document.getElementById("closeCapilar")
-        ?.addEventListener("click", () => cerrarModal(modalCapilar));
-
-    document.getElementById("closeLociones")
-        ?.addEventListener("click", () => cerrarModal(modalLociones));
-});
 
 let cart = [];
 
@@ -166,10 +151,12 @@ const cartCount = document.getElementById("cartCount");
 const cartCountDrawer = document.getElementById("cartCountDrawer");
 const cartTotal = document.getElementById("cartTotal");
 const checkoutButton = document.getElementById("checkoutButton");
-const modalMaquillaje = document.getElementById("modalMaquillaje");
-const closeModalButton = document.getElementById("closeModal");
 const catalogTitle = document.getElementById("catalogTitle");
 const catalogSubtitle = document.getElementById("catalogSubtitle");
+
+const makeupModal = document.getElementById("modalMaquillaje");
+const capilarModal = document.getElementById("modalcapilar");
+const locionesModal = document.getElementById("modallociones");
 
 const moneyCOP = value => new Intl.NumberFormat("es-CO", {
   style: "currency",
@@ -182,14 +169,16 @@ function normalize(value) {
 }
 
 function renderProducts(filter = "all", brand = null) {
+  if (!productsGrid) return;
+
   productsGrid.innerHTML = "";
 
   const filteredProducts = products.filter(product => {
     if (filter === "all") return true;
 
     if (brand) {
-      return normalize(product.category) === "maquillaje" &&
-             normalize(product.brand) === normalize(brand);
+      return normalize(product.category) === normalize(filter) &&
+        normalize(product.brand) === normalize(brand);
     }
 
     return normalize(product.category) === normalize(filter);
@@ -197,8 +186,14 @@ function renderProducts(filter = "all", brand = null) {
 
   if (catalogTitle) {
     if (brand) {
-      const brandButton = document.querySelector(`.brand-btn[data-brand="${CSS.escape(brand)}"]`);
-      catalogTitle.textContent = brandButton ? brandButton.textContent.trim() : brand;
+      const brandButton = [...document.querySelectorAll(".brand-btn")]
+        .find(button =>
+          normalize(button.dataset.category || "maquillaje") === normalize(filter) &&
+          normalize(button.dataset.brand) === normalize(brand)
+        );
+      catalogTitle.textContent = brandButton
+        ? brandButton.textContent.trim()
+        : brand;
     } else {
       const titles = {
         all: "Todos los productos",
@@ -211,14 +206,16 @@ function renderProducts(filter = "all", brand = null) {
   }
 
   if (catalogSubtitle) {
-    catalogSubtitle.textContent = `${filteredProducts.length} producto${filteredProducts.length === 1 ? "" : "s"} encontrado${filteredProducts.length === 1 ? "" : "s"}.`;
+    const count = filteredProducts.length;
+    catalogSubtitle.textContent =
+      `${count} producto${count === 1 ? "" : "s"} encontrado${count === 1 ? "" : "s"}.`;
   }
 
-  if (!filteredProducts.length) {
+  if (filteredProducts.length === 0) {
     const empty = document.createElement("p");
     empty.className = "no-products";
     empty.textContent = brand
-      ? "Todavía no hay productos registrados para esta marca."
+      ? "Todavía no hay productos registrados para esta marca o subcategoría."
       : "Todavía no hay productos registrados en esta categoría.";
     productsGrid.appendChild(empty);
     return;
@@ -229,10 +226,10 @@ function renderProducts(filter = "all", brand = null) {
     card.className = "product-card";
 
     const image = document.createElement("img");
-    image.src = product.image;
-    image.alt = product.name;
     image.className = "product-img";
+    image.alt = product.name || "Producto Dueve Makeup";
     image.loading = "lazy";
+    image.src = product.image || "imagenes/sin-imagen.png";
     image.onerror = () => {
       image.onerror = null;
       image.src = "imagenes/sin-imagen.png";
@@ -266,55 +263,94 @@ function renderProducts(filter = "all", brand = null) {
 
 function setActiveFilter(filter, brand = null) {
   document.querySelectorAll(".filter-btn").forEach(button => {
-    const isMakeupButton = button.id === "btnMaquillaje" || button.id === "btnMaquillajeMobile";
-    const active = brand ? isMakeupButton : (!isMakeupButton && normalize(button.dataset.filter) === filter);
+    const isCategoryModalButton = [
+      "btnMaquillaje", "btnMaquillajeMobile",
+      "btnCapilar", "btnCapilarMobile",
+      "btnLociones", "btnLocionesMobile"
+    ].includes(button.id);
+
+    const active = brand
+      ? false
+      : (!isCategoryModalButton && normalize(button.dataset.filter) === normalize(filter));
+
     button.classList.toggle("active", active);
   });
 }
 
-function openMakeupModal() {
-  modalMaquillaje.classList.add("active");
-  modalMaquillaje.setAttribute("aria-hidden", "false");
-  closeModalButton.focus();
+function openModal(modal) {
+  if (!modal) return;
+  closeAllModals();
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
 }
 
-function closeMakeupModal() {
-  modalMaquillaje.classList.remove("active");
-  modalMaquillaje.setAttribute("aria-hidden", "true");
+function closeModal(modal) {
+  if (!modal) return;
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
 }
 
-document.querySelectorAll(".filter-btn[data-filter]").forEach(button => {
+function closeAllModals() {
+  [makeupModal, capilarModal, locionesModal].forEach(closeModal);
+}
+
+function bindModalButton(buttonId, modal) {
+  document.getElementById(buttonId)?.addEventListener("click", () => openModal(modal));
+}
+
+bindModalButton("btnMaquillaje", makeupModal);
+bindModalButton("btnMaquillajeMobile", makeupModal);
+bindModalButton("btnCapilar", capilarModal);
+bindModalButton("btnCapilarMobile", capilarModal);
+bindModalButton("btnLociones", locionesModal);
+bindModalButton("btnLocionesMobile", locionesModal);
+
+document.getElementById("closeModal")?.addEventListener("click", () => closeModal(makeupModal));
+document.getElementById("closeCapilar")?.addEventListener("click", () => closeModal(capilarModal));
+document.getElementById("closeLociones")?.addEventListener("click", () => closeModal(locionesModal));
+
+[makeupModal, capilarModal, locionesModal].forEach(modal => {
+  modal?.addEventListener("click", event => {
+    if (event.target === modal) closeModal(modal);
+  });
+});
+
+// Los botones "Todos" filtran directamente; las otras categorías abren su modal.
+document.querySelectorAll('.filter-btn[data-filter]').forEach(button => {
   button.addEventListener("click", () => {
     const filter = normalize(button.dataset.filter) || "all";
     setActiveFilter(filter);
     renderProducts(filter);
-    document.getElementById("productos").scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById("productos")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   });
 });
 
-document.getElementById("btnMaquillaje").addEventListener("click", openMakeupModal);
-document.getElementById("btnMaquillajeMobile").addEventListener("click", openMakeupModal);
-closeModalButton.addEventListener("click", closeMakeupModal);
+// Al pulsar una marca o subcategoría, filtra usando su categoría y su brand.
+document.querySelectorAll(".brand-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const brand = normalize(button.dataset.brand);
+    if (!brand) return;
 
-modalMaquillaje.addEventListener("click", event => {
-  if (event.target === modalMaquillaje) closeMakeupModal();
+    const category = normalize(button.dataset.category || "maquillaje");
+    setActiveFilter(category, brand);
+    renderProducts(category, brand);
+    closeAllModals();
+
+    document.getElementById("productos")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
 });
 
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") {
-    closeMakeupModal();
+    closeAllModals();
     closeCartDrawer();
   }
-});
-
-document.querySelectorAll(".brand-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    const brand = normalize(button.dataset.brand);
-    setActiveFilter("maquillaje", brand);
-    renderProducts("maquillaje", brand);
-    closeMakeupModal();
-    document.getElementById("productos").scrollIntoView({ behavior: "smooth", block: "start" });
-  });
 });
 
 function addToCart(productId) {
@@ -357,21 +393,23 @@ function updateCartUI() {
   const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
   const total = cart.reduce((sum, item) => sum + Number(item.price) * item.quantity, 0);
 
-  cartCount.textContent = totalQuantity;
-  cartCountDrawer.textContent = totalQuantity;
-  cartTotal.textContent = moneyCOP(total);
+  if (cartCount) cartCount.textContent = totalQuantity;
+  if (cartCountDrawer) cartCountDrawer.textContent = totalQuantity;
+  if (cartTotal) cartTotal.textContent = moneyCOP(total);
+  if (!cartItemsContainer) return;
 
   cartItemsContainer.innerHTML = "";
+
   if (cart.length === 0) {
     const empty = document.createElement("p");
     empty.className = "empty-cart";
     empty.textContent = "El carrito está vacío.";
     cartItemsContainer.appendChild(empty);
-    checkoutButton.disabled = true;
+    if (checkoutButton) checkoutButton.disabled = true;
     return;
   }
 
-  checkoutButton.disabled = false;
+  if (checkoutButton) checkoutButton.disabled = false;
 
   cart.forEach(item => {
     const row = document.createElement("div");
@@ -425,6 +463,7 @@ function updateCartUI() {
 }
 
 function openCartDrawer() {
+  if (!cartDrawer || !overlay) return;
   cartDrawer.classList.add("open");
   overlay.classList.add("active");
   cartDrawer.setAttribute("aria-hidden", "false");
@@ -432,26 +471,22 @@ function openCartDrawer() {
 }
 
 function closeCartDrawer() {
-  cartDrawer.classList.remove("open");
-  overlay.classList.remove("active");
-  cartDrawer.setAttribute("aria-hidden", "true");
-  overlay.setAttribute("aria-hidden", "true");
+  cartDrawer?.classList.remove("open");
+  overlay?.classList.remove("active");
+  cartDrawer?.setAttribute("aria-hidden", "true");
+  overlay?.setAttribute("aria-hidden", "true");
 }
 
-cartButton.addEventListener("click", openCartDrawer);
-closeCartButton.addEventListener("click", closeCartDrawer);
-overlay.addEventListener("click", closeCartDrawer);
+cartButton?.addEventListener("click", openCartDrawer);
+closeCartButton?.addEventListener("click", closeCartDrawer);
+overlay?.addEventListener("click", closeCartDrawer);
 
 /*
-  Wompi:
-  1) El total se calcula aquí a partir del carrito actual.
-  2) El frontend pide al servidor que firme reference + amountInCents + currency.
-  3) El servidor devuelve la firma sin exponer la clave secreta.
-  Configura en server.js la clave pública de tu comercio y la URL del servidor.
-*/
-
+ * Wompi:
+ * El frontend solicita la firma al backend /api/wompi-signature.
+ * El backend debe validar productos y precios; nunca expongas aquí la clave secreta.
+ */
 let checkoutInProgress = false;
-
 
 async function checkout() {
   if (cart.length === 0) {
@@ -469,13 +504,15 @@ async function checkout() {
     return;
   }
 
-  checkoutButton.disabled = true;
-  checkoutButton.textContent = "Preparando pago...";
-
+  if (checkoutInProgress) return;
   checkoutInProgress = true;
 
+  if (checkoutButton) {
+    checkoutButton.disabled = true;
+    checkoutButton.textContent = "Preparando pago...";
+  }
+
   try {
-    // El servidor valida IDs/cantidades y calcula el importe con precios propios.
     const response = await fetch("/api/wompi-signature", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -488,24 +525,24 @@ async function checkout() {
     if (!response.ok) {
       throw new Error(data.error || "El servidor no pudo preparar el pago.");
     }
+
     if (!data.signature || !data.publicKey || !data.reference || !data.amountInCents) {
       throw new Error("La respuesta del servidor está incompleta.");
     }
 
     const checkoutWidget = new WidgetCheckout({
-  currency: data.currency,
-  amountInCents: data.amountInCents,
-  reference: data.reference,
-  publicKey: data.publicKey,
-  signature: { integrity: data.signature },
-  redirectUrl: window.location.href
-});
+      currency: data.currency,
+      amountInCents: data.amountInCents,
+      reference: data.reference,
+      publicKey: data.publicKey,
+      signature: { integrity: data.signature },
+      redirectUrl: window.location.href
+    });
 
     checkoutWidget.open(result => {
       const transaction = result && result.transaction;
+
       if (transaction && transaction.status === "APPROVED") {
-        // El callback del navegador no es una verificación final del pago.
-        // Para confirmar pedidos reales, valida la transacción desde el servidor/webhook.
         alert("Wompi reportó el pago como aprobado. La confirmación final del pedido debe verificarse en el servidor.");
         cart = [];
         updateCartUI();
@@ -514,22 +551,21 @@ async function checkout() {
         alert(`Estado del pago: ${transaction.status}.`);
       }
     });
-  } 
-catch (error) {
+  } catch (error) {
     console.error("Error al iniciar Wompi:", error);
-
-    const detalle = error?.message || String(error);
-    alert("Error al iniciar el pago: " + detalle);
+    alert("Error al iniciar el pago: " + (error?.message || String(error)));
   } finally {
-  checkoutInProgress = false;
-  checkoutButton.disabled = cart.length === 0;
-  checkoutButton.textContent = "Finalizar compra con Wompi";
+    checkoutInProgress = false;
+    if (checkoutButton) {
+      checkoutButton.disabled = cart.length === 0;
+      checkoutButton.textContent = "Finalizar compra con Wompi";
+    }
+  }
 }
 
-}
-checkoutButton.addEventListener("click", checkout);
+checkoutButton?.addEventListener("click", checkout);
 
-// Compatibilidad con cualquier botón antiguo que invoque checkout().
+// Compatibilidad con cualquier botón antiguo que invoque estas funciones.
 window.checkout = checkout;
 window.addToCart = addToCart;
 window.removeFromCart = removeFromCart;

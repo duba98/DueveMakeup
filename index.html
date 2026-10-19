@@ -17,20 +17,21 @@
       <nav class="nav-links" aria-label="Categorías de productos">
         <button type="button" class="filter-btn active" data-filter="all">Todos</button>
         <button type="button" class="filter-btn highlight" id="btnMaquillaje" aria-haspopup="dialog" aria-controls="modalMaquillaje">Maquillaje ▾</button>
-        <button type="button" class="filter-btn" data-filter="capilar">Capilar</button>
-        <button type="button" class="filter-btn" data-filter="lociones">Lociones</button>
+        <button type="button" class="filter-btn" id="btnCapilar" aria-haspopup="dialog" aria-controls="modalcapilar">Capilar ▾</button>
+        <button type="button" class="filter-btn" id="btnLociones" aria-haspopup="dialog" aria-controls="modallociones">Lociones ▾</button>
       </nav>
 
-      <button class="cart-btn" id="cartButton" aria-label="Ver carrito">
+      <button type="button" class="cart-btn" id="cartButton" aria-label="Ver carrito">
         <i class="fas fa-shopping-bag" aria-hidden="true"></i>
         <span class="cart-count" id="cartCount">0</span>
       </button>
     </div>
+
     <nav class="mobile-categories" aria-label="Categorías para móvil">
       <button type="button" class="filter-btn active" data-filter="all">Todos</button>
       <button type="button" class="filter-btn" id="btnMaquillajeMobile" aria-haspopup="dialog" aria-controls="modalMaquillaje">Maquillaje ▾</button>
-      <button type="button" class="filter-btn" data-filter="capilar">Capilar</button>
-      <button type="button" class="filter-btn" data-filter="lociones">Lociones</button>
+      <button type="button" class="filter-btn" id="btnCapilarMobile" aria-haspopup="dialog" aria-controls="modalcapilar">Capilar ▾</button>
+      <button type="button" class="filter-btn" id="btnLocionesMobile" aria-haspopup="dialog" aria-controls="modallociones">Lociones ▾</button>
     </nav>
   </header>
 
@@ -42,61 +43,61 @@
     </div>
   </section>
 
-  <div id="modalMaquillaje" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <!-- MODAL: MAQUILLAJE -->
+  <div id="modalMaquillaje" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleMaquillaje" aria-hidden="true">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 id="modalTitle">Marcas de maquillaje</h2>
+        <h2 id="modalTitleMaquillaje">Marcas de maquillaje</h2>
         <button type="button" id="closeModal" class="close-btn" aria-label="Cerrar marcas">&times;</button>
       </div>
       <div class="modal-body">
-        <button type="button" class="brand-btn" data-brand="atenea">Atenea</button>
-        <button type="button" class="brand-btn" data-brand="ani-k">Ani-K</button>
-        <button type="button" class="brand-btn" data-brand="bloomshell">Bloomshell</button>
-        <button type="button" class="brand-btn" data-brand="bonshik">Bonshik</button>
-        <button type="button" class="brand-btn" data-brand="maybelline">Maybelline</button>
-        <button type="button" class="brand-btn" data-brand="raquel">Raquel</button>
-        <button type="button" class="brand-btn" data-brand="ruby-rose">Ruby Rose</button>
-        <button type="button" class="brand-btn" data-brand="samy">Samy</button>
-        <button type="button" class="brand-btn" data-brand="vogue">Vogue</button>
-        <button type="button" class="brand-btn" data-brand="elaya">Elaya</button>
-        <button type="button" class="brand-btn" data-brand="girly">Girly</button>
-        <button type="button" class="brand-btn" data-brand="myk">MyK</button>
-        <button type="button" class="brand-btn" data-brand="nailen">Nailen</button>
-        <button type="button" class="brand-btn" data-brand="prosa">Prosa</button>
-        <button type="button" class="brand-btn" data-brand="sagui">Sagui</button>
+        <button type="button" class="brand-btn" data-brand="atenea" data-category="maquillaje">Atenea</button>
+        <button type="button" class="brand-btn" data-brand="ani-k" data-category="maquillaje">Ani-K</button>
+        <button type="button" class="brand-btn" data-brand="bloomshell" data-category="maquillaje">Bloomshell</button>
+        <button type="button" class="brand-btn" data-brand="bonshik" data-category="maquillaje">Bonshik</button>
+        <button type="button" class="brand-btn" data-brand="maybelline" data-category="maquillaje">Maybelline</button>
+        <button type="button" class="brand-btn" data-brand="raquel" data-category="maquillaje">Raquel</button>
+        <button type="button" class="brand-btn" data-brand="ruby-rose" data-category="maquillaje">Ruby Rose</button>
+        <button type="button" class="brand-btn" data-brand="samy" data-category="maquillaje">Samy</button>
+        <button type="button" class="brand-btn" data-brand="vogue" data-category="maquillaje">Vogue</button>
+        <button type="button" class="brand-btn" data-brand="elaya" data-category="maquillaje">Elaya</button>
+        <button type="button" class="brand-btn" data-brand="girly" data-category="maquillaje">Girly</button>
+        <button type="button" class="brand-btn" data-brand="myk" data-category="maquillaje">MyK</button>
+        <button type="button" class="brand-btn" data-brand="nailen" data-category="maquillaje">Nailen</button>
+        <button type="button" class="brand-btn" data-brand="prosa" data-category="maquillaje">Prosa</button>
+        <button type="button" class="brand-btn" data-brand="sagui" data-category="maquillaje">Sagui</button>
       </div>
     </div>
   </div>
 
-
-  <div id="modalcapilar" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <!-- MODAL: CAPILAR -->
+  <div id="modalcapilar" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleCapilar" aria-hidden="true">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 id="modalTitlecapilar">Marcas de capilar</h2>
-        <button type="button" id="closeCapilar" class="close-btn" aria-label="Cerrar marcas">&times;</button>
+        <h2 id="modalTitleCapilar">Marcas capilares</h2>
+        <button type="button" id="closeCapilar" class="close-btn" aria-label="Cerrar marcas capilares">&times;</button>
       </div>
       <div class="modal-body">
-        <button type="button" class="brand-btn" data-brand="mariana zapata">mariana zapata</button>
-        <button type="button" class="brand-btn" data-brand="anyeluz">anyeluz</button>
-        <button type="button" class="brand-btn" data-brand="milagros">milagros</button>
-        <button type="button" class="brand-btn" data-brand="ritual botanico">ritual botanico</button>
-        <button type="button" class="brand-btn" data-brand="click hair">click hair</button>
-        <button type="button" class="brand-btn" data-brand="kaba">kaba</button>
-        <button type="button" class="brand-btn" data-brand=""></button>
+        <button type="button" class="brand-btn" data-brand="mariana zapata" data-category="capilar">Mariana Zapata</button>
+        <button type="button" class="brand-btn" data-brand="anyeluz" data-category="capilar">Anyeluz</button>
+        <button type="button" class="brand-btn" data-brand="milagros" data-category="capilar">Milagros</button>
+        <button type="button" class="brand-btn" data-brand="ritual botanico" data-category="capilar">Ritual Botánico</button>
+        <button type="button" class="brand-btn" data-brand="click hair" data-category="capilar">Click Hair</button>
+        <button type="button" class="brand-btn" data-brand="kaba" data-category="capilar">Kaba</button>
       </div>
     </div>
   </div>
 
-
-  <div id="modallociones" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <!-- MODAL: LOCIONES -->
+  <div id="modallociones" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleLociones" aria-hidden="true">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 id="modallociones">lociones</h2>
-        <button type="button" id="closelociones" class="close-btn" aria-label="Cerrar marcas">&times;</button>
+        <h2 id="modalTitleLociones">Lociones</h2>
+        <button type="button" id="closeLociones" class="close-btn" aria-label="Cerrar lociones">&times;</button>
       </div>
       <div class="modal-body">
-        <button type="button" class="brand-btn" data-brand="hombre">hombre</button>
-        <button type="button" class="brand-btn" data-brand="mujeres">mujeres</button>
+        <button type="button" class="brand-btn" data-brand="hombre" data-category="lociones">Hombre</button>
+        <button type="button" class="brand-btn" data-brand="mujer" data-category="lociones">Mujer</button>
       </div>
     </div>
   </div>
@@ -109,11 +110,11 @@
     <div class="products-grid" id="productsGrid" aria-live="polite"></div>
   </main>
 
-  <div id="overlay" class="overlay"></div>
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
   <aside id="cartDrawer" class="cart-sidebar" aria-label="Carrito de compras" aria-hidden="true">
     <div class="cart-header">
       <h2>Tu carrito <span id="cartCountDrawer" class="cart-badge">0</span></h2>
-      <button class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
+      <button type="button" class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
     </div>
     <div class="cart-body" id="cartItems">
       <p class="empty-cart">El carrito está vacío.</p>
