@@ -105,16 +105,80 @@ const products = [
     brand: "kaba",
     image: "imagenes/sin-imagen.png"
   },
+  {
+    id: 107,
+    name: "Producto pocion (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "pocion",
+    image: "imagenes/sin-imagen.png"
+  },
+{
+    id: 108,
+    name: "Producto menta hair  (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "menta hair",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 109,
+    name: "Producto leche pal pelo (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "leche pal pelo",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 110,
+    name: "producto magic hair (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "magic hair",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 111,
+    name: "Producto maria salome (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "mmaria salome",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 112,
+    name: "Producto lehit (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "lehit",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 113,
+    name: "Producto elvive (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "elvive",
+    image: "imagenes/sin-imagen.png"
+  },
+  {
+    id: 114,
+    name: "Producto ponto (completar)",
+    price: 0,
+    category: "capilar",
+    brand: "ponto",
+    image: "imagenes/sin-imagen.png"
+  },
 
   // ==================== LOCIONES ====================
   // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
   {
     id: 201,
-    name: "Loción para hombre (completar)",
+    name: "asad-lattafa",
     price: 0,
     category: "lociones",
     brand: "hombre",
-    image: "imagenes/sin-imagen.png"
+    image: "c:\Users\Cash\Desktop\DueveMakeup\imagenes\locion hombre\asad-lattafa.png"
   },
   {
     id: 202,
