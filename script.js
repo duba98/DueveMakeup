@@ -3,7 +3,7 @@
   IMPORTANTE: la firma de integridad se solicita al backend /api/wompi-signature.
   Nunca coloques la clave secreta de Wompi en este archivo.
 */
-
+--productos maquillaje
 const products = [
   {
     id: 1,
@@ -46,6 +46,113 @@ const products = [
     image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
   }
 ];
+
+
+--productos capilares
+
+const products = [
+   {
+    id: 01,
+    name: "shampoo mariana zapata",
+    price: 0,
+    category: "capilar",
+    brand: "mariana zapata",
+    image: ""
+  }
+  {id: 02,
+    name: "",
+    price: 0,
+    category: "capilar",
+    brand: "anyeluz",
+    image: ""
+  }
+  {id: 03,
+    name: "",
+    price: 0,
+    category: "capilar",
+    brand: "milagros",
+    image: ""
+  }
+  {id: 02,
+    name: "",
+    price: 0,
+    category: "capilar",
+    brand: "ritual botanico",
+    image: ""
+  }
+  {id: 02,
+    name: "",
+    price: 0,
+    category: "capilar",
+    brand: "click hair",
+    image: ""
+  }
+  {id: 02,
+    name: "",
+    price: 0,
+    category: "capilar",
+    brand: "kaba",
+    image: ""
+  }
+];
+
+--productos lociones
+
+const products = [
+  
+  {
+    id: 001,
+    name: "",
+    price: 0,
+    category: "lociones",
+    brand: "hombre",
+    image: ""
+  }
+   {
+    id: 002,
+    name: "",
+    price: 0,
+    category: "lociones",
+    brand: "mujer",
+    image: ""
+  }
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btnCapilar = document.getElementById("btnCapilar");
+    const btnLociones = document.getElementById("btnLociones");
+
+    const modalCapilar = document.getElementById("modalcapilar");
+    const modalLociones = document.getElementById("modallociones");
+
+    function abrirModal(modal) {
+        if (!modal) return;
+
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+    }
+
+    function cerrarModal(modal) {
+        if (!modal) return;
+
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+    }
+
+    btnCapilar?.addEventListener("click", () => {
+        abrirModal(modalCapilar);
+    });
+
+    btnLociones?.addEventListener("click", () => {
+        abrirModal(modalLociones);
+    });
+
+    document.getElementById("closeCapilar")
+        ?.addEventListener("click", () => cerrarModal(modalCapilar));
+
+    document.getElementById("closeLociones")
+        ?.addEventListener("click", () => cerrarModal(modalLociones));
+});
 
 let cart = [];
 
