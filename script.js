@@ -178,7 +178,7 @@ const products = [
     price: 0,
     category: "lociones",
     brand: "hombre",
-    image: "c:\Users\Cash\Desktop\DueveMakeup\imagenes\locion hombre\asad-lattafa.png"
+    image: "/imagenes/locion hombre/asad-lattafa.png"
   },
   {
     id: 202,
