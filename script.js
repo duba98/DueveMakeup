@@ -169,7 +169,40 @@ const products = [
     brand: "ponto",
     image: "imagenes/sin-imagen.png"
   },
-
+  {
+    id: 115,
+    name: "Producto balsamo de labios bloom honey",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/Bálsamo de labios bloom honey_.png"
+  },
+ {
+    id: 116,
+    name: "Producto beauty blender",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/Beauty blender xl_.png"
+  },
+   {
+    id: 116,
+    name: "Producto beauty blender",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/Beauty blender xl_.png"
+  },
+   {
+    id: 116,
+    name: "Producto rubor bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/Archivo_080.png"
+  },
+  
+  
   // ==================== LOCIONES ====================
   // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
   {
