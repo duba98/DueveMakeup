@@ -54,6 +54,107 @@ const products = [
     brand: "atenea",
     image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
   },
+  {
+    id: 115,
+    name: "Producto balsamo de labios bloom honey",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/BLOOMSHELL/Bálsamo de labios bloom honey_.png"
+  },
+ {
+    id: 116,
+    name: "Producto beauty blender",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
+  },
+   {
+    id: 117,
+    name: "Producto beauty blender",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
+  },
+   {
+    id: 118,
+    name: "Producto rubor bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "BLOOMSHELL",
+    image: "imagenes/BLOOMSHELL/Archivo_080.png"
+  },
+    {
+    id: 119,
+    name: "Producto pestañina prosa negra",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_000.png"
+  },
+     {
+    id: 120,
+    name: "Producto pestañina prosa gris",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_002.png"
+  },
+      {
+    id: 121,
+    name: "Producto pestañina prosa morada",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_001.png"
+  },
+        {
+    id: 122,
+    name: "Producto pestañina prosa rosada",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_003.png"
+  },
+         {
+    id: 123,
+    name: "Producto pestañina prosa cafe",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_005.png"
+  },
+         {
+    id: 124,
+    name: "Producto pestañina prosa vino tinto",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_007.png"
+  },
+  {id:125,
+    name: "producto aceite para pestañas",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_006.png"
+  },
+  {id:125,
+    name: "producto tratamiento para pestañas",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_008.png"
+  },
+  {id:125,
+    name: "producto para alargar pestañas",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/PROSA/Archivo_009.png"
+  },
 
   // ==================== CAPILAR ====================
   // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
@@ -169,107 +270,7 @@ const products = [
     brand: "ponto",
     image: "imagenes/sin-imagen.png"
   },
-  {
-    id: 115,
-    name: "Producto balsamo de labios bloom honey",
-    price: 0,
-    category: "maquillaje",
-    brand: "BLOOMSHELL",
-    image: "imagenes/Bálsamo de labios bloom honey_.png"
-  },
- {
-    id: 116,
-    name: "Producto beauty blender",
-    price: 0,
-    category: "maquillaje",
-    brand: "BLOOMSHELL",
-    image: "imagenes/Beauty blender xl_.png"
-  },
-   {
-    id: 117,
-    name: "Producto beauty blender",
-    price: 0,
-    category: "maquillaje",
-    brand: "BLOOMSHELL",
-    image: "imagenes/Beauty blender xl_.png"
-  },
-   {
-    id: 118,
-    name: "Producto rubor bloomshell",
-    price: 0,
-    category: "maquillaje",
-    brand: "BLOOMSHELL",
-    image: "imagenes/Archivo_080.png"
-  },
-    {
-    id: 119,
-    name: "Producto pestañina prosa negra",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_000.png"
-  },
-     {
-    id: 120,
-    name: "Producto pestañina prosa gris",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_002.png"
-  },
-      {
-    id: 121,
-    name: "Producto pestañina prosa morada",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_001.png"
-  },
-        {
-    id: 122,
-    name: "Producto pestañina prosa rosada",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_003.png"
-  },
-         {
-    id: 123,
-    name: "Producto pestañina prosa cafe",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_005.png"
-  },
-         {
-    id: 124,
-    name: "Producto pestañina prosa vino tinto",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_007.png"
-  },
-  {id:125,
-    name: "producto aceite para pestañas",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_006.png"
-  },
-  {id:125,
-    name: "producto tratamiento para pestañas",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_008.png"
-  },
-  {id:125,
-    name: "producto para alargar pestañas",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/Archivo_009.png"
-  },
+  
   // ==================== LOCIONES ====================
   // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
   {
