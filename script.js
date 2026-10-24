@@ -79,7 +79,7 @@ const products = [
     image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
   },
    {
-    id: *,
+    id: 9,
     name: "rubor bloomshell",
     price: 0,
     category: "maquillaje",
