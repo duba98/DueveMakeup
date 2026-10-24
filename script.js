@@ -186,7 +186,7 @@ const products = [
     image: "imagenes/Beauty blender xl_.png"
   },
    {
-    id: 116,
+    id: 117,
     name: "Producto beauty blender",
     price: 0,
     category: "maquillaje",
@@ -194,15 +194,82 @@ const products = [
     image: "imagenes/Beauty blender xl_.png"
   },
    {
-    id: 116,
+    id: 118,
     name: "Producto rubor bloomshell",
     price: 0,
     category: "maquillaje",
     brand: "BLOOMSHELL",
     image: "imagenes/Archivo_080.png"
   },
-  
-  
+    {
+    id: 119,
+    name: "Producto pestañina prosa negra",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_000.png"
+  },
+     {
+    id: 120,
+    name: "Producto pestañina prosa gris",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_002.png"
+  },
+      {
+    id: 121,
+    name: "Producto pestañina prosa morada",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_001.png"
+  },
+        {
+    id: 122,
+    name: "Producto pestañina prosa rosada",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_003.png"
+  },
+         {
+    id: 123,
+    name: "Producto pestañina prosa cafe",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_005.png"
+  },
+         {
+    id: 124,
+    name: "Producto pestañina prosa vino tinto",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_007.png"
+  },
+  {id:125,
+    name: "producto aceite para pestañas",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_006.png"
+  },
+  {id:125,
+    name: "producto tratamiento para pestañas",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_008.png"
+  },
+  {id:125,
+    name: "producto para alargar pestañas",
+    price: 0,
+    category: "maquillaje",
+    brand: "prosa",
+    image: "imagenes/Archivo_009.png"
+  },
   // ==================== LOCIONES ====================
   // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
   {
