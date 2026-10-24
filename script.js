@@ -62,14 +62,6 @@ const products = [
     brand: "BLOOMSHELL",
     image: "imagenes/BLOOMSHELL/Bálsamo de labios bloom honey_.png"
   },
- {
-    id: 7,
-    name: "beauty blender",
-    price: 0,
-    category: "maquillaje",
-    brand: "BLOOMSHELL",
-    image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
-  },
    {
     id: 8,
     name: "beauty blender",
