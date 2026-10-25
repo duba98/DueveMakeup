@@ -14,7 +14,7 @@
 
 const products = [
   // ==================== MAQUILLAJE ====================
-  ------------atenea-------------------------
+  //------------atenea-------------------------
   {
     id: 1,
     name: "Base Líquida Atenea",
@@ -55,7 +55,7 @@ const products = [
     brand: "atenea",
     image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
   },
-  ----------bloomshell---------
+  //----------bloomshell---------
   {
     id: 6,
     name: "balsamo de labios bloom honey",
@@ -80,7 +80,7 @@ const products = [
     brand: "BLOOMSHELL",
     image: "imagenes/BLOOMSHELL/Archivo_080.png"
   },
-  ----------------------prosa--------------------------
+  //----------------------prosa--------------------------
     {
     id: 10,
     name: "Pestañina prosa negra",
