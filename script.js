@@ -84,7 +84,14 @@ const products = [
     price: 0,
     category: "maquillaje",
     brand: "prosa",
-    image: "imagenes/PROSA/Archivo_000.png",
+    image: ["imagenes/PROSA/Archivo_000.png",
+      "image/PROSA/Archivo_001.png",
+      "image/PROSA/Archivo_002.png",
+      "image/PROSA/ARCHIVO_003.png",
+      "image/PROSA/Archivo_004.png",
+      "image/PROSA/Archivo_005.png",
+      "image/PROSA/Archivo_007.png"
+    ]
     variants: ["Negro", "Gris", "Rosado", "Morado", "Café"]
   },
   {
