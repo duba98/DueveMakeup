@@ -1,20 +1,15 @@
 /*
- * Dueve Makeup - catálogo, filtros, carrito y Wompi.
- *
- * PARA AGREGAR PRODUCTOS:
- * 1. Añade un objeto dentro del arreglo products, separado por coma.
- * 2. Usa un id numérico único.
- * 3. category debe ser "maquillaje", "capilar" o "lociones".
- * 4. brand debe coincidir exactamente (sin importar mayúsculas) con data-brand
- *    del botón correspondiente en index.html.
- * 5. image debe ser la ruta real de la imagen dentro del proyecto.
- *
- * No pongas la clave secreta de Wompi en este archivo.
+ * DUEVE MAKEUP
+ * Catálogo, filtros, productos ampliados, variantes, carrito y Wompi.
+ * No coloques la clave secreta de Wompi en este archivo.
  */
 
+// ==================================================
+// 1. CATÁLOGO DE PRODUCTOS
+// ==================================================
+
 const products = [
-  // ==================== MAQUILLAJE ====================
-  //------------atenea-------------------------
+  // MAQUILLAJE - ATENEA
   {
     id: 1,
     name: "Base Líquida Atenea",
@@ -55,72 +50,69 @@ const products = [
     brand: "atenea",
     image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
   },
-  //----------bloomshell---------
+
+  // MAQUILLAJE - BLOOMSHELL
   {
     id: 6,
-    name: "balsamo de labios bloom honey",
+    name: "Bálsamo de labios Bloom Honey",
     price: 0,
     category: "maquillaje",
     brand: "BLOOMSHELL",
     image: "imagenes/BLOOMSHELL/Bálsamo de labios bloom honey_.png"
   },
-   {
+  {
     id: 8,
-    name: "beauty blender",
+    name: "Beauty Blender",
     price: 0,
     category: "maquillaje",
     brand: "BLOOMSHELL",
     image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
   },
-   {
+  {
     id: 9,
-    name: "rubor bloomshell",
+    name: "Rubor Bloomshell",
     price: 0,
     category: "maquillaje",
     brand: "BLOOMSHELL",
     image: "imagenes/BLOOMSHELL/Archivo_080.png"
   },
-  //----------------------prosa--------------------------
-    {
+
+  // MAQUILLAJE - PROSA
+  {
     id: 10,
-    name: "Pestañina prosa negra",
+    name: "Pestañina Prosa",
     price: 0,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_000.png",
-     variants: [
-    "Negro",
-    "Gris",
-    "Rosado",
-    "Morado",
-    "Café"
-  ]
+    variants: ["Negro", "Gris", "Rosado", "Morado", "Café"]
   },
-
-  {id:16,
-    name: "aceite para pestañas",
+  {
+    id: 16,
+    name: "Aceite para pestañas",
     price: 0,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_006.png"
   },
-  {id:17,
-    name: "tratamiento para pestañas",
+  {
+    id: 17,
+    name: "Tratamiento para pestañas",
     price: 0,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_008.png"
   },
-  {id:125,
-    name: "pestañina aprueba de agua",
+  {
+    id: 125,
+    name: "Pestañina a prueba de agua",
     price: 0,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_009.png"
   },
 
-  // ==================== CAPILAR ====================
-  // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
+  // CAPILAR
   {
     id: 101,
     name: "Shampoo Mariana Zapata (completar)",
@@ -171,15 +163,15 @@ const products = [
   },
   {
     id: 107,
-    name: "Producto pocion (completar)",
+    name: "Producto Pocion (completar)",
     price: 0,
     category: "capilar",
     brand: "pocion",
     image: "imagenes/sin-imagen.png"
   },
-{
+  {
     id: 108,
-    name: "Producto menta hair  (completar)",
+    name: "Producto Menta Hair (completar)",
     price: 0,
     category: "capilar",
     brand: "menta hair",
@@ -187,7 +179,7 @@ const products = [
   },
   {
     id: 109,
-    name: "Producto leche pal pelo (completar)",
+    name: "Producto Leche Pal Pelo (completar)",
     price: 0,
     category: "capilar",
     brand: "leche pal pelo",
@@ -195,7 +187,7 @@ const products = [
   },
   {
     id: 110,
-    name: "producto magic hair (completar)",
+    name: "Producto Magic Hair (completar)",
     price: 0,
     category: "capilar",
     brand: "magic hair",
@@ -203,15 +195,15 @@ const products = [
   },
   {
     id: 111,
-    name: "Producto maria salome (completar)",
+    name: "Producto María Salomé (completar)",
     price: 0,
     category: "capilar",
-    brand: "mmaria salome",
+    brand: "maria salome",
     image: "imagenes/sin-imagen.png"
   },
   {
     id: 112,
-    name: "Producto lehit (completar)",
+    name: "Producto Lehit (completar)",
     price: 0,
     category: "capilar",
     brand: "lehit",
@@ -219,7 +211,7 @@ const products = [
   },
   {
     id: 113,
-    name: "Producto elvive (completar)",
+    name: "Producto Elvive (completar)",
     price: 0,
     category: "capilar",
     brand: "elvive",
@@ -227,18 +219,17 @@ const products = [
   },
   {
     id: 114,
-    name: "Producto ponto (completar)",
+    name: "Producto Ponto (completar)",
     price: 0,
     category: "capilar",
     brand: "ponto",
     image: "imagenes/sin-imagen.png"
   },
-  
-  // ==================== LOCIONES ====================
-  // EJEMPLOS: cambia nombre, precio e imagen por los datos reales.
+
+  // LOCIONES
   {
     id: 201,
-    name: "asad-lattafa",
+    name: "Asad Lattafa",
     price: 0,
     category: "lociones",
     brand: "hombre",
@@ -252,64 +243,102 @@ const products = [
     brand: "mujer",
     image: "imagenes/sin-imagen.png"
   }
-
-  /*
-   * COPIA ESTE MODELO PARA CADA PRODUCTO NUEVO:
-   * ,
-   * {
-   *   id: 203,
-   *   name: "Nombre del producto",
-   *   price: 25000,
-   *   category: "lociones",
-   *   brand: "mujer",
-   *   image: "imagenes/lociones/nombre-imagen.png"
-   * }
-   */
 ];
 
+// ==================================================
+// 2. VARIABLES Y ELEMENTOS
+// ==================================================
+
 let cart = [];
+let selectedDetailProduct = null;
+let selectedDetailVariant = "";
 
 const productsGrid = document.getElementById("productsGrid");
 
-/* Ventana de producto ampliado */
+const cartButton = document.getElementById("cartButton");
+const cartDrawer = document.getElementById("cartDrawer");
+const closeCartButton = document.getElementById("closeCart");
+const overlay = document.getElementById("overlay");
+const cartItemsContainer = document.getElementById("cartItems");
+const cartCount = document.getElementById("cartCount");
+const cartCountDrawer = document.getElementById("cartCountDrawer");
+const cartTotal = document.getElementById("cartTotal");
+const checkoutButton = document.getElementById("checkoutButton");
+
+const catalogTitle = document.getElementById("catalogTitle");
+const catalogSubtitle = document.getElementById("catalogSubtitle");
+
+const makeupModal = document.getElementById("modalMaquillaje");
+const capilarModal = document.getElementById("modalcapilar");
+const locionesModal = document.getElementById("modallociones");
+
+const moneyCOP = value => new Intl.NumberFormat("es-CO", {
+  style: "currency",
+  currency: "COP",
+  maximumFractionDigits: 0
+}).format(Number(value) || 0);
+
+function normalize(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+// ==================================================
+// 3. CREAR VENTANA DE PRODUCTO AMPLIADO
+// ==================================================
+
 const productModal = document.createElement("div");
+
 productModal.id = "productDetailModal";
 productModal.className = "product-detail-modal";
 productModal.setAttribute("aria-hidden", "true");
 
 productModal.innerHTML = `
-  <div class="product-detail-content" role="dialog"
-       aria-modal="true" aria-labelledby="detailProductName">
-    <button type="button" class="product-detail-close"
+  <div class="product-detail-content"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="detailProductName">
+
+    <button type="button"
+            class="product-detail-close"
             aria-label="Cerrar">&times;</button>
 
     <div class="product-detail-layout">
+
       <div class="product-detail-photo">
         <img id="detailProductImage" src="" alt="">
       </div>
 
       <div class="product-detail-info">
         <h2 id="detailProductName"></h2>
+
         <p id="detailProductPrice" class="product-price"></p>
 
         <div id="detailVariants"></div>
 
         <label for="detailQuantity">Cantidad</label>
-        <input id="detailQuantity" type="number"
-               min="1" value="1">
 
-        <button type="button" id="detailAddButton"
+        <input id="detailQuantity"
+               type="number"
+               min="1"
+               value="1">
+
+        <button type="button"
+                id="detailAddButton"
                 class="btn">
           Añadir al carrito
         </button>
       </div>
+
     </div>
   </div>
 `;
 
 document.body.appendChild(productModal);
 
-/* Estilos de la ventana */
+// ==================================================
+// 4. ESTILOS DE LA VENTANA
+// ==================================================
+
 const productModalStyles = document.createElement("style");
 
 productModalStyles.textContent = `
@@ -434,32 +463,9 @@ productModalStyles.textContent = `
 
 document.head.appendChild(productModalStyles);
 
-
-const cartButton = document.getElementById("cartButton");
-const cartDrawer = document.getElementById("cartDrawer");
-const closeCartButton = document.getElementById("closeCart");
-const overlay = document.getElementById("overlay");
-const cartItemsContainer = document.getElementById("cartItems");
-const cartCount = document.getElementById("cartCount");
-const cartCountDrawer = document.getElementById("cartCountDrawer");
-const cartTotal = document.getElementById("cartTotal");
-const checkoutButton = document.getElementById("checkoutButton");
-const catalogTitle = document.getElementById("catalogTitle");
-const catalogSubtitle = document.getElementById("catalogSubtitle");
-
-const makeupModal = document.getElementById("modalMaquillaje");
-const capilarModal = document.getElementById("modalcapilar");
-const locionesModal = document.getElementById("modallociones");
-
-const moneyCOP = value => new Intl.NumberFormat("es-CO", {
-  style: "currency",
-  currency: "COP",
-  maximumFractionDigits: 0
-}).format(value);
-
-function normalize(value) {
-  return String(value || "").trim().toLowerCase();
-}
+// ==================================================
+// 5. MOSTRAR Y FILTRAR PRODUCTOS
+// ==================================================
 
 function renderProducts(filter = "all", brand = null) {
   if (!productsGrid) return;
@@ -484,6 +490,7 @@ function renderProducts(filter = "all", brand = null) {
           normalize(button.dataset.category || "maquillaje") === normalize(filter) &&
           normalize(button.dataset.brand) === normalize(brand)
         );
+
       catalogTitle.textContent = brandButton
         ? brandButton.textContent.trim()
         : brand;
@@ -494,22 +501,27 @@ function renderProducts(filter = "all", brand = null) {
         capilar: "Productos capilares",
         lociones: "Lociones"
       };
+
       catalogTitle.textContent = titles[filter] || "Productos";
     }
   }
 
   if (catalogSubtitle) {
     const count = filteredProducts.length;
+
     catalogSubtitle.textContent =
       `${count} producto${count === 1 ? "" : "s"} encontrado${count === 1 ? "" : "s"}.`;
   }
 
   if (filteredProducts.length === 0) {
     const empty = document.createElement("p");
+
     empty.className = "no-products";
+
     empty.textContent = brand
       ? "Todavía no hay productos registrados para esta marca o subcategoría."
       : "Todavía no hay productos registrados en esta categoría.";
+
     productsGrid.appendChild(empty);
     return;
   }
@@ -519,71 +531,101 @@ function renderProducts(filter = "all", brand = null) {
     card.className = "product-card";
 
     const image = document.createElement("img");
+
     image.className = "product-img";
-    image.alt = product.name || "Producto Dueve Makeup";
+    image.alt = product.name;
     image.loading = "lazy";
-    image.src = product.image || "imagenes/sin-imagen.png";
+    image.src = product.image || "";
+
+    // Al pulsar la foto se abre la ventana ampliada.
+    image.addEventListener("click", () => {
+      openProductModal(product.id);
+    });
+
+    // Evita un bucle de errores si falta la imagen.
     image.onerror = () => {
       image.onerror = null;
-      image.src = "imagenes/sin-imagen.png";
       image.alt = `${product.name} (imagen no disponible)`;
     };
-    image.onerror = () => {
-  image.onerror = null;
-  image.src = "imagenes/sin-imagen.png";
-  image.alt = `${product.name} (imagen no disponible)`;
-};
 
     const info = document.createElement("div");
     info.className = "product-info";
 
     const details = document.createElement("div");
+
     const title = document.createElement("h3");
     title.className = "product-title";
     title.textContent = product.name;
 
     const price = document.createElement("div");
     price.className = "product-price";
-    price.textContent = moneyCOP(Number(product.price) || 0);
+    price.textContent = moneyCOP(product.price);
 
     const addButton = document.createElement("button");
+
     addButton.type = "button";
     addButton.className = "btn add-cart-btn";
-    addButton.textContent = "Añadir al carrito";
-    addButton.addEventListener("click", () => addToCart(product.id));
+
+    addButton.textContent = product.variants?.length
+      ? "Elegir color"
+      : "Añadir al carrito";
+
+    addButton.addEventListener("click", () => {
+      if (product.variants?.length) {
+        openProductModal(product.id);
+      } else {
+        addToCart(product.id);
+      }
+    });
 
     details.append(title, price);
     info.append(details, addButton);
     card.append(image, info);
+
     productsGrid.appendChild(card);
   });
 }
 
+// ==================================================
+// 6. FILTROS ACTIVOS
+// ==================================================
+
 function setActiveFilter(filter, brand = null) {
   document.querySelectorAll(".filter-btn").forEach(button => {
-    const isCategoryModalButton = [
-      "btnMaquillaje", "btnMaquillajeMobile",
-      "btnCapilar", "btnCapilarMobile",
-      "btnLociones", "btnLocionesMobile"
+    const isModalButton = [
+      "btnMaquillaje",
+      "btnMaquillajeMobile",
+      "btnCapilar",
+      "btnCapilarMobile",
+      "btnLociones",
+      "btnLocionesMobile"
     ].includes(button.id);
 
     const active = brand
       ? false
-      : (!isCategoryModalButton && normalize(button.dataset.filter) === normalize(filter));
+      : (!isModalButton &&
+         normalize(button.dataset.filter) === normalize(filter));
 
     button.classList.toggle("active", active);
   });
 }
 
+// ==================================================
+// 7. MODALES DE CATEGORÍAS
+// ==================================================
+
 function openModal(modal) {
   if (!modal) return;
+
   closeAllModals();
+
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");
 }
 
 function closeModal(modal) {
   if (!modal) return;
+
   modal.classList.remove("active");
   modal.setAttribute("aria-hidden", "true");
 }
@@ -593,32 +635,48 @@ function closeAllModals() {
 }
 
 function bindModalButton(buttonId, modal) {
-  document.getElementById(buttonId)?.addEventListener("click", () => openModal(modal));
+  document.getElementById(buttonId)?.addEventListener("click", () => {
+    openModal(modal);
+  });
 }
 
 bindModalButton("btnMaquillaje", makeupModal);
 bindModalButton("btnMaquillajeMobile", makeupModal);
+
 bindModalButton("btnCapilar", capilarModal);
 bindModalButton("btnCapilarMobile", capilarModal);
+
 bindModalButton("btnLociones", locionesModal);
 bindModalButton("btnLocionesMobile", locionesModal);
 
-document.getElementById("closeModal")?.addEventListener("click", () => closeModal(makeupModal));
-document.getElementById("closeCapilar")?.addEventListener("click", () => closeModal(capilarModal));
-document.getElementById("closeLociones")?.addEventListener("click", () => closeModal(locionesModal));
+document.getElementById("closeModal")?.addEventListener("click", () => {
+  closeModal(makeupModal);
+});
+
+document.getElementById("closeCapilar")?.addEventListener("click", () => {
+  closeModal(capilarModal);
+});
+
+document.getElementById("closeLociones")?.addEventListener("click", () => {
+  closeModal(locionesModal);
+});
 
 [makeupModal, capilarModal, locionesModal].forEach(modal => {
   modal?.addEventListener("click", event => {
-    if (event.target === modal) closeModal(modal);
+    if (event.target === modal) {
+      closeModal(modal);
+    }
   });
 });
 
-// Los botones "Todos" filtran directamente; las otras categorías abren su modal.
-document.querySelectorAll('.filter-btn[data-filter]').forEach(button => {
+// Botones que tienen data-filter en index.html.
+document.querySelectorAll(".filter-btn[data-filter]").forEach(button => {
   button.addEventListener("click", () => {
     const filter = normalize(button.dataset.filter) || "all";
+
     setActiveFilter(filter);
     renderProducts(filter);
+
     document.getElementById("productos")?.scrollIntoView({
       behavior: "smooth",
       block: "start"
@@ -626,13 +684,17 @@ document.querySelectorAll('.filter-btn[data-filter]').forEach(button => {
   });
 });
 
-// Al pulsar una marca o subcategoría, filtra usando su categoría y su brand.
+// Botones de marcas y subcategorías.
 document.querySelectorAll(".brand-btn").forEach(button => {
   button.addEventListener("click", () => {
     const brand = normalize(button.dataset.brand);
+
     if (!brand) return;
 
-    const category = normalize(button.dataset.category || "maquillaje");
+    const category = normalize(
+      button.dataset.category || "maquillaje"
+    );
+
     setActiveFilter(category, brand);
     renderProducts(category, brand);
     closeAllModals();
@@ -644,25 +706,9 @@ document.querySelectorAll(".brand-btn").forEach(button => {
   });
 });
 
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") {
-    closeAllModals();
-    closeCartDrawer();
-  }
-});
-
-function addToCart(productId) {
-  const product = products.find(item => item.id === Number(productId));
-  if (!product) return;
-
-  if (!Number.isFinite(Number(product.price)) || Number(product.price) <= 0) {
-    alert("Este producto todavía no tiene un precio válido. Actualiza su precio antes de comprarlo.");
-    return;
-  }
-
-  
-let selectedDetailProduct = null;
-let selectedDetailVariant = "";
+// ==================================================
+// 8. ABRIR PRODUCTO Y SELECCIONAR COLOR
+// ==================================================
 
 function openProductModal(productId) {
   const product = products.find(
@@ -678,28 +724,33 @@ function openProductModal(productId) {
     product.name;
 
   document.getElementById("detailProductPrice").textContent =
-    moneyCOP(Number(product.price) || 0);
+    moneyCOP(product.price);
 
   const detailImage = document.getElementById("detailProductImage");
+
   detailImage.onerror = () => {
     detailImage.onerror = null;
-    detailImage.src = "imagenes/sin-imagen.png";
+    detailImage.alt = `${product.name} (imagen no disponible)`;
   };
-  detailImage.src = product.image || "imagenes/sin-imagen.png";
+
+  detailImage.src = product.image || "";
   detailImage.alt = product.name;
 
   document.getElementById("detailQuantity").value = 1;
 
   const variantsContainer = document.getElementById("detailVariants");
+
   variantsContainer.innerHTML = "";
 
-  if (product.variants && product.variants.length > 0) {
+  if (product.variants?.length) {
     const label = document.createElement("p");
+
     label.textContent = "Selecciona el color:";
     variantsContainer.appendChild(label);
 
     product.variants.forEach(variant => {
       const button = document.createElement("button");
+
       button.type = "button";
       button.className = "variant-option";
       button.textContent = variant;
@@ -711,6 +762,7 @@ function openProductModal(productId) {
         variantsContainer.querySelectorAll(".variant-option")
           .forEach(option => {
             const selected = option === button;
+
             option.classList.toggle("selected", selected);
             option.setAttribute("aria-pressed", String(selected));
           });
@@ -750,122 +802,6 @@ document.getElementById("detailAddButton")
       return;
     }
 
-    const quantityInput =
-      document.getElementById("detailQuantity");
-
-    const quantity = Number(quantityInput.value);
-
-    if (!Number.isInteger(quantity) || quantity < 1) {
-      alert("Introduce una cantidad válida.");
-      return;
-    }
-
-    addToCart(
-      selectedDetailProduct.id,
-      selectedDetailVariant,
-      quantity
-    );
-
-    closeProductModal();
-  });
-
-
-  const existingItem = cart.find(item => item.id === product.id);
-  if (existingItem) {
-    existingItem.quantity += 1;
-  } else {
-    cart.push({ ...product, quantity: 1 });
-  }
-
-
-let selectedDetailProduct = null;
-let selectedDetailVariant = "";
-
-function openProductModal(productId) {
-  const product = products.find(
-    item => item.id === Number(productId)
-  );
-
-  if (!product) return;
-
-  selectedDetailProduct = product;
-  selectedDetailVariant = "";
-
-  document.getElementById("detailProductName").textContent =
-    product.name;
-
-  document.getElementById("detailProductPrice").textContent =
-    moneyCOP(Number(product.price) || 0);
-
-  const detailImage = document.getElementById("detailProductImage");
-
-  detailImage.onerror = () => {
-    detailImage.onerror = null;
-    detailImage.alt = "Imagen del producto no disponible";
-  };
-
-  detailImage.src = product.image;
-  detailImage.alt = product.name;
-
-  document.getElementById("detailQuantity").value = 1;
-
-  const variantsContainer = document.getElementById("detailVariants");
-  variantsContainer.innerHTML = "";
-
-  if (product.variants?.length) {
-    const label = document.createElement("p");
-    label.textContent = "Selecciona el color:";
-    variantsContainer.appendChild(label);
-
-    product.variants.forEach(variant => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "variant-option";
-      button.textContent = variant;
-
-      button.addEventListener("click", () => {
-        selectedDetailVariant = variant;
-
-        variantsContainer.querySelectorAll(".variant-option")
-          .forEach(option => {
-            const selected = option === button;
-            option.classList.toggle("selected", selected);
-            option.setAttribute("aria-pressed", String(selected));
-          });
-      });
-
-      variantsContainer.appendChild(button);
-    });
-  }
-
-  productModal.classList.add("active");
-  productModal.setAttribute("aria-hidden", "false");
-}
-
-function closeProductModal() {
-  productModal.classList.remove("active");
-  productModal.setAttribute("aria-hidden", "true");
-}
-
-productModal.querySelector(".product-detail-close")
-  .addEventListener("click", closeProductModal);
-
-productModal.addEventListener("click", event => {
-  if (event.target === productModal) closeProductModal();
-});
-
-document.getElementById("detailAddButton")
-  .addEventListener("click", () => {
-    if (!selectedDetailProduct) return;
-
-    if (
-      selectedDetailProduct.variants?.length &&
-      !selectedDetailVariant
-    ) {
-      alert("Selecciona el color que deseas comprar.");
-      return;
-    }
-
     const quantity = Number(
       document.getElementById("detailQuantity").value
     );
@@ -875,35 +811,47 @@ document.getElementById("detailAddButton")
       return;
     }
 
-    addToCart(
+    const added = addToCart(
       selectedDetailProduct.id,
       selectedDetailVariant,
       quantity
     );
 
-    if (Number(selectedDetailProduct.price) > 0) {
+    if (added) {
       closeProductModal();
     }
   });
+
+// ==================================================
+// 9. AÑADIR PRODUCTOS AL CARRITO
+// ==================================================
 
 function addToCart(productId, variant = "", quantity = 1) {
   const product = products.find(
     item => item.id === Number(productId)
   );
 
-  if (!product) return;
+  if (!product) return false;
 
+  // Los productos con variantes requieren selección.
   if (product.variants?.length && !variant) {
     openProductModal(product.id);
-    return;
+    return false;
   }
 
-  if (!Number.isFinite(Number(product.price)) ||
-      Number(product.price) <= 0) {
-    alert("Este producto todavía no tiene un precio válido.");
-    return;
+  // No permitir comprar productos sin precio.
+  if (
+    !Number.isFinite(Number(product.price)) ||
+    Number(product.price) <= 0
+  ) {
+    alert(
+      "Este producto todavía no tiene un precio válido. Actualiza su precio antes de comprarlo."
+    );
+
+    return false;
   }
 
+  // Cada color se guarda como un producto distinto en el carrito.
   const cartKey = `${product.id}::${variant || ""}`;
 
   const existingItem = cart.find(
@@ -923,23 +871,29 @@ function addToCart(productId, variant = "", quantity = 1) {
 
   updateCartUI();
   openCartDrawer();
+
+  return true;
 }
 
+// ==================================================
+// 10. CAMBIAR CANTIDADES Y ELIMINAR DEL CARRITO
+// ==================================================
+
 function changeQuantity(cartKey, change) {
-  const item = cart.find(product => product.cartKey === cartKey);
+  const item = cart.find(
+    product => product.cartKey === cartKey
+  );
+
   if (!item) return;
 
   item.quantity += change;
 
   if (item.quantity <= 0) {
-    cart = cart.filter(product => product.cartKey !== cartKey);
+    cart = cart.filter(
+      product => product.cartKey !== cartKey
+    );
   }
 
-  updateCartUI();
-}
-
-function removeFromCart(cartKey) {
-  cart = cart.filter(item => item.cartKey !== cartKey);
   updateCartUI();
 }
 
@@ -951,33 +905,55 @@ function removeFromCart(cartKey) {
   updateCartUI();
 }
 
-
-function removeFromCart(productId) {
-  cart = cart.filter(item => item.id !== Number(productId));
-  updateCartUI();
-}
+// ==================================================
+// 11. ACTUALIZAR INTERFAZ DEL CARRITO
+// ==================================================
 
 function updateCartUI() {
-  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const total = cart.reduce((sum, item) => sum + Number(item.price) * item.quantity, 0);
+  const totalQuantity = cart.reduce(
+    (sum, item) => sum + item.quantity,
+    0
+  );
 
-  if (cartCount) cartCount.textContent = totalQuantity;
-  if (cartCountDrawer) cartCountDrawer.textContent = totalQuantity;
-  if (cartTotal) cartTotal.textContent = moneyCOP(total);
+  const total = cart.reduce(
+    (sum, item) => sum + Number(item.price) * item.quantity,
+    0
+  );
+
+  if (cartCount) {
+    cartCount.textContent = totalQuantity;
+  }
+
+  if (cartCountDrawer) {
+    cartCountDrawer.textContent = totalQuantity;
+  }
+
+  if (cartTotal) {
+    cartTotal.textContent = moneyCOP(total);
+  }
+
   if (!cartItemsContainer) return;
 
   cartItemsContainer.innerHTML = "";
 
   if (cart.length === 0) {
     const empty = document.createElement("p");
+
     empty.className = "empty-cart";
     empty.textContent = "El carrito está vacío.";
+
     cartItemsContainer.appendChild(empty);
-    if (checkoutButton) checkoutButton.disabled = true;
+
+    if (checkoutButton) {
+      checkoutButton.disabled = true;
+    }
+
     return;
   }
 
-  if (checkoutButton) checkoutButton.disabled = false;
+  if (checkoutButton) {
+    checkoutButton.disabled = false;
+  }
 
   cart.forEach(item => {
     const row = document.createElement("div");
@@ -987,53 +963,91 @@ function updateCartUI() {
     info.className = "cart-item-info";
 
     const name = document.createElement("h3");
-    name.textContent = item.name;
+
+    name.textContent = item.variant
+      ? `${item.name} - Color: ${item.variant}`
+      : item.name;
 
     const price = document.createElement("p");
     price.textContent = `${moneyCOP(item.price)} c/u`;
 
     const subtotal = document.createElement("p");
     subtotal.className = "cart-item-subtotal";
-    subtotal.textContent = `Subtotal: ${moneyCOP(item.price * item.quantity)}`;
+
+    subtotal.textContent =
+      `Subtotal: ${moneyCOP(item.price * item.quantity)}`;
 
     const controls = document.createElement("div");
     controls.className = "quantity-controls";
 
     const minus = document.createElement("button");
+
     minus.type = "button";
     minus.className = "quantity-btn";
     minus.textContent = "−";
-    minus.setAttribute("aria-label", `Quitar una unidad de ${item.name}`);
-    minus.addEventListener("click", () => changeQuantity(item.id, -1));
+
+    minus.setAttribute(
+      "aria-label",
+      `Quitar una unidad de ${item.name}`
+    );
+
+    minus.addEventListener("click", () => {
+      changeQuantity(item.cartKey, -1);
+    });
 
     const quantity = document.createElement("span");
     quantity.textContent = item.quantity;
 
     const plus = document.createElement("button");
+
     plus.type = "button";
     plus.className = "quantity-btn";
     plus.textContent = "+";
-    plus.setAttribute("aria-label", `Añadir una unidad de ${item.name}`);
-    plus.addEventListener("click", () => changeQuantity(item.id, 1));
+
+    plus.setAttribute(
+      "aria-label",
+      `Añadir una unidad de ${item.name}`
+    );
+
+    plus.addEventListener("click", () => {
+      changeQuantity(item.cartKey, 1);
+    });
 
     const remove = document.createElement("button");
+
     remove.type = "button";
     remove.className = "remove-btn";
-    remove.setAttribute("aria-label", `Eliminar ${item.name} del carrito`);
-    remove.innerHTML = '<i class="fas fa-trash" aria-hidden="true"></i>';
-    remove.addEventListener("click", () => removeFromCart(item.id));
+
+    remove.setAttribute(
+      "aria-label",
+      `Eliminar ${item.name} del carrito`
+    );
+
+    remove.innerHTML =
+      '<i class="fas fa-trash" aria-hidden="true"></i>';
+
+    remove.addEventListener("click", () => {
+      removeFromCart(item.cartKey);
+    });
 
     controls.append(minus, quantity, plus, remove);
     info.append(name, price, subtotal);
     row.append(info, controls);
+
     cartItemsContainer.appendChild(row);
   });
 }
 
+// ==================================================
+// 12. ABRIR Y CERRAR EL CARRITO
+// ==================================================
+
 function openCartDrawer() {
   if (!cartDrawer || !overlay) return;
+
   cartDrawer.classList.add("open");
   overlay.classList.add("active");
+
   cartDrawer.setAttribute("aria-hidden", "false");
   overlay.setAttribute("aria-hidden", "false");
 }
@@ -1041,6 +1055,7 @@ function openCartDrawer() {
 function closeCartDrawer() {
   cartDrawer?.classList.remove("open");
   overlay?.classList.remove("active");
+
   cartDrawer?.setAttribute("aria-hidden", "true");
   overlay?.setAttribute("aria-hidden", "true");
 }
@@ -1049,11 +1064,19 @@ cartButton?.addEventListener("click", openCartDrawer);
 closeCartButton?.addEventListener("click", closeCartDrawer);
 overlay?.addEventListener("click", closeCartDrawer);
 
-/*
- * Wompi:
- * El frontend solicita la firma al backend /api/wompi-signature.
- * El backend debe validar productos y precios; nunca expongas aquí la clave secreta.
- */
+// Escape cierra las ventanas abiertas.
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    closeAllModals();
+    closeProductModal();
+    closeCartDrawer();
+  }
+});
+
+// ==================================================
+// 13. PAGOS CON WOMPI
+// ==================================================
+
 let checkoutInProgress = false;
 
 async function checkout() {
@@ -1062,17 +1085,27 @@ async function checkout() {
     return;
   }
 
-  if (cart.some(item => !Number.isFinite(Number(item.price)) || Number(item.price) <= 0)) {
-    alert("Hay productos sin precio válido en el carrito. Revisa los precios antes de pagar.");
+  if (cart.some(item =>
+    !Number.isFinite(Number(item.price)) ||
+    Number(item.price) <= 0
+  )) {
+    alert(
+      "Hay productos sin precio válido en el carrito. Revisa los precios antes de pagar."
+    );
+
     return;
   }
 
   if (typeof WidgetCheckout === "undefined") {
-    alert("No se pudo cargar Wompi. Comprueba tu conexión e inténtalo de nuevo.");
+    alert(
+      "No se pudo cargar Wompi. Comprueba tu conexión e inténtalo de nuevo."
+    );
+
     return;
   }
 
   if (checkoutInProgress) return;
+
   checkoutInProgress = true;
 
   if (checkoutButton) {
@@ -1083,19 +1116,35 @@ async function checkout() {
   try {
     const response = await fetch("/api/wompi-signature", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
-        items: cart.map(item => ({ id: item.id, quantity: item.quantity }))
+        items: cart.map(item => ({
+          id: item.id,
+          quantity: item.quantity,
+          variant: item.variant || ""
+        }))
       })
     });
 
     const data = await response.json().catch(() => ({}));
+
     if (!response.ok) {
-      throw new Error(data.error || "El servidor no pudo preparar el pago.");
+      throw new Error(
+        data.error || "El servidor no pudo preparar el pago."
+      );
     }
 
-    if (!data.signature || !data.publicKey || !data.reference || !data.amountInCents) {
-      throw new Error("La respuesta del servidor está incompleta.");
+    if (
+      !data.signature ||
+      !data.publicKey ||
+      !data.reference ||
+      !data.amountInCents
+    ) {
+      throw new Error(
+        "La respuesta del servidor está incompleta."
+      );
     }
 
     const checkoutWidget = new WidgetCheckout({
@@ -1103,40 +1152,62 @@ async function checkout() {
       amountInCents: data.amountInCents,
       reference: data.reference,
       publicKey: data.publicKey,
-      signature: { integrity: data.signature },
+      signature: {
+        integrity: data.signature
+      },
       redirectUrl: window.location.href
     });
 
     checkoutWidget.open(result => {
       const transaction = result && result.transaction;
 
-      if (transaction && transaction.status === "APPROVED") {
-        alert("Wompi reportó el pago como aprobado. La confirmación final del pedido debe verificarse en el servidor.");
+      if (
+        transaction &&
+        transaction.status === "APPROVED"
+      ) {
+        alert(
+          "Wompi reportó el pago como aprobado. La confirmación final del pedido debe verificarse en el servidor."
+        );
+
         cart = [];
+
         updateCartUI();
         closeCartDrawer();
+
       } else if (transaction && transaction.status) {
         alert(`Estado del pago: ${transaction.status}.`);
       }
     });
+
   } catch (error) {
     console.error("Error al iniciar Wompi:", error);
-    alert("Error al iniciar el pago: " + (error?.message || String(error)));
+
+    alert(
+      "Error al iniciar el pago: " +
+      (error?.message || String(error))
+    );
+
   } finally {
     checkoutInProgress = false;
+
     if (checkoutButton) {
       checkoutButton.disabled = cart.length === 0;
-      checkoutButton.textContent = "Finalizar compra con Wompi";
+      checkoutButton.textContent =
+        "Finalizar compra con Wompi";
     }
   }
 }
 
 checkoutButton?.addEventListener("click", checkout);
 
-// Compatibilidad con cualquier botón antiguo que invoque estas funciones.
+// Compatibilidad con botones antiguos.
 window.checkout = checkout;
 window.addToCart = addToCart;
 window.removeFromCart = removeFromCart;
+
+// ==================================================
+// 14. INICIAR LA TIENDA
+// ==================================================
 
 updateCartUI();
 renderProducts("all");
