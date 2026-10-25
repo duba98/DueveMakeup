@@ -79,21 +79,29 @@ const products = [
 
   // MAQUILLAJE - PROSA
   {
-    id: 10,
-    name: "Pestañina Prosa",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: ["imagenes/PROSA/Archivo_000.png",
-      "image/PROSA/Archivo_001.png",
-      "image/PROSA/Archivo_002.png",
-      "image/PROSA/ARCHIVO_003.png",
-      "image/PROSA/Archivo_004.png",
-      "image/PROSA/Archivo_005.png",
-      "image/PROSA/Archivo_007.png"
-    ]
-    variants: ["Negro", "Gris", "Rosado", "Morado", "Café"]
-  },
+  id: 10,
+  name: "Pestañina Prosa",
+  price: 0,
+  category: "maquillaje",
+  brand: "prosa",
+
+  // Foto principal del producto
+  image: "imagenes/PROSA/Archivo_000.png",
+
+  // Todas las fotos que se mostrarán en la galería
+  images: [
+    "imagenes/PROSA/Archivo_000.png",
+    "imagenes/PROSA/Archivo_001.png",
+    "imagenes/PROSA/Archivo_002.png",
+    "imagenes/PROSA/ARCHIVO_003.png",
+    "imagenes/PROSA/Archivo_004.png",
+    "imagenes/PROSA/Archivo_005.png",
+    "imagenes/PROSA/Archivo_007.png"
+  ],
+
+  // Colores disponibles
+  variants: ["Negro", "Gris", "Rosado", "Morado", "Café"]
+},
   {
     id: 16,
     name: "Aceite para pestañas",
