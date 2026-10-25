@@ -14,6 +14,7 @@
 
 const products = [
   // ==================== MAQUILLAJE ====================
+  ------------atenea-------------------------
   {
     id: 1,
     name: "Base Líquida Atenea",
@@ -54,6 +55,7 @@ const products = [
     brand: "atenea",
     image: "imagenes/atenea/RUBOR DUO ATENEA PINK CRUSH.png"
   },
+  ----------bloomshell---------
   {
     id: 6,
     name: "balsamo de labios bloom honey",
@@ -78,54 +80,23 @@ const products = [
     brand: "BLOOMSHELL",
     image: "imagenes/BLOOMSHELL/Archivo_080.png"
   },
+  ----------------------prosa--------------------------
     {
     id: 10,
     name: "Pestañina prosa negra",
     price: 0,
     category: "maquillaje",
     brand: "prosa",
-    image: "imagenes/PROSA/Archivo_000.png"
+    image: "imagenes/PROSA/Archivo_000.png",
+     variants: [
+    "Negro",
+    "Gris",
+    "Rosado",
+    "Morado",
+    "Café"
+  ]
   },
-     {
-    id: 11,
-    name: "pestañina prosa gris",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/PROSA/Archivo_002.png"
-  },
-      {
-    id: 12,
-    name: "pestañina prosa morada",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/PROSA/Archivo_001.png"
-  },
-        {
-    id: 13,
-    name: "pestañina prosa rosada",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/PROSA/Archivo_003.png"
-  },
-         {
-    id: 14,
-    name: "pestañina prosa cafe",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/PROSA/Archivo_005.png"
-  },
-         {
-    id: 15,
-    name: "pestañina prosa vino tinto",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/PROSA/Archivo_007.png"
-  },
+
   {id:16,
     name: "aceite para pestañas",
     price: 0,
@@ -299,6 +270,171 @@ const products = [
 let cart = [];
 
 const productsGrid = document.getElementById("productsGrid");
+
+/* Ventana de producto ampliado */
+const productModal = document.createElement("div");
+productModal.id = "productDetailModal";
+productModal.className = "product-detail-modal";
+productModal.setAttribute("aria-hidden", "true");
+
+productModal.innerHTML = `
+  <div class="product-detail-content" role="dialog"
+       aria-modal="true" aria-labelledby="detailProductName">
+    <button type="button" class="product-detail-close"
+            aria-label="Cerrar">&times;</button>
+
+    <div class="product-detail-layout">
+      <div class="product-detail-photo">
+        <img id="detailProductImage" src="" alt="">
+      </div>
+
+      <div class="product-detail-info">
+        <h2 id="detailProductName"></h2>
+        <p id="detailProductPrice" class="product-price"></p>
+
+        <div id="detailVariants"></div>
+
+        <label for="detailQuantity">Cantidad</label>
+        <input id="detailQuantity" type="number"
+               min="1" value="1">
+
+        <button type="button" id="detailAddButton"
+                class="btn">
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+`;
+
+document.body.appendChild(productModal);
+
+/* Estilos de la ventana */
+const productModalStyles = document.createElement("style");
+
+productModalStyles.textContent = `
+  .product-detail-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, .72);
+    padding: 20px;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-detail-modal.active {
+    display: flex;
+  }
+
+  .product-detail-content {
+    position: relative;
+    background: white;
+    color: #292329;
+    width: 100%;
+    max-width: 760px;
+    padding: 28px;
+    border-radius: 18px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .product-detail-close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    border: 0;
+    background: transparent;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .product-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    align-items: start;
+    padding-top: 12px;
+  }
+
+  .product-detail-photo img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .product-detail-info label {
+    display: block;
+    margin: 18px 0 8px;
+  }
+
+  #detailVariants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .variant-option {
+    border: 1px solid #d8cbd0;
+    background: white;
+    color: #292329;
+    border-radius: 20px;
+    padding: 9px 13px;
+    cursor: pointer;
+  }
+
+  .variant-option.selected {
+    border: 2px solid #d46a84;
+    background: #fff0f4;
+    font-weight: bold;
+  }
+
+  #detailQuantity {
+    display: block;
+    width: 100%;
+    max-width: 110px;
+    padding: 10px;
+  }
+
+  #detailAddButton {
+    margin-top: 20px;
+    width: 100%;
+    background: #d46a84;
+    color: white;
+    border: 0;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .product-img {
+    cursor: zoom-in;
+  }
+
+  @media (max-width: 600px) {
+    .product-detail-content {
+      padding: 20px;
+    }
+
+    .product-detail-layout {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .product-detail-photo img {
+      max-height: 280px;
+    }
+  }
+`;
+
+document.head.appendChild(productModalStyles);
+
+
 const cartButton = document.getElementById("cartButton");
 const cartDrawer = document.getElementById("cartDrawer");
 const closeCartButton = document.getElementById("closeCart");
@@ -392,6 +528,11 @@ function renderProducts(filter = "all", brand = null) {
       image.src = "imagenes/sin-imagen.png";
       image.alt = `${product.name} (imagen no disponible)`;
     };
+    image.onerror = () => {
+  image.onerror = null;
+  image.src = "imagenes/sin-imagen.png";
+  image.alt = `${product.name} (imagen no disponible)`;
+};
 
     const info = document.createElement("div");
     info.className = "product-info";
@@ -519,6 +660,116 @@ function addToCart(productId) {
     return;
   }
 
+  
+let selectedDetailProduct = null;
+let selectedDetailVariant = "";
+
+function openProductModal(productId) {
+  const product = products.find(
+    item => item.id === Number(productId)
+  );
+
+  if (!product) return;
+
+  selectedDetailProduct = product;
+  selectedDetailVariant = "";
+
+  document.getElementById("detailProductName").textContent =
+    product.name;
+
+  document.getElementById("detailProductPrice").textContent =
+    moneyCOP(Number(product.price) || 0);
+
+  const detailImage = document.getElementById("detailProductImage");
+  detailImage.onerror = () => {
+    detailImage.onerror = null;
+    detailImage.src = "imagenes/sin-imagen.png";
+  };
+  detailImage.src = product.image || "imagenes/sin-imagen.png";
+  detailImage.alt = product.name;
+
+  document.getElementById("detailQuantity").value = 1;
+
+  const variantsContainer = document.getElementById("detailVariants");
+  variantsContainer.innerHTML = "";
+
+  if (product.variants && product.variants.length > 0) {
+    const label = document.createElement("p");
+    label.textContent = "Selecciona el color:";
+    variantsContainer.appendChild(label);
+
+    product.variants.forEach(variant => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "variant-option";
+      button.textContent = variant;
+      button.setAttribute("aria-pressed", "false");
+
+      button.addEventListener("click", () => {
+        selectedDetailVariant = variant;
+
+        variantsContainer.querySelectorAll(".variant-option")
+          .forEach(option => {
+            const selected = option === button;
+            option.classList.toggle("selected", selected);
+            option.setAttribute("aria-pressed", String(selected));
+          });
+      });
+
+      variantsContainer.appendChild(button);
+    });
+  }
+
+  productModal.classList.add("active");
+  productModal.setAttribute("aria-hidden", "false");
+}
+
+function closeProductModal() {
+  productModal.classList.remove("active");
+  productModal.setAttribute("aria-hidden", "true");
+}
+
+productModal.querySelector(".product-detail-close")
+  .addEventListener("click", closeProductModal);
+
+productModal.addEventListener("click", event => {
+  if (event.target === productModal) {
+    closeProductModal();
+  }
+});
+
+document.getElementById("detailAddButton")
+  .addEventListener("click", () => {
+    if (!selectedDetailProduct) return;
+
+    if (
+      selectedDetailProduct.variants?.length &&
+      !selectedDetailVariant
+    ) {
+      alert("Selecciona el color que deseas comprar.");
+      return;
+    }
+
+    const quantityInput =
+      document.getElementById("detailQuantity");
+
+    const quantity = Number(quantityInput.value);
+
+    if (!Number.isInteger(quantity) || quantity < 1) {
+      alert("Introduce una cantidad válida.");
+      return;
+    }
+
+    addToCart(
+      selectedDetailProduct.id,
+      selectedDetailVariant,
+      quantity
+    );
+
+    closeProductModal();
+  });
+
+
   const existingItem = cart.find(item => item.id === product.id);
   if (existingItem) {
     existingItem.quantity += 1;
@@ -530,16 +781,33 @@ function addToCart(productId) {
   openCartDrawer();
 }
 
-function changeQuantity(productId, change) {
-  const item = cart.find(product => product.id === Number(productId));
+
+function changeQuantity(cartKey, change) {
+  const item = cart.find(
+    product => product.cartKey === cartKey
+  );
+
   if (!item) return;
 
   item.quantity += change;
+
   if (item.quantity <= 0) {
-    cart = cart.filter(product => product.id !== Number(productId));
+    cart = cart.filter(
+      product => product.cartKey !== cartKey
+    );
   }
+
   updateCartUI();
 }
+
+function removeFromCart(cartKey) {
+  cart = cart.filter(
+    item => item.cartKey !== cartKey
+  );
+
+  updateCartUI();
+}
+
 
 function removeFromCart(productId) {
   cart = cart.filter(item => item.id !== Number(productId));
