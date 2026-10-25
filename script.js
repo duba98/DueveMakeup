@@ -93,7 +93,7 @@ const products = [
     "imagenes/PROSA/Archivo_000.png",
     "imagenes/PROSA/Archivo_001.png",
     "imagenes/PROSA/Archivo_002.png",
-    "imagenes/PROSA/ARCHIVO_003.png",
+    "imagenes/PROSA/Archivo_003.png",
     "imagenes/PROSA/Archivo_004.png",
     "imagenes/PROSA/Archivo_005.png",
     "imagenes/PROSA/Archivo_007.png"
