@@ -777,26 +777,169 @@ document.getElementById("detailAddButton")
     cart.push({ ...product, quantity: 1 });
   }
 
+
+let selectedDetailProduct = null;
+let selectedDetailVariant = "";
+
+function openProductModal(productId) {
+  const product = products.find(
+    item => item.id === Number(productId)
+  );
+
+  if (!product) return;
+
+  selectedDetailProduct = product;
+  selectedDetailVariant = "";
+
+  document.getElementById("detailProductName").textContent =
+    product.name;
+
+  document.getElementById("detailProductPrice").textContent =
+    moneyCOP(Number(product.price) || 0);
+
+  const detailImage = document.getElementById("detailProductImage");
+
+  detailImage.onerror = () => {
+    detailImage.onerror = null;
+    detailImage.alt = "Imagen del producto no disponible";
+  };
+
+  detailImage.src = product.image;
+  detailImage.alt = product.name;
+
+  document.getElementById("detailQuantity").value = 1;
+
+  const variantsContainer = document.getElementById("detailVariants");
+  variantsContainer.innerHTML = "";
+
+  if (product.variants?.length) {
+    const label = document.createElement("p");
+    label.textContent = "Selecciona el color:";
+    variantsContainer.appendChild(label);
+
+    product.variants.forEach(variant => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "variant-option";
+      button.textContent = variant;
+
+      button.addEventListener("click", () => {
+        selectedDetailVariant = variant;
+
+        variantsContainer.querySelectorAll(".variant-option")
+          .forEach(option => {
+            const selected = option === button;
+            option.classList.toggle("selected", selected);
+            option.setAttribute("aria-pressed", String(selected));
+          });
+      });
+
+      variantsContainer.appendChild(button);
+    });
+  }
+
+  productModal.classList.add("active");
+  productModal.setAttribute("aria-hidden", "false");
+}
+
+function closeProductModal() {
+  productModal.classList.remove("active");
+  productModal.setAttribute("aria-hidden", "true");
+}
+
+productModal.querySelector(".product-detail-close")
+  .addEventListener("click", closeProductModal);
+
+productModal.addEventListener("click", event => {
+  if (event.target === productModal) closeProductModal();
+});
+
+document.getElementById("detailAddButton")
+  .addEventListener("click", () => {
+    if (!selectedDetailProduct) return;
+
+    if (
+      selectedDetailProduct.variants?.length &&
+      !selectedDetailVariant
+    ) {
+      alert("Selecciona el color que deseas comprar.");
+      return;
+    }
+
+    const quantity = Number(
+      document.getElementById("detailQuantity").value
+    );
+
+    if (!Number.isInteger(quantity) || quantity < 1) {
+      alert("Introduce una cantidad válida.");
+      return;
+    }
+
+    addToCart(
+      selectedDetailProduct.id,
+      selectedDetailVariant,
+      quantity
+    );
+
+    if (Number(selectedDetailProduct.price) > 0) {
+      closeProductModal();
+    }
+  });
+
+function addToCart(productId, variant = "", quantity = 1) {
+  const product = products.find(
+    item => item.id === Number(productId)
+  );
+
+  if (!product) return;
+
+  if (product.variants?.length && !variant) {
+    openProductModal(product.id);
+    return;
+  }
+
+  if (!Number.isFinite(Number(product.price)) ||
+      Number(product.price) <= 0) {
+    alert("Este producto todavía no tiene un precio válido.");
+    return;
+  }
+
+  const cartKey = `${product.id}::${variant || ""}`;
+
+  const existingItem = cart.find(
+    item => item.cartKey === cartKey
+  );
+
+  if (existingItem) {
+    existingItem.quantity += quantity;
+  } else {
+    cart.push({
+      ...product,
+      variant,
+      cartKey,
+      quantity
+    });
+  }
+
   updateCartUI();
   openCartDrawer();
 }
 
-
 function changeQuantity(cartKey, change) {
-  const item = cart.find(
-    product => product.cartKey === cartKey
-  );
-
+  const item = cart.find(product => product.cartKey === cartKey);
   if (!item) return;
 
   item.quantity += change;
 
   if (item.quantity <= 0) {
-    cart = cart.filter(
-      product => product.cartKey !== cartKey
-    );
+    cart = cart.filter(product => product.cartKey !== cartKey);
   }
 
+  updateCartUI();
+}
+
+function removeFromCart(cartKey) {
+  cart = cart.filter(item => item.cartKey !== cartKey);
   updateCartUI();
 }
 
