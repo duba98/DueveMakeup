@@ -124,6 +124,19 @@ const products = [
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom esplendor tono 1.png"
 },
+{
+  id:109,
+  name:"bloom gelei berry",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom gelei berry.png",
+  images: [
+    "imagenes/BLOOMSHELL/Bloom gelei cherry.png",
+    "imagenes/BLOOMSHELL/Bloom gelei pink.png"
+  ],
+  variant: ["berry", "cherry", "pink"],
+},
 
   // MAQUILLAJE - PROSA
   {
