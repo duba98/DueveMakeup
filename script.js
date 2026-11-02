@@ -136,7 +136,7 @@ const products = [
     "imagenes/BLOOMSHELL/Bloom gelei cherry.png",
     "imagenes/BLOOMSHELL/Bloom gelei pink.png"
   ],
-  variant: ["berry", "cherry", "pink"]
+  variants: ["berry", "cherry", "pink"]
 },
 
   // MAQUILLAJE - PROSA
