@@ -79,7 +79,7 @@ const products = [
   },
 {
   id:104,
-  name:"base cushion #2-3-4-5-6-7-8"
+  name:"base cushion #2-3-4-5-6-7-8",
   price: 0,
   category: "maquillaje",
   brand: "bloomshell",
@@ -89,7 +89,7 @@ const products = [
   name:"bloom bronzer iluminoso 2 en 1 #2",
   price:0,
   category: "maquillaje",
-  brand: "bloonshell",
+  brand: "bloomshell",
   image: "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 #02.png"
 }
 {
