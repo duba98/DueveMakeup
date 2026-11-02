@@ -83,14 +83,14 @@ const products = [
   price: 0,
   category: "maquillaje",
   brand: "bloomshell",
-  image: "imagenes/BLOOMSHELL/Base cushion #—2-3-4-5-6-7-8.png"
+  image: "imagenes/BLOOMSHELL/Base cushion %23%E2%80%942-3-4-5-6-7-8.png"
 },
 {id:105,
   name:"bloom bronzer iluminoso 2 en 1 #2",
   price:0,
   category: "maquillaje",
   brand: "bloomshell",
-  image: "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 #02.png"
+  image: "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 %2302.png"
 },
 {
   id:106,
@@ -98,7 +98,7 @@ const products = [
   price:0,
   category: "maquillaje",
   brand:"bloomshell",
-  image:"imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 #2.png"
+  image:"imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 %232.png"
 },
   // MAQUILLAJE - PROSA
   {
