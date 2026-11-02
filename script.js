@@ -54,7 +54,7 @@ const products = [
 
   // MAQUILLAJE - BLOOMSHELL
   {
-    id: 6,
+    id: 101,
     name: "Bálsamo de labios Bloom Honey",
     price: 0,
     category: "maquillaje",
@@ -62,7 +62,7 @@ const products = [
     image: "imagenes/BLOOMSHELL/Bálsamo de labios bloom honey_.png"
   },
   {
-    id: 8,
+    id: 102,
     name: "Beauty Blender",
     price: 0,
     category: "maquillaje",
@@ -70,17 +70,39 @@ const products = [
     image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
   },
   {
-    id: 9,
+    id: 103,
     name: "Rubor Bloomshell",
     price: 0,
     category: "maquillaje",
     brand: "bloomshell",
     image: "imagenes/BLOOMSHELL/Archivo_080.png"
   },
-
+{
+  id:104,
+  name:"base cushion #2-3-4-5-6-7-8"
+  price: 0,
+  category: "maquillaje",
+  brand: "bloomshell",
+  image: "imagenes/BLOOMSHELL/Base cushion #—2-3-4-5-6-7-8.png"
+}
+{id:105,
+  name:"bloom bronzer iluminoso 2 en 1 #2",
+  price:0,
+  category: "maquillaje",
+  brand: "bloonshell",
+  image: "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 #02.png"
+}
+{
+  id:106,
+  name:"bloom bronzer matte 2 en 1 #2",
+  price:0,
+  category: "maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 #2.png"
+}
   // MAQUILLAJE - PROSA
   {
-    id: 10,
+    id: 1000,
     name: "Pestañina Prosa",
     price: 0,
     category: "maquillaje",
@@ -98,7 +120,7 @@ const products = [
     variants: ["Negro", "Gris", "Rosado", "Morado", "Café"]
   },
   {
-    id: 16,
+    id: 1001,
     name: "Aceite para pestañas",
     price: 0,
     category: "maquillaje",
@@ -106,7 +128,7 @@ const products = [
     image: "imagenes/PROSA/Archivo_006.png"
   },
   {
-    id: 17,
+    id: 1002,
     name: "Tratamiento para pestañas",
     price: 0,
     category: "maquillaje",
@@ -114,7 +136,7 @@ const products = [
     image: "imagenes/PROSA/Archivo_008.png"
   },
   {
-    id: 125,
+    id: 1003,
     name: "Pestañina a prueba de agua",
     price: 0,
     category: "maquillaje",
@@ -124,7 +146,7 @@ const products = [
 
   // CAPILAR
   {
-    id: 101,
+    id: 10001,
     name: "Shampoo Mariana Zapata (completar)",
     price: 0,
     category: "capilar",
@@ -132,7 +154,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 102,
+    id: 10002,
     name: "Producto Anyeluz (completar)",
     price: 0,
     category: "capilar",
@@ -140,7 +162,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 103,
+    id: 10003,
     name: "Producto Milagros (completar)",
     price: 0,
     category: "capilar",
@@ -148,7 +170,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 104,
+    id: 10004,
     name: "Producto Ritual Botánico (completar)",
     price: 0,
     category: "capilar",
@@ -156,7 +178,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 105,
+    id: 10005,
     name: "Producto Click Hair (completar)",
     price: 0,
     category: "capilar",
@@ -164,7 +186,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 106,
+    id: 10006,
     name: "Producto Kaba (completar)",
     price: 0,
     category: "capilar",
@@ -172,7 +194,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 107,
+    id: 10007,
     name: "Producto Pocion (completar)",
     price: 0,
     category: "capilar",
@@ -180,7 +202,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 108,
+    id: 10008,
     name: "Producto Menta Hair (completar)",
     price: 0,
     category: "capilar",
@@ -188,7 +210,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 109,
+    id: 10009,
     name: "Producto Leche Pal Pelo (completar)",
     price: 0,
     category: "capilar",
@@ -196,7 +218,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 110,
+    id: 10010,
     name: "Producto Magic Hair (completar)",
     price: 0,
     category: "capilar",
@@ -204,7 +226,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 111,
+    id: 10011,
     name: "Producto María Salomé (completar)",
     price: 0,
     category: "capilar",
@@ -212,7 +234,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 112,
+    id: 10012,
     name: "Producto Lehit (completar)",
     price: 0,
     category: "capilar",
@@ -220,7 +242,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 113,
+    id: 10013,
     name: "Producto Elvive (completar)",
     price: 0,
     category: "capilar",
@@ -228,7 +250,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
   {
-    id: 114,
+    id: 10014,
     name: "Producto Ponto (completar)",
     price: 0,
     category: "capilar",
