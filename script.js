@@ -100,6 +100,31 @@ const products = [
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 %232.png"
 },
+{
+  id:107,
+  name:"bloom duo perfect",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom dúo perfect.png"
+},
+{
+  id:108,
+  name:"Bloom dulce duo tint",
+  price:0,
+  category:"maquillaje",
+  brand:"bloonshell",
+  image:"imagenes/BLOOMSHELL/Bloom dulce duo tint_.png"
+},
+{
+  id:108,
+  name:"Bloom esplendor tono 1",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom esplendor tono 1.png"
+},
+
   // MAQUILLAJE - PROSA
   {
     id: 1000,
@@ -117,7 +142,7 @@ const products = [
       "imagenes/PROSA/Archivo_005.png",
       "imagenes/PROSA/Archivo_007.png"
     ],
-    variants: ["Negro", "Gris", "Rosado", "Morado", "Café", "plata", "fucsia", "vino tinto"]
+    variants: ["Negro", "Gris", "Morado", "Café", "plata", "fucsia", "vino tinto"]
   },
   {
     id: 1001,
