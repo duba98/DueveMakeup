@@ -79,11 +79,12 @@ const products = [
   },
 {
   id:104,
-  name:"base cushion #2-3-4-5-6-7-8",
+  name:"base cushion",
   price: 0,
   category: "maquillaje",
   brand: "bloomshell",
-  image: "imagenes/BLOOMSHELL/Base cushion %23%E2%80%942-3-4-5-6-7-8.png"
+  image: "imagenes/BLOOMSHELL/Base cushion %23%E2%80%942-3-4-5-6-7-8.png",
+  variants: ["#1", "#2", "#3", "#4", "#5", "#6", "#7", "#8"]
 },
 {id:105,
   name:"bloom bronzer iluminoso 2 en 1 #2",
@@ -144,7 +145,8 @@ const products = [
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
-  image:"imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png"
+  image:"imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png",
+  variants: ["#1", "#2", "#3", "#4"]
 },
 
   // MAQUILLAJE - PROSA
