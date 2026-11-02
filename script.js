@@ -138,6 +138,14 @@ const products = [
   ],
   variants: ["berry", "cherry", "pink"]
 },
+{
+  id:110,
+  name:"bloom hydra 2 en 1",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png"
+},
 
   // MAQUILLAJE - PROSA
   {
