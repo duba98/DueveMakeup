@@ -3,142 +3,371 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Dueve Makeup</title>
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+
+  <!-- ENCABEZADO -->
   <header>
     <div class="nav-container">
+
       <a href="#" class="logo" aria-label="Dueve Makeup - inicio">
-        <img src="imagenes/logo.png" alt="Dueve Makeup Logo" class="logo-img">
+        <img src="imagenes/logo.png"
+             alt="Dueve Makeup Logo"
+             class="logo-img">
       </a>
 
       <nav class="nav-links" aria-label="Categorías de productos">
-        <button type="button" class="filter-btn active" data-filter="all">Todos</button>
-        <button type="button" class="filter-btn highlight" id="btnMaquillaje" aria-haspopup="dialog" aria-controls="modalMaquillaje">Maquillaje ▾</button>
-        <button type="button" class="filter-btn" id="btnCapilar" aria-haspopup="dialog" aria-controls="modalcapilar">Capilar ▾</button>
-        <button type="button" class="filter-btn" id="btnLociones" aria-haspopup="dialog" aria-controls="modallociones">Lociones ▾</button>
+
+        <button type="button"
+                class="filter-btn active"
+                data-filter="all">
+          Todos
+        </button>
+
+        <button type="button"
+                class="filter-btn highlight"
+                id="btnMaquillaje"
+                aria-haspopup="dialog"
+                aria-controls="modalMaquillaje">
+          Maquillaje ▾
+        </button>
+
+        <button type="button"
+                class="filter-btn"
+                id="btnCapilar"
+                aria-haspopup="dialog"
+                aria-controls="modalcapilar">
+          Capilar ▾
+        </button>
+
+        <button type="button"
+                class="filter-btn"
+                id="btnLociones"
+                aria-haspopup="dialog"
+                aria-controls="modallociones">
+          Lociones ▾
+        </button>
+
       </nav>
 
-      <button type="button" class="cart-btn" id="cartButton" aria-label="Ver carrito">
+      <button type="button"
+              class="cart-btn"
+              id="cartButton"
+              aria-label="Ver carrito">
+
         <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+
         <span class="cart-count" id="cartCount">0</span>
+
       </button>
     </div>
 
+    <!-- CATEGORÍAS PARA MÓVIL -->
     <nav class="mobile-categories" aria-label="Categorías para móvil">
-      <button type="button" class="filter-btn active" data-filter="all">Todos</button>
-      <button type="button" class="filter-btn" id="btnMaquillajeMobile" aria-haspopup="dialog" aria-controls="modalMaquillaje">Maquillaje ▾</button>
-      <button type="button" class="filter-btn" id="btnCapilarMobile" aria-haspopup="dialog" aria-controls="modalcapilar">Capilar ▾</button>
-      <button type="button" class="filter-btn" id="btnLocionesMobile" aria-haspopup="dialog" aria-controls="modallociones">Lociones ▾</button>
+
+      <button type="button"
+              class="filter-btn active"
+              data-filter="all">
+        Todos
+      </button>
+
+      <button type="button"
+              class="filter-btn"
+              id="btnMaquillajeMobile">
+        Maquillaje ▾
+      </button>
+
+      <button type="button"
+              class="filter-btn"
+              id="btnCapilarMobile">
+        Capilar ▾
+      </button>
+
+      <button type="button"
+              class="filter-btn"
+              id="btnLocionesMobile">
+        Lociones ▾
+      </button>
+
     </nav>
   </header>
 
+  <!-- PORTADA -->
   <section class="hero">
-    <div class="hero-content">
-    </div>
+    <div class="hero-content"></div>
   </section>
 
-  <!-- MODAL: MAQUILLAJE -->
-  <div id="modalMaquillaje" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleMaquillaje" aria-hidden="true">
+  <!-- MODAL MAQUILLAJE -->
+  <div id="modalMaquillaje"
+       class="modal-overlay"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitleMaquillaje"
+       aria-hidden="true">
+
     <div class="modal-content">
+
       <div class="modal-header">
         <h2 id="modalTitleMaquillaje">Marcas de maquillaje</h2>
-        <button type="button" id="closeModal" class="close-btn" aria-label="Cerrar marcas">&times;</button>
+
+        <button type="button"
+                id="closeModal"
+                class="close-btn"
+                aria-label="Cerrar">
+          &times;
+        </button>
       </div>
+
       <div class="modal-body">
-        <button type="button" class="brand-btn" data-brand="atenea" data-category="maquillaje">Atenea</button>
-        <button type="button" class="brand-btn" data-brand="ani-k" data-category="maquillaje">Ani-K</button>
-        <button type="button" class="brand-btn" data-brand="bloomshell" data-category="maquillaje">Bloomshell</button>
-        <button type="button" class="brand-btn" data-brand="bonshik" data-category="maquillaje">Bonshik</button>
-        <button type="button" class="brand-btn" data-brand="maybelline" data-category="maquillaje">Maybelline</button>
-        <button type="button" class="brand-btn" data-brand="raquel" data-category="maquillaje">Raquel</button>
-        <button type="button" class="brand-btn" data-brand="ruby-rose" data-category="maquillaje">Ruby Rose</button>
-        <button type="button" class="brand-btn" data-brand="samy" data-category="maquillaje">Samy</button>
-        <button type="button" class="brand-btn" data-brand="vogue" data-category="maquillaje">Vogue</button>
-        <button type="button" class="brand-btn" data-brand="elaya" data-category="maquillaje">Elaya</button>
-        <button type="button" class="brand-btn" data-brand="girly" data-category="maquillaje">Girly</button>
-        <button type="button" class="brand-btn" data-brand="myk" data-category="maquillaje">MyK</button>
-        <button type="button" class="brand-btn" data-brand="nailen" data-category="maquillaje">Nailen</button>
-        <button type="button" class="brand-btn" data-brand="prosa" data-category="maquillaje">Prosa</button>
-        <button type="button" class="brand-btn" data-brand="sagui" data-category="maquillaje">Sagui</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="atenea" data-category="maquillaje">Atenea</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="ani-k" data-category="maquillaje">Ani-K</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="bloomshell" data-category="maquillaje">Bloomshell</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="bonshik" data-category="maquillaje">Bonshik</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="maybelline" data-category="maquillaje">Maybelline</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="raquel" data-category="maquillaje">Raquel</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="ruby-rose" data-category="maquillaje">Ruby Rose</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="samy" data-category="maquillaje">Samy</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="vogue" data-category="maquillaje">Vogue</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="elaya" data-category="maquillaje">Elaya</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="girly" data-category="maquillaje">Girly</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="myk" data-category="maquillaje">MyK</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="nailen" data-category="maquillaje">Nailen</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="prosa" data-category="maquillaje">Prosa</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="sagui" data-category="maquillaje">Sagui</button>
+
       </div>
     </div>
   </div>
 
-  <!-- MODAL: CAPILAR -->
-  <div id="modalcapilar" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleCapilar" aria-hidden="true">
+  <!-- MODAL CAPILAR -->
+  <div id="modalcapilar"
+       class="modal-overlay"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitleCapilar"
+       aria-hidden="true">
+
     <div class="modal-content">
+
       <div class="modal-header">
         <h2 id="modalTitleCapilar">Marcas capilares</h2>
-        <button type="button" id="closeCapilar" class="close-btn" aria-label="Cerrar marcas capilares">&times;</button>
+
+        <button type="button"
+                id="closeCapilar"
+                class="close-btn"
+                aria-label="Cerrar">
+          &times;
+        </button>
       </div>
+
       <div class="modal-body">
-        <button type="button" class="brand-btn" data-brand="mariana zapata" data-category="capilar">Mariana Zapata</button>
-        <button type="button" class="brand-btn" data-brand="anyeluz" data-category="capilar">Anyeluz</button>
-        <button type="button" class="brand-btn" data-brand="milagros" data-category="capilar">Milagros</button>
-        <button type="button" class="brand-btn" data-brand="ritual botanico" data-category="capilar">Ritual Botánico</button>
-        <button type="button" class="brand-btn" data-brand="click hair" data-category="capilar">Click Hair</button>
-        <button type="button" class="brand-btn" data-brand="kaba" data-category="capilar">Kaba</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="mariana zapata" data-category="capilar">Mariana Zapata</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="anyeluz" data-category="capilar">Anyeluz</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="milagros" data-category="capilar">Milagros</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="ritual botanico" data-category="capilar">Ritual Botánico</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="click hair" data-category="capilar">Click Hair</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="kaba" data-category="capilar">Kaba</button>
+
       </div>
     </div>
   </div>
 
-  <!-- MODAL: LOCIONES -->
-  <div id="modallociones" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleLociones" aria-hidden="true">
+  <!-- MODAL LOCIONES -->
+  <div id="modallociones"
+       class="modal-overlay"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitleLociones"
+       aria-hidden="true">
+
     <div class="modal-content">
+
       <div class="modal-header">
         <h2 id="modalTitleLociones">Lociones</h2>
-        <button type="button" id="closeLociones" class="close-btn" aria-label="Cerrar lociones">&times;</button>
+
+        <button type="button"
+                id="closeLociones"
+                class="close-btn"
+                aria-label="Cerrar">
+          &times;
+        </button>
       </div>
+
       <div class="modal-body">
-        <button type="button" class="brand-btn" data-brand="hombre" data-category="lociones">Hombre</button>
-        <button type="button" class="brand-btn" data-brand="mujer" data-category="lociones">Mujer</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="hombre" data-category="lociones">Hombre</button>
+
+        <button type="button" class="brand-btn"
+                data-brand="mujer" data-category="lociones">Mujer</button>
+
       </div>
     </div>
   </div>
 
+  <!-- CATÁLOGO -->
   <main id="productos" class="container">
+
     <div class="catalog-heading">
       <h2 id="catalogTitle">Todos los productos</h2>
-      <p id="catalogSubtitle">Encuentra tus favoritos en Dueve Makeup.</p>
+      <p id="catalogSubtitle">
+        Encuentra tus favoritos en Dueve Makeup.
+      </p>
     </div>
-    <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+
+    <div class="products-grid"
+         id="productsGrid"
+         aria-live="polite">
+    </div>
+
   </main>
 
+  <!-- FONDO DEL CARRITO -->
   <div id="overlay" class="overlay" aria-hidden="true"></div>
-  <aside id="cartDrawer" class="cart-sidebar" aria-label="Carrito de compras" aria-hidden="true">
+
+  <!-- CARRITO -->
+  <aside id="cartDrawer"
+         class="cart-sidebar"
+         aria-label="Carrito de compras"
+         aria-hidden="true">
+
     <div class="cart-header">
-      <h2>Tu carrito <span id="cartCountDrawer" class="cart-badge">0</span></h2>
-      <button type="button" class="close-cart-btn" id="closeCart" aria-label="Cerrar carrito">&times;</button>
+
+      <h2>
+        Tu carrito
+        <span id="cartCountDrawer" class="cart-badge">0</span>
+      </h2>
+
+      <button type="button"
+              class="close-cart-btn"
+              id="closeCart"
+              aria-label="Cerrar carrito">
+        &times;
+      </button>
+
     </div>
+
     <div class="cart-body" id="cartItems">
       <p class="empty-cart">El carrito está vacío.</p>
     </div>
+
     <div class="cart-footer">
-      <div class="cart-total"><span>Total:</span><span id="cartTotal">$0 COP</span></div>
-      <p class="payment-note">El total se calculará según los productos y cantidades de tu carrito.</p>
-      <button class="btn-checkout" id="checkoutButton" type="button">Finalizar compra con Wompi</button>
+
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0 COP</span>
+      </div>
+
+      <p class="payment-note">
+        El total se calculará según los productos y cantidades de tu carrito.
+      </p>
+
+      <button class="btn-checkout"
+              id="checkoutButton"
+              type="button">
+        Finalizar compra con Wompi
+      </button>
+
     </div>
   </aside>
 
+  <!-- PIE DE PÁGINA -->
   <footer id="contacto">
+
     <div class="footer-content">
+
       <div>
         <h3>Dueve Makeup</h3>
-        <p>Brindándote productos de maquillaje de marcas reconocidas para resaltar tu belleza natural, directo a tu hogar.</p>
+
+        <p>
+          Brindándote productos de maquillaje de marcas reconocidas
+          para resaltar tu belleza natural, directo a tu hogar.
+        </p>
       </div>
+
       <div>
         <h4>Contáctanos</h4>
-        <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/573043127283" target="_blank" rel="noopener noreferrer">+57 304 3127283</a></p>
-        <p><i class="fab fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/duevemakeup/" target="_blank" rel="noopener noreferrer">@duevemakeup</a></p>
+
+        <p>
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          <a href="https://wa.me/573043127283"
+             target="_blank"
+             rel="noopener noreferrer">
+            +57 304 3127283
+          </a>
+        </p>
+
+        <p>
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <a href="https://www.instagram.com/duevemakeup/"
+             target="_blank"
+             rel="noopener noreferrer">
+            @duevemakeup
+          </a>
+        </p>
       </div>
+
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 Dueve Makeup. Todos los derechos reservados.</p></div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Dueve Makeup. Todos los derechos reservados.</p>
+    </div>
+
   </footer>
 
+  <!-- WOMPI Y JAVASCRIPT: CARGAR UNA SOLA VEZ Y AL FINAL -->
   <script src="https://checkout.wompi.co/widget.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
