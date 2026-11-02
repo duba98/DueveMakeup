@@ -192,8 +192,27 @@ const products = [
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_009.png"
   },
-
-  // CAPILAR
+  //MAQUILLAJE ANI-K
+  //MAQUILLAJE BONSHIK
+  //MAQUILLAJE ELAYA
+  //MAQUILLAJE GIRLY
+  //MAQUILLAJE MAYBELLINE
+  //MAQUILLAJE MYK
+  //MAQUILLAJE NAILEN
+  //MAQUILLAJE RAQUEL
+  //MQUILLAJE RUBIROSE
+  {
+    id:1151,
+    name:"labial matte",
+    price:0,
+    category:"maquillaje",
+    brand: "ruby rose",
+    image: "imagenes/RUBY ROSE/labial-matte.png"
+  },
+  //MAQUILLAJE SAGUI
+  //MAQUILLAJE SAMY
+  //MAQUILLAJE VOGUE
+  // CAPILAR MARIANA ZAPATA
   {
     id: 10001,
     name: "Shampoo Mariana Zapata (completar)",
@@ -202,6 +221,7 @@ const products = [
     brand: "mariana zapata",
     image: "imagenes/sin-imagen.png"
   },
+  //CAPILAR ANYELUZ
   {
     id: 10002,
     name: "Producto Anyeluz (completar)",
@@ -210,6 +230,7 @@ const products = [
     brand: "anyeluz",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR MILAGROS
   {
     id: 10003,
     name: "Producto Milagros (completar)",
@@ -218,6 +239,7 @@ const products = [
     brand: "milagros",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR RITUAL BOTANICO
   {
     id: 10004,
     name: "Producto Ritual Botánico (completar)",
@@ -226,6 +248,7 @@ const products = [
     brand: "ritual botanico",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR CLICK HAIR
   {
     id: 10005,
     name: "Producto Click Hair (completar)",
@@ -234,6 +257,7 @@ const products = [
     brand: "click hair",
     image: "imagenes/sin-imagen.png"
   },
+  //CAPILAR KABA
   {
     id: 10006,
     name: "Producto Kaba (completar)",
@@ -242,6 +266,7 @@ const products = [
     brand: "kaba",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR POCION
   {
     id: 10007,
     name: "Producto Pocion (completar)",
@@ -250,6 +275,7 @@ const products = [
     brand: "pocion",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR MENTA HAIR
   {
     id: 10008,
     name: "Producto Menta Hair (completar)",
@@ -258,6 +284,7 @@ const products = [
     brand: "menta hair",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR LECHE PAL PELO
   {
     id: 10009,
     name: "Producto Leche Pal Pelo (completar)",
@@ -266,6 +293,7 @@ const products = [
     brand: "leche pal pelo",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR MAGIC HAIR
   {
     id: 10010,
     name: "Producto Magic Hair (completar)",
@@ -274,6 +302,7 @@ const products = [
     brand: "magic hair",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR MARIA SALOME
   {
     id: 10011,
     name: "Producto María Salomé (completar)",
@@ -282,6 +311,7 @@ const products = [
     brand: "maria salome",
     image: "imagenes/sin-imagen.png"
   },
+  // CAPILAR LEHIT
   {
     id: 10012,
     name: "Producto Lehit (completar)",
@@ -290,6 +320,7 @@ const products = [
     brand: "lehit",
     image: "imagenes/sin-imagen.png"
   },
+  //CAPILAR ELVIVE
   {
     id: 10013,
     name: "Producto Elvive (completar)",
@@ -298,6 +329,7 @@ const products = [
     brand: "elvive",
     image: "imagenes/sin-imagen.png"
   },
+  //CAPILAR PONTO
   {
     id: 10014,
     name: "Producto Ponto (completar)",
@@ -307,7 +339,7 @@ const products = [
     image: "imagenes/sin-imagen.png"
   },
 
-  // LOCIONES
+  // LOCIONES HOMBRE
   {
     id: 201,
     name: "Asad Lattafa",
@@ -316,6 +348,7 @@ const products = [
     brand: "hombre",
     image: "imagenes/locionhombre/asad-lattafa.png"
   },
+  // LOCIONES MUJER
   {
     id: 202,
     name: "Loción para mujer (completar)",
