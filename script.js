@@ -206,7 +206,7 @@ const products = [
     name:"labial matte",
     price:0,
     category:"maquillaje",
-    brand: "ruby rose",
+    brand: "RUBY ROSE",
     image: "imagenes/RUBY ROSE/labial-matte.png"
   },
   //MAQUILLAJE SAGUI
