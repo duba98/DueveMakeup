@@ -117,7 +117,7 @@ const products = [
       "imagenes/PROSA/Archivo_005.png",
       "imagenes/PROSA/Archivo_007.png"
     ],
-    variants: ["Negro", "Gris", "Rosado", "Morado", "Café"]
+    variants: ["Negro", "Gris", "Rosado", "Morado", "Café", "plata", "fucsia", "vino tinto"]
   },
   {
     id: 1001,
