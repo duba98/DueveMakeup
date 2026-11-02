@@ -319,9 +319,14 @@ productModal.innerHTML = `
 
     <div class="product-detail-layout">
 
-      <div class="product-detail-photo">
-        <img id="detailProductImage" src="" alt="">
-      </div>
+     <div class="product-detail-photo">
+  <img id="detailProductImage" src="" alt="">
+
+  <div
+    id="detailImageThumbnails"
+    class="detail-image-thumbnails">
+  </div>
+</div>
 
       <div class="product-detail-info">
         <h2 id="detailProductName"></h2>
@@ -470,13 +475,81 @@ productModalStyles.textContent = `
       gap: 12px;
     }
 
+    .detail-image-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.detail-thumbnail {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 4px;
+  background: white;
+}
+
+.detail-thumbnail.selected {
+  border: 2px solid #d46a84;
+}
+
     .product-detail-photo img {
       max-height: 280px;
     }
   }
 `;
 
+
 document.head.appendChild(productModalStyles);
+
+function renderProductGallery(product) {
+  const mainImage = document.getElementById("detailProductImage");
+  const thumbnails = document.getElementById("detailImageThumbnails");
+
+  if (!mainImage || !thumbnails) return;
+
+  const images = product.images?.length
+    ? product.images
+    : [product.image];
+
+  thumbnails.innerHTML = "";
+
+  images.forEach((src, index) => {
+    const thumb = document.createElement("img");
+
+    thumb.src = src;
+    thumb.alt = `${product.name} - foto ${index + 1}`;
+    thumb.className = "detail-thumbnail";
+
+    if (index === 0) {
+      thumb.classList.add("selected");
+    }
+
+    thumb.onerror = () => {
+      thumb.style.display = "none";
+    };
+
+    thumb.addEventListener("click", () => {
+      mainImage.src = src;
+
+      thumbnails.querySelectorAll("img").forEach(img => {
+        img.classList.remove("selected");
+      });
+
+      thumb.classList.add("selected");
+    });
+
+    thumbnails.appendChild(thumb);
+  });
+
+  mainImage.src = images[0];
+}
+
 
 // ==================================================
 // 5. MOSTRAR Y FILTRAR PRODUCTOS
@@ -555,7 +628,9 @@ function renderProducts(filter = "all", brand = null) {
     // Al pulsar la foto se abre la ventana ampliada.
     image.addEventListener("click", () => {
       openProductModal(product.id);
+      renderProductGallery(product);
     });
+    
 
     // Evita un bucle de errores si falta la imagen.
     image.onerror = () => {
