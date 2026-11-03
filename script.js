@@ -148,6 +148,27 @@ const products = [
   image:"imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png",
   variants: ["#1", "#2", "#3", "#4"]
 },
+{
+  id:111,
+  name:"bloom jelly fusion",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom jelly fusión.png"
+},
+{
+  id:112,
+  name:"bloom lip kit",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
+  images: [
+    "imagenes/BLOOMSHELL/Bloom lip kit tono 4.jpg"
+  ],
+  variants:["tono #3", "tono #4"]
+},
+
 
   // MAQUILLAJE - PROSA
   {
