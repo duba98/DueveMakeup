@@ -123,7 +123,7 @@ const products = [
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
-  image:"imagenes/BLOOMSHELL/Bloom esplendor tono 1.png"
+  image:"imagenes/BLOOMSHELL/labialbloom.png"
 },
 {
   id:109,
@@ -182,7 +182,7 @@ const products = [
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
-  image:"imagenes/BLOOMSHELL/Bloom oil stop_.png",
+  image:"imagenes/BLOOMSHELL/Bloom_.png",
 },
 
 
