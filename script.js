@@ -91,7 +91,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/BLOOM OIL CONTROL.jpg"
+    "image": "imagenes/BLOOMSHELL/BLOOM OIL CONTROl.jpg"
   },
   {
     "id": 3006,
@@ -243,7 +243,12 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom gelei berry.png"
+    "image": "imagenes/BLOOMSHELL/Bloom gelei berry.png",
+    variants:["berry", "cherry", "pink",]
+      images:[
+        "imagenes/BLOOMSHELL/Bloom gelei pink.png",
+        "imagenes/BLOOMSHELL/Bloom gelei cherry.png"
+    ],  
   },
   {
     "id": 3025,
