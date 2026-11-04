@@ -133,8 +133,9 @@ const products = [
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom gelei berry.png",
   images: [
+    "imagenes/BLOOMSHELL/bloom gelei berry.png",
     "imagenes/BLOOMSHELL/Bloom gelei cherry.png",
-    "imagenes/BLOOMSHELL/Bloom gelei pink.png"
+    "imagenes/BLOOMSHELL/Bloom gelei pink.png",
   ],
   variants: ["berry", "cherry", "pink"]
 },
