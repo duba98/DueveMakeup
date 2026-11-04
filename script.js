@@ -54,1313 +54,1021 @@ const products = [
 
   // MAQUILLAJE - BLOOMSHELL
    {
-    "id": 3001,
-    "name": "Archivo 080",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Archivo_080.png"
-  },
-  {
-    "id": 3002,
-    "name": "Bloom bronzer luminoso 2 en 1 #02",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 %2302.png"
-  },
-  {
-    "id": 3003,
-    "name": "Bloom esplendor tono 1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom esplendor tono 1.png"
-  },
-  {
-    "id": 3004,
-    "name": "Bloom hydra 2 en 1 #1-2-3-4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png"
-  },
-  {
-    "id": 3005,
-    "name": "BLOOM OIL CONTROL",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/BLOOM OIL CONTROl.jpg"
-  },
-  {
-    "id": 3006,
-    "name": "Borla Bloomshell corazón",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png"
-  },
-  {
-    "id": 3007,
-    "name": "Brillo color bloom glow",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo color bloom glow.png"
-  },
-  {
-    "id": 3008,
-    "name": "Brillo glossy color tono 4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color tono 4.png"
-  },
-  {
-    "id": 3009,
-    "name": "Brillo labial powder kiss #1 flower",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss #1 flower.png"
-  },
-  {
-    "id": 3010,
-    "name": "BRILLO POKET KISS",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/BRILLO POKET KISS.jpg"
-  },
-  {
-    "id": 3011,
-    "name": "Contorno en barra bloom define #1 contour",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png"
-  },
-  {
-    "id": 3012,
-    "name": "Crema en gel bloom essential",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Crema en gel bloom essential.png"
-  },
-  {
-    "id": 3013,
-    "name": "FIJADOR BLOOM 120ml",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/FIJADOR BLOOM 120ml.png"
-  },
-  {
-    "id": 3014,
-    "name": "Iluminador bloom glow #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador bloom glow %233.png"
-  },
-  {
-    "id": 3015,
-    "name": "Kit mini favoritos x6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Kit mini favoritos x6.png"
-  },
-  {
-    "id": 3016,
-    "name": "Lápiz delineador labios coofe 02",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg"
-  },
-  {
-    "id": 3017,
-    "name": "Lápiz para ojos negro (1)",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz para ojos negro_(1).png"
-  },
-  {
-    "id": 3018,
-    "name": "Lip balm bloom sparkle kiss #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %231.png"
-  },
-  {
-    "id": 3019,
-    "name": "Lip bloom coco nut",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip bloom coco nut.png"
-  },
-  {
-    "id": 3020,
-    "name": "Lip oil mimosa xl",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip oil mimosa xl.jpg"
-  },
-  {
-    "id": 3021,
-    "name": "Llavero dúo nude",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Llavero dúo nude.jpg"
-  },
-  {
-    "id": 3022,
-    "name": "Bálsamo de labios bloom honey",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bálsamo de labios bloom honey_.png"
-  },
-  {
-    "id": 3023,
-    "name": "Bloom bronzer matte 2 en 1 #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 %232.png"
-  },
-  {
-    "id": 3024,
-    "name": "Bloom gelei berry",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom gelei berry.png",
-    variants:["berry", "cherry", "pink",]
-      images:[
-        "imagenes/BLOOMSHELL/Bloom gelei pink.png",
-        "imagenes/BLOOMSHELL/Bloom gelei cherry.png"
-    ],  
-  },
-  {
-    "id": 3025,
-    "name": "Bloom jelly fusión",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom jelly fusión.png"
-  },
-  {
-    "id": 3026,
-    "name": "Bloom oil stop",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom oil stop_.png"
-  },
-  {
-    "id": 3027,
-    "name": "Borlas x3 Bloomshell",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
-  },
-  {
-    "id": 3028,
-    "name": "Brillo glossy color #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color %232.png"
-  },
-  {
-    "id": 3029,
-    "name": "Brillo glossy color tono 6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color tono 6.png"
-  },
-  {
-    "id": 3030,
-    "name": "Brillo labial powder kiss #2 rose",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss %232 rose.png"
-  },
-  {
-    "id": 3031,
-    "name": "Bya bya brillo espejo",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bya bya brillo espejo.png"
-  },
-  {
-    "id": 3032,
-    "name": "Contorno en barra bloom define #3 dark",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Contorno en barra bloom define %233 dark.png"
-  },
-  {
-    "id": 3033,
-    "name": "Dúo contorno Bloomshell deep",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Dúo contorno Bloomshell deep_.png"
-  },
-  {
-    "id": 3034,
-    "name": "FIJADOR BLOOM FIX MINI 46ml",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/FIJADOR BLOOM FIX MINI 46ml.jpg"
-  },
-  {
-    "id": 3035,
-    "name": "Iluminador bloom glow #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador bloom glow %234.png"
-  },
-  {
-    "id": 3036,
-    "name": "Kit mini infaltables x6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Kit mini infaltables x6.png"
-  },
-  {
-    "id": 3037,
-    "name": "Lápiz delineador labios nude 04",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios nude 04.png"
-  },
-  {
-    "id": 3038,
-    "name": "Lápiz para ojos negro",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz para ojos negro_.png"
-  },
-  {
-    "id": 3039,
-    "name": "Lip balm bloom sparkle kiss #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %232.png"
-  },
-  {
-    "id": 3040,
-    "name": "Lip gloss bloom fusión",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip gloss bloom fusión.png"
-  },
-  {
-    "id": 3041,
-    "name": "LLAVERO BLOOM LATTE KISS",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/LLAVERO BLOOM LATTE KISS.jpg"
-  },
-  {
-    "id": 3042,
-    "name": "Llavero dúo shell tint+mini mimosa",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Llavero dúo shell tint+mini mimosa_.jpg"
-  },
-  {
-    "id": 3043,
-    "name": "Base cushion #—2-3-4-5-6-7-8",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png"
-  },
-  {
-    "id": 3044,
-    "name": "Bloom dulce duo tint",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom dulce duo tint_.png"
-  },
-  {
-    "id": 3045,
-    "name": "Bloom gelei cherry",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom gelei cherry.png"
-  },
-  {
-    "id": 3046,
-    "name": "Bloom lip kit tono 3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg"
-  },
-  {
-    "id": 3047,
-    "name": "Bloom pincel perfect",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom pincel perfect_.png"
-  },
-  {
-    "id": 3048,
-    "name": "Brillo bloom Aqua fruit",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo bloom Aqua fruit.png"
-  },
-  {
-    "id": 3049,
-    "name": "Brillo glossy color #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color %233.png"
-  },
-  {
-    "id": 3050,
-    "name": "Brillo hidratante bloom gelee",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo hidratante bloom gelee.png"
-  },
-  {
-    "id": 3051,
-    "name": "Brillo labial powder kiss #3 mocha",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss %233 mocha_.png"
-  },
-  {
-    "id": 3052,
-    "name": "Cera en barra Bloomshell",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Cera en barra Bloomshell_.png"
-  },
-  {
-    "id": 3053,
-    "name": "Contorno en barra define bronzy",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Contorno en barra define bronzy_.png"
-  },
-  {
-    "id": 3054,
-    "name": "Dúo contorno Bloomshell toasted",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Dúo contorno Bloomshell toasted_.png"
-  },
-  {
-    "id": 3055,
-    "name": "Fijador hidratante mist fix",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Fijador hidratante mist fix.jpg"
-  },
-  {
-    "id": 3056,
-    "name": "Iluminador crema bloom cosmic",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador crema bloom cosmic_.jpg"
-  },
-  {
-    "id": 3057,
-    "name": "LAMINADOR DE CEJAS XL",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/LAMINADOR DE CEJAS XL.jpg"
-  },
-  {
-    "id": 3058,
-    "name": "Lápiz delineador labios rose #3(1)",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios rose %233(1).png"
-  },
-  {
-    "id": 3059,
-    "name": "Limpiador bloom lumi gel",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Limpiador bloom lumi gel.jpg"
-  },
-  {
-    "id": 3060,
-    "name": "Lip balm sparkle kiss #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm sparkle kiss %233.png"
-  },
-  {
-    "id": 3061,
-    "name": "Lip oil bloom cherry",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip oil bloom cherry_.png"
-  },
-  {
-    "id": 3062,
-    "name": "Llavero bloom lush petan",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Llavero bloom lush petan_.png"
-  },
-  {
-    "id": 3063,
-    "name": "Llavero+espejo bloom mimosa",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Llavero+espejo bloom mimosa.jpg"
-  },
-  {
-    "id": 3064,
-    "name": "Beauty blender xl",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Beauty blender xl_.png"
-  },
-  {
-    "id": 3065,
-    "name": "Bloom dúo perfect",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom dúo perfect.png"
-  },
-  {
-    "id": 3066,
-    "name": "Bloom gelei pink",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom gelei pink.png"
-  },
-  {
-    "id": 3067,
-    "name": "Bloom lip kit tono 4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom lip kit tono 4.jpg"
-  },
-  {
-    "id": 3068,
-    "name": "Bloom rolon xl",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom rolon xl.png"
-  },
-  {
-    "id": 3069,
-    "name": "Brillo bloom capuchi",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo bloom capuchi.jpg"
-  },
-  {
-    "id": 3070,
-    "name": "Brillo glossy color #5",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color %235.png"
-  },
-  {
-    "id": 3071,
-    "name": "Brillo labial bloom bombon",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo labial bloom bombon_.jpg"
-  },
-  {
-    "id": 3072,
-    "name": "Brillo mágico bloom crush",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo mágico bloom crush_.png"
-  },
-  {
-    "id": 3073,
-    "name": "Cinta levanta busto Bloomshell",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Cinta levanta busto Bloomshell_.png"
-  },
-  {
-    "id": 3074,
-    "name": "Crema bloom repair",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Crema bloom repair_.png"
-  },
-  {
-    "id": 3075,
-    "name": "Estuche Bloomshell",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Estuche Bloomshell_.png"
-  },
-  {
-    "id": 3076,
-    "name": "Iluminador Bloom glow #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador Bloom glow %231.png"
-  },
-  {
-    "id": 3077,
-    "name": "Kit borla Bloomshell x7",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Kit borla Bloomshell x7.png"
-  },
-  {
-    "id": 3078,
-    "name": "Laminador de cejas",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Laminador de cejas_.jpg"
-  },
-  {
-    "id": 3079,
-    "name": "Lápiz delineador labios rose #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios rose %233.png"
-  },
-  {
-    "id": 3080,
-    "name": "Lip balm bloom latte",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm bloom latte.png"
-  },
-  {
-    "id": 3081,
-    "name": "Lip balm sparkle kiss #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm sparkle kiss %234.png"
-  },
-  {
-    "id": 3082,
-    "name": "LIP OIL BLOOM SUBLIME XL",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/LIP OIL BLOOM SUBLIME XL.jpg"
-  },
-  {
-    "id": 3083,
-    "name": "Llavero dúo mimosa+mini",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Llavero dúo mimosa+mini.png"
-  },
-  {
-    "id": 3084,
-    "name": "Paleta bloom luxury coral #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury coral %232.png"
-  },
-  {
-    "id": 3085,
-    "name": "Paleta bloom nude #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom nude %231.png"
-  },
-  {
-    "id": 3086,
-    "name": "Paleta de rubores dolce bouquet",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta de rubores dolce bouquet.png"
-  },
-  {
-    "id": 3087,
-    "name": "Papel matificante con polvo suelto #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Papel matificante con polvo suelto %232_.png"
-  },
-  {
-    "id": 3088,
-    "name": "Pestañina lash resistente",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Pestañina lash resistente_.jpg"
-  },
-  {
-    "id": 3089,
-    "name": "Polvo compacto fusión",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto fusión.png"
-  },
-  {
-    "id": 3090,
-    "name": "Polvo compacto soft #4 nude",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %234 nude.png"
-  },
-  {
-    "id": 3091,
-    "name": "Polvo compacto soft #8 mocha",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %238 mocha_.png"
-  },
-  {
-    "id": 3092,
-    "name": "Polvo suelto mini Bloomshell traslúcido",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo suelto mini Bloomshell traslúcido_.png"
-  },
-  {
-    "id": 3093,
-    "name": "Primer bloom puff",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Primer bloom puff.png"
-  },
-  {
-    "id": 3094,
-    "name": "Rubor bloom touch huellita",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor bloom touch huellita_.png"
-  },
-  {
-    "id": 3095,
-    "name": "Rubor en barra cherry blossom #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %234.png"
-  },
-  {
-    "id": 3096,
-    "name": "Rubor líquido bloom floral #5",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %235.png"
-  },
-  {
-    "id": 3097,
-    "name": "Rubor luminoso shell #2 luminoso",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor luminoso shell %232 luminoso.png"
-  },
-  {
-    "id": 3098,
-    "name": "Rubor trío #8 magenta",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío #8 magenta_.png"
-  },
-  {
-    "id": 3099,
-    "name": "Rubor trío pink #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío pink %231.jpg"
-  },
-  {
-    "id": 3100,
-    "name": "Rubor trío vino #9",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío vino %239.png"
-  },
-  {
-    "id": 3101,
-    "name": "Shimmer blooming glow",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Shimmer blooming glow_.png"
-  },
-  {
-    "id": 3102,
-    "name": "Sombra individual matte bloom #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %231.png"
-  },
-  {
-    "id": 3103,
-    "name": "Tinta de labios bloom bow",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Tinta de labios bloom bow_.png"
-  },
-  {
-    "id": 3104,
-    "name": "Paleta bloom luxury magenta #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury magenta %233.png"
-  },
-  {
-    "id": 3105,
-    "name": "Paleta bloom nude #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom nude %232.png"
-  },
-  {
-    "id": 3106,
-    "name": "Paleta kiss love x6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta kiss love x6.png"
-  },
-  {
-    "id": 3107,
-    "name": "Parches bye bye",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Parches bye bye_.png"
-  },
-  {
-    "id": 3108,
-    "name": "Polvo 2 en 1 bloom paqñ #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo 2 en 1 bloom paqñ %231.png"
-  },
-  {
-    "id": 3109,
-    "name": "Polvo compacto soft #1 ivory",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %231 ivory_.png"
-  },
-  {
-    "id": 3110,
-    "name": "Polvo compacto soft #5 sand",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %235 sand_.png"
-  },
-  {
-    "id": 3111,
-    "name": "Polvo suelto 4 en 1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo suelto 4 en 1.png"
-  },
-  {
-    "id": 3112,
-    "name": "Polvo suelto mini luminous banana malla",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo suelto mini luminous banana malla_.png"
-  },
-  {
-    "id": 3113,
-    "name": "PRIMER BLOOM PUMPLING",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/PRIMER BLOOM PUMPLING.png"
-  },
-  {
-    "id": 3114,
-    "name": "Rubor bloom touch love",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor bloom touch love_.png"
-  },
-  {
-    "id": 3115,
-    "name": "Rubor líquido bloom floral #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %232.png"
-  },
-  {
-    "id": 3116,
-    "name": "Rubor líquido bloom floral #6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %236.png"
-  },
-  {
-    "id": 3117,
-    "name": "Rubor luminoso shell #3 sunsell",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor luminoso shell %233 sunsell.png"
-  },
-  {
-    "id": 3118,
-    "name": "Rubor trío cherry #6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío cherry %236.png"
-  },
-  {
-    "id": 3119,
-    "name": "Rubor trío purple #7",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío purple %237.png"
-  },
-  {
-    "id": 3120,
-    "name": "Rubor en barra cherry blossom #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %232.png"
-  },
-  {
-    "id": 3121,
-    "name": "Sombra bloom seductor gold #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra bloom seductor gold %232.png"
-  },
-  {
-    "id": 3122,
-    "name": "Sombra individual matte bloom #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %232.png"
-  },
-  {
-    "id": 3123,
-    "name": "Tónico bloom repair mist",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Tónico bloom repair mist.png"
-  },
-  {
-    "id": 3124,
-    "name": "Paleta bloom luxury pink #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury pink %231_.png"
-  },
-  {
-    "id": 3125,
-    "name": "Paleta bloom vibes #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom vibes %231.png"
-  },
-  {
-    "id": 3126,
-    "name": "Papel de arroz beautiful face",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Papel de arroz beautiful face.jpg"
-  },
-  {
-    "id": 3127,
-    "name": "Parches faciales x24",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Parches faciales x24.png"
-  },
-  {
-    "id": 3128,
-    "name": "Polvo 2 en 1 paqñ #2 rosado",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo 2 en 1 paqñ %232 rosado.png"
-  },
-  {
-    "id": 3129,
-    "name": "Polvo compacto soft #2 beige",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %232 beige.png"
-  },
-  {
-    "id": 3130,
-    "name": "Polvo compacto soft #6 golden",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %236 golden_.png"
-  },
-  {
-    "id": 3131,
-    "name": "Polvo suelto banana grande",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo suelto banana grande_.jpg"
-  },
-  {
-    "id": 3132,
-    "name": "Polvo suelto traslúcido grande",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo suelto traslúcido grande.jpg"
-  },
-  {
-    "id": 3133,
-    "name": "Primer en crema bloom pink",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Primer en crema bloom pink.png"
-  },
-  {
-    "id": 3134,
-    "name": "Rubor en barra cherry blossom #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %232.png"
-  },
-  {
-    "id": 3135,
-    "name": "Rubor líquido bloom floral #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %233.png"
-  },
-  {
-    "id": 3136,
-    "name": "Rubor líquido mágico",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido mágico_.png"
-  },
-  {
-    "id": 3137,
-    "name": "Rubor matte shell blush baby #5",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor matte shell blush baby %235_.png"
-  },
-  {
-    "id": 3138,
-    "name": "Rubor trío melón #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío melón %234.png"
-  },
-  {
-    "id": 3139,
-    "name": "Rubor trío sandía #5",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío sandía %235.png"
-  },
-  {
-    "id": 3140,
-    "name": "Serum bloom balance",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Serum bloom balance_.jpg"
-  },
-  {
-    "id": 3141,
-    "name": "Sombra bloom seductor pink #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra bloom seductor pink %233.png"
-  },
-  {
-    "id": 3142,
-    "name": "Sombra individual matte bloom #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %234.png"
-  },
-  {
-    "id": 3143,
-    "name": "unnamed 2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/unnamed_2.jpg"
-  },
-  {
-    "id": 3144,
-    "name": "Paleta bloom luxury vino #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury vino %234.png"
-  },
-  {
-    "id": 3145,
-    "name": "Paleta bloom vibes #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom vibes %232.png"
-  },
-  {
-    "id": 3146,
-    "name": "Papel matificante con polvo suelto #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Papel matificante con polvo suelto %231.png"
-  },
-  {
-    "id": 3147,
-    "name": "Pestañina coofe Bloomshell exclusive",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Pestañina coofe Bloomshell exclusive.png"
-  },
-  {
-    "id": 3148,
-    "name": "Polvo 2 en 1 paqñ #3 banana",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo 2 en 1 paqñ %233 banana_.png"
-  },
-  {
-    "id": 3149,
-    "name": "Polvo compacto soft #3 natural",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %233 natural.png"
-  },
-  {
-    "id": 3150,
-    "name": "Polvo compacto soft #7 honey",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft %237 honey_.png"
-  },
-  {
-    "id": 3151,
-    "name": "Polvo suelto mini 4 en 1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo suelto mini 4 en 1.png"
-  },
-  {
-    "id": 3152,
-    "name": "PRIMER BLOOM POROS INVISIBLES",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/PRIMER BLOOM POROS INVISIBLES.jpg"
-  },
-  {
-    "id": 3153,
-    "name": "Primer en crema bloom purple",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Primer en crema bloom purple.png"
-  },
-  {
-    "id": 3154,
-    "name": "Rubor en barra cherry blossom #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %233.png"
-  },
-  {
-    "id": 3155,
-    "name": "Rubor líquido bloom floral #4",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %234.png"
-  },
-  {
-    "id": 3156,
-    "name": "Rubor luminoso shell #1 pink",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor luminoso shell %231 pink.png"
-  },
-  {
-    "id": 3157,
-    "name": "Rubor matte shell terracota #6",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor matte shell terracota %236.png"
-  },
-  {
-    "id": 3158,
-    "name": "Rubor trío peach #2",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío peach %232.png"
-  },
-  {
-    "id": 3159,
-    "name": "Rubor trío terracota #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío terracota %233.png"
-  },
-  {
-    "id": 3160,
-    "name": "SERUM REPARADOR DE LABIOS",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/SERUM REPARADOR DE LABIOS_.png"
-  },
-  {
-    "id": 3161,
-    "name": "Sombra bloom seductor rose #1",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra bloom seductor rose %231.png"
-  },
-  {
-    "id": 3162,
-    "name": "Sombra individual matte bloom #3",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %233.png"
-  },
-  {
-    "id": 3163,
-    "name": "Voluminizador Bloomshell",
-    "price": 0,
-    "category": "maquillaje",
-    "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Voluminizador Bloomshell_.png"
+    id: 3001,
+    name: "Archivo 080",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Archivo_080.png"
+  },
+  {
+    id: 3002,
+    name: "Bloom bronzer luminoso 2 en 1 #02",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 %2302.png"
+  },
+  {
+    id: 3003,
+    name: "Bloom esplendor tono 1",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom esplendor tono 1.png"
+  },
+  {
+    id: 3004,
+    name: "Bloom Hydra 2 en 1",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png",
+    variants: ["#1", "#2", "#3", "#4"],
+    variantImages: {
+          "#1": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png",
+          "#2": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png",
+          "#3": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png",
+          "#4": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png"
+    }
+  },
+  {
+    id: 3005,
+    name: "BLOOM OIL CONTROL",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/BLOOM OIL CONTROL.jpg"
+  },
+  {
+    id: 3006,
+    name: "Borla Bloomshell corazón",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png"
+  },
+  {
+    id: 3007,
+    name: "Brillo color bloom glow",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo color bloom glow.png"
+  },
+  {
+    id: 3008,
+    name: "Brillo Glossy Color",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo glossy color tono 4.png",
+    variants: ["Tono 4", "#2", "Tono 6", "#3", "#5"],
+    variantImages: {
+          "Tono 4": "imagenes/BLOOMSHELL/Brillo glossy color tono 4.png",
+          "#2": "imagenes/BLOOMSHELL/Brillo glossy color %232.png",
+          "Tono 6": "imagenes/BLOOMSHELL/Brillo glossy color tono 6.png",
+          "#3": "imagenes/BLOOMSHELL/Brillo glossy color %233.png",
+          "#5": "imagenes/BLOOMSHELL/Brillo glossy color %235.png"
+    }
+  },
+  {
+    id: 3009,
+    name: "Brillo labial Powder Kiss",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo labial powder kiss %231 flower.png",
+    variants: ["#1 flower", "#2 rose", "#3 mocha"],
+    variantImages: {
+          "#1 flower": "imagenes/BLOOMSHELL/Brillo labial powder kiss %231 flower.png",
+          "#2 rose": "imagenes/BLOOMSHELL/Brillo labial powder kiss %232 rose.png",
+          "#3 mocha": "imagenes/BLOOMSHELL/Brillo labial powder kiss %233 mocha_.png"
+    }
+  },
+  {
+    id: 3010,
+    name: "BRILLO POKET KISS",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/BRILLO POKET KISS.jpg"
+  },
+  {
+    id: 3011,
+    name: "Contorno en barra Bloom Define",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png",
+    variants: ["#1 contour", "#3 dark", "Bronzy"],
+    variantImages: {
+          "#1 contour": "imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png",
+          "#3 dark": "imagenes/BLOOMSHELL/Contorno en barra bloom define %233 dark.png",
+          "Bronzy": "imagenes/BLOOMSHELL/Contorno en barra define bronzy_.png"
+    }
+  },
+  {
+    id: 3012,
+    name: "Crema en gel bloom essential",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Crema en gel bloom essential.png"
+  },
+  {
+    id: 3013,
+    name: "FIJADOR BLOOM 120ml",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/FIJADOR BLOOM 120ml.png"
+  },
+  {
+    id: 3014,
+    name: "Iluminador Bloom Glow",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Iluminador bloom glow %233.png",
+    variants: ["#3", "#4", "#1"],
+    variantImages: {
+          "#3": "imagenes/BLOOMSHELL/Iluminador bloom glow %233.png",
+          "#4": "imagenes/BLOOMSHELL/Iluminador bloom glow %234.png",
+          "#1": "imagenes/BLOOMSHELL/Iluminador Bloom glow %231.png"
+    }
+  },
+  {
+    id: 3015,
+    name: "Kit mini favoritos x6",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Kit mini favoritos x6.png"
+  },
+  {
+    id: 3016,
+    name: "Lápiz delineador de labios",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg",
+    variants: ["Coofe 02", "Nude 04", "#3"],
+    variantImages: {
+          "Coofe 02": "imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg",
+          "Nude 04": "imagenes/BLOOMSHELL/Lápiz delineador labios nude 04.png",
+          "#3": "imagenes/BLOOMSHELL/Lápiz delineador labios rose %233(1).png"
+    }
+  },
+  {
+    id: 3017,
+    name: "Lápiz para ojos negro (1)",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lápiz para ojos negro_(1).png"
+  },
+  {
+    id: 3018,
+    name: "Lip Balm Sparkle Kiss",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %231.png",
+    variants: ["#1", "#2", "#3", "#4"],
+    variantImages: {
+          "#1": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %231.png",
+          "#2": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %232.png",
+          "#3": "imagenes/BLOOMSHELL/Lip balm sparkle kiss %233.png",
+          "#4": "imagenes/BLOOMSHELL/Lip balm sparkle kiss %234.png"
+    }
+  },
+  {
+    id: 3019,
+    name: "Lip bloom coco nut",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lip bloom coco nut.png"
+  },
+  {
+    id: 3020,
+    name: "Lip oil mimosa xl",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lip oil mimosa xl.jpg"
+  },
+  {
+    id: 3021,
+    name: "Llavero dúo nude",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Llavero dúo nude.jpg"
+  },
+  {
+    id: 3022,
+    name: "Bálsamo de labios bloom honey",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bálsamo de labios bloom honey_.png"
+  },
+  {
+    id: 3023,
+    name: "Bloom bronzer matte 2 en 1 #2",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 %232.png"
+  },
+  {
+    id: 3024,
+    name: "Bloom gelei berry",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom gelei berry.png"
+  },
+  {
+    id: 3025,
+    name: "Bloom jelly fusión",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom jelly fusión.png"
+  },
+  {
+    id: 3026,
+    name: "Bloom oil stop",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom oil stop_.png"
+  },
+  {
+    id: 3027,
+    name: "Borlas x3 Bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
+  },
+  {
+    id: 3031,
+    name: "Bya bya brillo espejo",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bya bya brillo espejo.png"
+  },
+  {
+    id: 3033,
+    name: "Dúo contorno Bloomshell deep",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Dúo contorno Bloomshell deep_.png"
+  },
+  {
+    id: 3034,
+    name: "FIJADOR BLOOM FIX MINI 46ml",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/FIJADOR BLOOM FIX MINI 46ml.jpg"
+  },
+  {
+    id: 3036,
+    name: "Kit mini infaltables x6",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Kit mini infaltables x6.png"
+  },
+  {
+    id: 3038,
+    name: "Lápiz para ojos negro",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lápiz para ojos negro_.png"
+  },
+  {
+    id: 3040,
+    name: "Lip gloss bloom fusión",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lip gloss bloom fusión.png"
+  },
+  {
+    id: 3041,
+    name: "LLAVERO BLOOM LATTE KISS",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/LLAVERO BLOOM LATTE KISS.jpg"
+  },
+  {
+    id: 3042,
+    name: "Llavero dúo shell tint+mini mimosa",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Llavero dúo shell tint+mini mimosa_.jpg"
+  },
+  {
+    id: 3043,
+    name: "Base Cushion",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+    variants: ["#2", "#3", "#4", "#5", "#6", "#7", "#8"],
+    variantImages: {
+          "#2": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+          "#3": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+          "#4": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+          "#5": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+          "#6": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+          "#7": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png",
+          "#8": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png"
+    }
+  },
+  {
+    id: 3044,
+    name: "Bloom dulce duo tint",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom dulce duo tint_.png"
+  },
+  {
+    id: 3045,
+    name: "Bloom gelei cherry",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom gelei cherry.png"
+  },
+  {
+    id: 3046,
+    name: "Bloom Lip Kit",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
+    variants: ["Tono 3", "Tono 4"],
+    variantImages: {
+          "Tono 3": "imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
+          "Tono 4": "imagenes/BLOOMSHELL/Bloom lip kit tono 4.jpg"
+    }
+  },
+  {
+    id: 3047,
+    name: "Bloom pincel perfect",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom pincel perfect_.png"
+  },
+  {
+    id: 3048,
+    name: "Brillo bloom Aqua fruit",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo bloom Aqua fruit.png"
+  },
+  {
+    id: 3050,
+    name: "Brillo hidratante bloom gelee",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo hidratante bloom gelee.png"
+  },
+  {
+    id: 3052,
+    name: "Cera en barra Bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Cera en barra Bloomshell_.png"
+  },
+  {
+    id: 3054,
+    name: "Dúo contorno Bloomshell toasted",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Dúo contorno Bloomshell toasted_.png"
+  },
+  {
+    id: 3055,
+    name: "Fijador hidratante mist fix",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Fijador hidratante mist fix.jpg"
+  },
+  {
+    id: 3056,
+    name: "Iluminador crema bloom cosmic",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Iluminador crema bloom cosmic_.jpg"
+  },
+  {
+    id: 3057,
+    name: "LAMINADOR DE CEJAS XL",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/LAMINADOR DE CEJAS XL.jpg"
+  },
+  {
+    id: 3059,
+    name: "Limpiador bloom lumi gel",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Limpiador bloom lumi gel.jpg"
+  },
+  {
+    id: 3061,
+    name: "Lip oil bloom cherry",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lip oil bloom cherry_.png"
+  },
+  {
+    id: 3062,
+    name: "Llavero bloom lush petan",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Llavero bloom lush petan_.png"
+  },
+  {
+    id: 3063,
+    name: "Llavero+espejo bloom mimosa",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Llavero+espejo bloom mimosa.jpg"
+  },
+  {
+    id: 3064,
+    name: "Beauty blender xl",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Beauty blender xl_.png"
+  },
+  {
+    id: 3065,
+    name: "Bloom dúo perfect",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom dúo perfect.png"
+  },
+  {
+    id: 3066,
+    name: "Bloom gelei pink",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom gelei pink.png"
+  },
+  {
+    id: 3068,
+    name: "Bloom rolon xl",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Bloom rolon xl.png"
+  },
+  {
+    id: 3069,
+    name: "Brillo bloom capuchi",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo bloom capuchi.jpg"
+  },
+  {
+    id: 3071,
+    name: "Brillo labial bloom bombon",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo labial bloom bombon_.jpg"
+  },
+  {
+    id: 3072,
+    name: "Brillo mágico bloom crush",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Brillo mágico bloom crush_.png"
+  },
+  {
+    id: 3073,
+    name: "Cinta levanta busto Bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Cinta levanta busto Bloomshell_.png"
+  },
+  {
+    id: 3074,
+    name: "Crema bloom repair",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Crema bloom repair_.png"
+  },
+  {
+    id: 3075,
+    name: "Estuche Bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Estuche Bloomshell_.png"
+  },
+  {
+    id: 3077,
+    name: "Kit borla Bloomshell x7",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Kit borla Bloomshell x7.png"
+  },
+  {
+    id: 3078,
+    name: "Laminador de cejas",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Laminador de cejas_.jpg"
+  },
+  {
+    id: 3080,
+    name: "Lip balm bloom latte",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Lip balm bloom latte.png"
+  },
+  {
+    id: 3082,
+    name: "LIP OIL BLOOM SUBLIME XL",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/LIP OIL BLOOM SUBLIME XL.jpg"
+  },
+  {
+    id: 3083,
+    name: "Llavero dúo mimosa+mini",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/BLOOMSHELL/Llavero dúo mimosa+mini.png"
+  },
+  {
+    id: 3084,
+    name: "Paleta Bloom Luxury",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Paleta bloom luxury coral %232.png",
+    variants: ["#2", "#3", "#1", "#4"],
+    variantImages: {
+          "#2": "imagenes/bloomshell%232/Paleta bloom luxury coral %232.png",
+          "#3": "imagenes/bloomshell%232/Paleta bloom luxury magenta %233.png",
+          "#1": "imagenes/bloomshell%232/Paleta bloom luxury pink %231_.png",
+          "#4": "imagenes/bloomshell%232/Paleta bloom luxury vino %234.png"
+    }
+  },
+  {
+    id: 3085,
+    name: "Paleta Bloom Nude",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Paleta bloom nude %231.png",
+    variants: ["#1", "#2"],
+    variantImages: {
+          "#1": "imagenes/bloomshell%232/Paleta bloom nude %231.png",
+          "#2": "imagenes/bloomshell%232/Paleta bloom nude %232.png"
+    }
+  },
+  {
+    id: 3086,
+    name: "Paleta de rubores dolce bouquet",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Paleta de rubores dolce bouquet.png"
+  },
+  {
+    id: 3087,
+    name: "Papel matificante con polvo suelto",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Papel matificante con polvo suelto %232_.png",
+    variants: ["#2", "#1"],
+    variantImages: {
+          "#2": "imagenes/bloomshell%232/Papel matificante con polvo suelto %232_.png",
+          "#1": "imagenes/bloomshell%232/Papel matificante con polvo suelto %231.png"
+    }
+  },
+  {
+    id: 3088,
+    name: "Pestañina lash resistente",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Pestañina lash resistente_.jpg"
+  },
+  {
+    id: 3089,
+    name: "Polvo compacto fusión",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo compacto fusión.png"
+  },
+  {
+    id: 3090,
+    name: "Polvo Compacto Soft",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo compacto soft %234 nude.png",
+    variants: ["#4 nude", "#8 mocha", "#1 ivory", "#5 sand", "#2 beige", "#6 golden", "#3 natural", "#7 honey"],
+    variantImages: {
+          "#4 nude": "imagenes/bloomshell%232/Polvo compacto soft %234 nude.png",
+          "#8 mocha": "imagenes/bloomshell%232/Polvo compacto soft %238 mocha_.png",
+          "#1 ivory": "imagenes/bloomshell%232/Polvo compacto soft %231 ivory_.png",
+          "#5 sand": "imagenes/bloomshell%232/Polvo compacto soft %235 sand_.png",
+          "#2 beige": "imagenes/bloomshell%232/Polvo compacto soft %232 beige.png",
+          "#6 golden": "imagenes/bloomshell%232/Polvo compacto soft %236 golden_.png",
+          "#3 natural": "imagenes/bloomshell%232/Polvo compacto soft %233 natural.png",
+          "#7 honey": "imagenes/bloomshell%232/Polvo compacto soft %237 honey_.png"
+    }
+  },
+  {
+    id: 3092,
+    name: "Polvo suelto mini Bloomshell traslúcido",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo suelto mini Bloomshell traslúcido_.png"
+  },
+  {
+    id: 3093,
+    name: "Primer bloom puff",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Primer bloom puff.png"
+  },
+  {
+    id: 3094,
+    name: "Rubor bloom touch huellita",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor bloom touch huellita_.png"
+  },
+  {
+    id: 3095,
+    name: "Rubor en barra Cherry Blossom",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor en barra cherry blossom %234.png",
+    variants: ["#4", "#2", "#3"],
+    variantImages: {
+          "#4": "imagenes/bloomshell%232/Rubor en barra cherry blossom %234.png",
+          "#2": "imagenes/bloomshell%232/Rubor en barra cherry blossom %232.png",
+          "#3": "imagenes/bloomshell%232/Rubor en barra cherry blossom %233.png"
+    }
+  },
+  {
+    id: 3096,
+    name: "Rubor líquido Bloom Floral",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor líquido bloom floral %235.png",
+    variants: ["#5", "#2", "#6", "#3", "#4"],
+    variantImages: {
+          "#5": "imagenes/bloomshell%232/Rubor líquido bloom floral %235.png",
+          "#2": "imagenes/bloomshell%232/Rubor líquido bloom floral %232.png",
+          "#6": "imagenes/bloomshell%232/Rubor líquido bloom floral %236.png",
+          "#3": "imagenes/bloomshell%232/Rubor líquido bloom floral %233.png",
+          "#4": "imagenes/bloomshell%232/Rubor líquido bloom floral %234.png"
+    }
+  },
+  {
+    id: 3097,
+    name: "Rubor luminoso Shell",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor luminoso shell %232 luminoso.png",
+    variants: ["#2 luminoso", "#3 sunsell", "#1 pink"],
+    variantImages: {
+          "#2 luminoso": "imagenes/bloomshell%232/Rubor luminoso shell %232 luminoso.png",
+          "#3 sunsell": "imagenes/bloomshell%232/Rubor luminoso shell %233 sunsell.png",
+          "#1 pink": "imagenes/bloomshell%232/Rubor luminoso shell %231 pink.png"
+    }
+  },
+  {
+    id: 3098,
+    name: "Rubor Trío",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor trío %238 magenta_.png",
+    variants: ["#8 magenta", "#1", "#9", "#6", "#7", "#4", "#5", "#2", "#3"],
+    variantImages: {
+          "#8 magenta": "imagenes/bloomshell%232/Rubor trío %238 magenta_.png",
+          "#1": "imagenes/bloomshell%232/Rubor trío pink %231.jpg",
+          "#9": "imagenes/bloomshell%232/Rubor trío vino %239.png",
+          "#6": "imagenes/bloomshell%232/Rubor trío cherry %236.png",
+          "#7": "imagenes/bloomshell%232/Rubor trío purple %237.png",
+          "#4": "imagenes/bloomshell%232/Rubor trío melón %234.png",
+          "#5": "imagenes/bloomshell%232/Rubor trío sandía %235.png",
+          "#2": "imagenes/bloomshell%232/Rubor trío peach %232.png",
+          "#3": "imagenes/bloomshell%232/Rubor trío terracota %233.png"
+    }
+  },
+  {
+    id: 3101,
+    name: "Shimmer blooming glow",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Shimmer blooming glow_.png"
+  },
+  {
+    id: 3102,
+    name: "Sombra Individual Matte Bloom",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Sombra individual matte bloom %231.png",
+    variants: ["#1", "#2", "#4", "#3"],
+    variantImages: {
+          "#1": "imagenes/bloomshell%232/Sombra individual matte bloom %231.png",
+          "#2": "imagenes/bloomshell%232/Sombra individual matte bloom %232.png",
+          "#4": "imagenes/bloomshell%232/Sombra individual matte bloom %234.png",
+          "#3": "imagenes/bloomshell%232/Sombra individual matte bloom %233.png"
+    }
+  },
+  {
+    id: 3103,
+    name: "Tinta de labios bloom bow",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Tinta de labios bloom bow_.png"
+  },
+  {
+    id: 3106,
+    name: "Paleta kiss love x6",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Paleta kiss love x6.png"
+  },
+  {
+    id: 3107,
+    name: "Parches bye bye",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Parches bye bye_.png"
+  },
+  {
+    id: 3108,
+    name: "Polvo 2 en 1 Bloom",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo 2 en 1 bloom paqñ %231.png",
+    variants: ["#1", "#2 rosado", "#3 banana"],
+    variantImages: {
+          "#1": "imagenes/bloomshell%232/Polvo 2 en 1 bloom paqñ %231.png",
+          "#2 rosado": "imagenes/bloomshell%232/Polvo 2 en 1 paqñ %232 rosado.png",
+          "#3 banana": "imagenes/bloomshell%232/Polvo 2 en 1 paqñ %233 banana_.png"
+    }
+  },
+  {
+    id: 3111,
+    name: "Polvo suelto 4 en 1",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo suelto 4 en 1.png"
+  },
+  {
+    id: 3112,
+    name: "Polvo suelto mini luminous banana malla",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo suelto mini luminous banana malla_.png"
+  },
+  {
+    id: 3113,
+    name: "PRIMER BLOOM PUMPLING",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/PRIMER BLOOM PUMPLING.png"
+  },
+  {
+    id: 3114,
+    name: "Rubor bloom touch love",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor bloom touch love_.png"
+  },
+  {
+    id: 3121,
+    name: "Sombra Bloom Seductor",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Sombra bloom seductor gold %232.png",
+    variants: ["#2", "#3", "#1"],
+    variantImages: {
+          "#2": "imagenes/bloomshell%232/Sombra bloom seductor gold %232.png",
+          "#3": "imagenes/bloomshell%232/Sombra bloom seductor pink %233.png",
+          "#1": "imagenes/bloomshell%232/Sombra bloom seductor rose %231.png"
+    }
+  },
+  {
+    id: 3123,
+    name: "Tónico bloom repair mist",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Tónico bloom repair mist.png"
+  },
+  {
+    id: 3125,
+    name: "Paleta Bloom Vibes",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Paleta bloom vibes %231.png",
+    variants: ["#1", "#2"],
+    variantImages: {
+          "#1": "imagenes/bloomshell%232/Paleta bloom vibes %231.png",
+          "#2": "imagenes/bloomshell%232/Paleta bloom vibes %232.png"
+    }
+  },
+  {
+    id: 3126,
+    name: "Papel de arroz beautiful face",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Papel de arroz beautiful face.jpg"
+  },
+  {
+    id: 3127,
+    name: "Parches faciales x24",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Parches faciales x24.png"
+  },
+  {
+    id: 3131,
+    name: "Polvo suelto banana grande",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo suelto banana grande_.jpg"
+  },
+  {
+    id: 3132,
+    name: "Polvo suelto traslúcido grande",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo suelto traslúcido grande.jpg"
+  },
+  {
+    id: 3133,
+    name: "Primer en crema bloom pink",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Primer en crema bloom pink.png"
+  },
+  {
+    id: 3136,
+    name: "Rubor líquido mágico",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor líquido mágico_.png"
+  },
+  {
+    id: 3137,
+    name: "Rubor matte shell blush baby #5",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor matte shell blush baby %235_.png"
+  },
+  {
+    id: 3140,
+    name: "Serum bloom balance",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Serum bloom balance_.jpg"
+  },
+  {
+    id: 3143,
+    name: "unnamed 2",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/unnamed_2.jpg"
+  },
+  {
+    id: 3147,
+    name: "Pestañina coofe Bloomshell exclusive",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Pestañina coofe Bloomshell exclusive.png"
+  },
+  {
+    id: 3151,
+    name: "Polvo suelto mini 4 en 1",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Polvo suelto mini 4 en 1.png"
+  },
+  {
+    id: 3152,
+    name: "PRIMER BLOOM POROS INVISIBLES",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/PRIMER BLOOM POROS INVISIBLES.jpg"
+  },
+  {
+    id: 3153,
+    name: "Primer en crema bloom purple",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Primer en crema bloom purple.png"
+  },
+  {
+    id: 3157,
+    name: "Rubor matte shell terracota #6",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Rubor matte shell terracota %236.png"
+  },
+  {
+    id: 3160,
+    name: "SERUM REPARADOR DE LABIOS",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/SERUM REPARADOR DE LABIOS_.png"
+  },
+  {
+    id: 3163,
+    name: "Voluminizador Bloomshell",
+    price: 0,
+    category: "maquillaje",
+    brand: "bloomshell",
+    image: "imagenes/bloomshell%232/Voluminizador Bloomshell_.png"
   },
 
 
