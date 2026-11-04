@@ -67,7 +67,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 #02.png"
+    "image": "imagenes/BLOOMSHELL/Bloom bronzer luminoso 2 en 1 %2302.png"
   },
   {
     "id": 3003,
@@ -83,7 +83,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 #1-2-3-4.png"
+    "image": "imagenes/BLOOMSHELL/Bloom hydra 2 en 1 %231-2-3-4.png"
   },
   {
     "id": 3005,
@@ -139,7 +139,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Contorno en barra bloom define #1 contour.png"
+    "image": "imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png"
   },
   {
     "id": 3012,
@@ -163,7 +163,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador bloom glow #3.png"
+    "image": "imagenes/BLOOMSHELL/Iluminador bloom glow %233.png"
   },
   {
     "id": 3015,
@@ -195,7 +195,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss #1.png"
+    "image": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %231.png"
   },
   {
     "id": 3019,
@@ -235,7 +235,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 #2.png"
+    "image": "imagenes/BLOOMSHELL/Bloom bronzer matte 2 en 1 %232.png"
   },
   {
     "id": 3024,
@@ -275,7 +275,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color #2.png"
+    "image": "imagenes/BLOOMSHELL/Brillo glossy color %232.png"
   },
   {
     "id": 3029,
@@ -291,7 +291,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss #2 rose.png"
+    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss %232 rose.png"
   },
   {
     "id": 3031,
@@ -307,7 +307,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Contorno en barra bloom define #3 dark.png"
+    "image": "imagenes/BLOOMSHELL/Contorno en barra bloom define %233 dark.png"
   },
   {
     "id": 3033,
@@ -331,7 +331,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador bloom glow #4.png"
+    "image": "imagenes/BLOOMSHELL/Iluminador bloom glow %234.png"
   },
   {
     "id": 3036,
@@ -363,7 +363,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss #2.png"
+    "image": "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %232.png"
   },
   {
     "id": 3040,
@@ -395,7 +395,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Base cushion #—2-3-4-5-6-7-8.png"
+    "image": "imagenes/BLOOMSHELL/Base cushion %23—2-3-4-5-6-7-8.png"
   },
   {
     "id": 3044,
@@ -443,7 +443,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color #3.png"
+    "image": "imagenes/BLOOMSHELL/Brillo glossy color %233.png"
   },
   {
     "id": 3050,
@@ -459,7 +459,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss #3 mocha_.png"
+    "image": "imagenes/BLOOMSHELL/Brillo labial powder kiss %233 mocha_.png"
   },
   {
     "id": 3052,
@@ -515,7 +515,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios rose #3(1).png"
+    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios rose %233(1).png"
   },
   {
     "id": 3059,
@@ -531,7 +531,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm sparkle kiss #3.png"
+    "image": "imagenes/BLOOMSHELL/Lip balm sparkle kiss %233.png"
   },
   {
     "id": 3061,
@@ -611,7 +611,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Brillo glossy color #5.png"
+    "image": "imagenes/BLOOMSHELL/Brillo glossy color %235.png"
   },
   {
     "id": 3071,
@@ -659,7 +659,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png"
+    "image": "imagenes/BLOOMSHELL/Iluminador Bloom glow %231.png"
   },
   {
     "id": 3077,
@@ -683,7 +683,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios rose #3.png"
+    "image": "imagenes/BLOOMSHELL/Lápiz delineador labios rose %233.png"
   },
   {
     "id": 3080,
@@ -699,7 +699,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/BLOOMSHELL/Lip balm sparkle kiss #4.png"
+    "image": "imagenes/BLOOMSHELL/Lip balm sparkle kiss %234.png"
   },
   {
     "id": 3082,
@@ -723,7 +723,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury coral #2.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom luxury coral %232.png"
   },
   {
     "id": 3085,
@@ -731,7 +731,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom nude #1.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom nude %231.png"
   },
   {
     "id": 3086,
@@ -747,7 +747,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Papel matificante con polvo suelto #2_.png"
+    "image": "imagenes/bloomshell#2/Papel matificante con polvo suelto %232_.png"
   },
   {
     "id": 3088,
@@ -771,7 +771,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #4 nude.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %234 nude.png"
   },
   {
     "id": 3091,
@@ -779,7 +779,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #8 mocha_.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %238 mocha_.png"
   },
   {
     "id": 3092,
@@ -811,7 +811,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom #4.png"
+    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %234.png"
   },
   {
     "id": 3096,
@@ -819,7 +819,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral #5.png"
+    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %235.png"
   },
   {
     "id": 3097,
@@ -827,7 +827,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor luminoso shell #2 luminoso.png"
+    "image": "imagenes/bloomshell#2/Rubor luminoso shell %232 luminoso.png"
   },
   {
     "id": 3098,
@@ -843,7 +843,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío pink #1.jpg"
+    "image": "imagenes/bloomshell#2/Rubor trío pink %231.jpg"
   },
   {
     "id": 3100,
@@ -851,7 +851,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío vino #9.png"
+    "image": "imagenes/bloomshell#2/Rubor trío vino %239.png"
   },
   {
     "id": 3101,
@@ -867,7 +867,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom #1.png"
+    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %231.png"
   },
   {
     "id": 3103,
@@ -883,7 +883,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury magenta #3.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom luxury magenta %233.png"
   },
   {
     "id": 3105,
@@ -891,7 +891,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom nude #2.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom nude %232.png"
   },
   {
     "id": 3106,
@@ -915,7 +915,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo 2 en 1 bloom paqñ #1.png"
+    "image": "imagenes/bloomshell#2/Polvo 2 en 1 bloom paqñ %231.png"
   },
   {
     "id": 3109,
@@ -923,7 +923,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #1 ivory_.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %231 ivory_.png"
   },
   {
     "id": 3110,
@@ -931,7 +931,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #5 sand_.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %235 sand_.png"
   },
   {
     "id": 3111,
@@ -971,7 +971,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral #2.png"
+    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %232.png"
   },
   {
     "id": 3116,
@@ -979,7 +979,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral #6.png"
+    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %236.png"
   },
   {
     "id": 3117,
@@ -987,7 +987,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor luminoso shell #3 sunsell.png"
+    "image": "imagenes/bloomshell#2/Rubor luminoso shell %233 sunsell.png"
   },
   {
     "id": 3118,
@@ -995,7 +995,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío cherry #6.png"
+    "image": "imagenes/bloomshell#2/Rubor trío cherry %236.png"
   },
   {
     "id": 3119,
@@ -1003,7 +1003,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío purple #7.png"
+    "image": "imagenes/bloomshell#2/Rubor trío purple %237.png"
   },
   {
     "id": 3120,
@@ -1011,7 +1011,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom #2.png"
+    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %232.png"
   },
   {
     "id": 3121,
@@ -1019,7 +1019,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra bloom seductor gold #2.png"
+    "image": "imagenes/bloomshell#2/Sombra bloom seductor gold %232.png"
   },
   {
     "id": 3122,
@@ -1027,7 +1027,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom #2.png"
+    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %232.png"
   },
   {
     "id": 3123,
@@ -1043,7 +1043,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury pink #1_.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom luxury pink %231_.png"
   },
   {
     "id": 3125,
@@ -1051,7 +1051,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom vibes #1.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom vibes %231.png"
   },
   {
     "id": 3126,
@@ -1075,7 +1075,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo 2 en 1 paqñ #2 rosado.png"
+    "image": "imagenes/bloomshell#2/Polvo 2 en 1 paqñ %232 rosado.png"
   },
   {
     "id": 3129,
@@ -1083,7 +1083,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #2 beige.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %232 beige.png"
   },
   {
     "id": 3130,
@@ -1091,7 +1091,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #6 golden_.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %236 golden_.png"
   },
   {
     "id": 3131,
@@ -1123,7 +1123,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom #2.png"
+    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %232.png"
   },
   {
     "id": 3135,
@@ -1131,7 +1131,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral #3.png"
+    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %233.png"
   },
   {
     "id": 3136,
@@ -1147,7 +1147,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor matte shell blush baby #5_.png"
+    "image": "imagenes/bloomshell#2/Rubor matte shell blush baby %235_.png"
   },
   {
     "id": 3138,
@@ -1155,7 +1155,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío melón #4.png"
+    "image": "imagenes/bloomshell#2/Rubor trío melón %234.png"
   },
   {
     "id": 3139,
@@ -1163,7 +1163,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío sandía #5.png"
+    "image": "imagenes/bloomshell#2/Rubor trío sandía %235.png"
   },
   {
     "id": 3140,
@@ -1179,7 +1179,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra bloom seductor pink #3.png"
+    "image": "imagenes/bloomshell#2/Sombra bloom seductor pink %233.png"
   },
   {
     "id": 3142,
@@ -1187,7 +1187,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom #4.png"
+    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %234.png"
   },
   {
     "id": 3143,
@@ -1203,7 +1203,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom luxury vino #4.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom luxury vino %234.png"
   },
   {
     "id": 3145,
@@ -1211,7 +1211,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Paleta bloom vibes #2.png"
+    "image": "imagenes/bloomshell#2/Paleta bloom vibes %232.png"
   },
   {
     "id": 3146,
@@ -1219,7 +1219,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Papel matificante con polvo suelto #1.png"
+    "image": "imagenes/bloomshell#2/Papel matificante con polvo suelto %231.png"
   },
   {
     "id": 3147,
@@ -1235,7 +1235,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo 2 en 1 paqñ #3 banana_.png"
+    "image": "imagenes/bloomshell#2/Polvo 2 en 1 paqñ %233 banana_.png"
   },
   {
     "id": 3149,
@@ -1243,7 +1243,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #3 natural.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %233 natural.png"
   },
   {
     "id": 3150,
@@ -1251,7 +1251,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Polvo compacto soft #7 honey_.png"
+    "image": "imagenes/bloomshell#2/Polvo compacto soft %237 honey_.png"
   },
   {
     "id": 3151,
@@ -1283,7 +1283,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom #3.png"
+    "image": "imagenes/bloomshell#2/Rubor en barra cherry blossom %233.png"
   },
   {
     "id": 3155,
@@ -1291,7 +1291,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral #4.png"
+    "image": "imagenes/bloomshell#2/Rubor líquido bloom floral %234.png"
   },
   {
     "id": 3156,
@@ -1299,7 +1299,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor luminoso shell #1 pink.png"
+    "image": "imagenes/bloomshell#2/Rubor luminoso shell %231 pink.png"
   },
   {
     "id": 3157,
@@ -1307,7 +1307,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor matte shell terracota #6.png"
+    "image": "imagenes/bloomshell#2/Rubor matte shell terracota %236.png"
   },
   {
     "id": 3158,
@@ -1315,7 +1315,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío peach #2.png"
+    "image": "imagenes/bloomshell#2/Rubor trío peach %232.png"
   },
   {
     "id": 3159,
@@ -1323,7 +1323,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Rubor trío terracota #3.png"
+    "image": "imagenes/bloomshell#2/Rubor trío terracota %233.png"
   },
   {
     "id": 3160,
@@ -1339,7 +1339,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra bloom seductor rose #1.png"
+    "image": "imagenes/bloomshell#2/Sombra bloom seductor rose %231.png"
   },
   {
     "id": 3162,
@@ -1347,7 +1347,7 @@ const products = [
     "price": 0,
     "category": "maquillaje",
     "brand": "bloomshell",
-    "image": "imagenes/bloomshell#2/Sombra individual matte bloom #3.png"
+    "image": "imagenes/bloomshell#2/Sombra individual matte bloom %233.png"
   },
   {
     "id": 3163,
