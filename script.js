@@ -168,6 +168,22 @@ const products = [
   ],
   variants:["tono #3", "tono #4"]
 },
+{
+  id:113,
+  name:"BLOOM OIL CONTROl",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/BLOOM OIL CONTROl.jpg",
+},
+{
+  id:113,
+  name:"bloom oil stop",
+  price:0,
+  category:"maquilaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom oil stop_.png",
+},
 
 
   // MAQUILLAJE - PROSA
