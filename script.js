@@ -208,11 +208,16 @@ const products = [
   category:"maquillaje",
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
-  images:[
-    "imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
-    "imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
-  ],
-  variants:["X1", "X3"],
+  variants: [
+    {
+      name:"X1",
+      image:"imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png"
+    },
+    {
+      name:"X3",
+      image:"imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
+    }
+  ]
 },
 
 
