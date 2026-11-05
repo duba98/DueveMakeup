@@ -276,6 +276,50 @@ const products = [
     }
   ]
 },
+{
+  id:118,
+  name:"brillo hidratante",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Brillo hidratante bloom gelee.png"
+},
+{
+  id:119,
+  name:"brillo labial bloom bombon",
+  price:0,
+  category:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Brillo labial bloom bombon_.jpg"
+},
+{
+  id:120,
+  name:"brillo labial podwer kiss",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Brillo labial podwer kiss %231 flower.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Brillo labial podwer kiss %231 flower.png",
+    "imagenes/BLOOMSHELL/Brillo labial podwer kiss %232 rose.png",
+    "imagenes/BLOOMSHELL/Brillo labial podwer kiss %233 mocha_.png"
+  ],
+  variants: [
+    {
+      name:"#1 flower",
+      image:"imagenes/BLOOMSHELL/Brillo labial podwer kiss %231 flower.png"
+    },
+    {
+      name:"#2 rose",
+      image:"imagenes/BLOOMSHELL/Brillo labial podwer kiss %232 rose.png"
+    },
+    {
+      name:"#3 mocha",
+      image:"imagenes/BLOOMSHELL/Brillo labial podwer kiss %233 mocha_.png"
+    }
+  ]
+},
 
 
 
