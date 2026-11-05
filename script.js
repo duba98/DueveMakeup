@@ -320,6 +320,101 @@ const products = [
     }
   ]
 },
+{
+  id:123,
+  name:"brillo magico bloom crush",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Brillo mágico bloom crush_.png"
+},
+{
+  id:124,
+  name:"brillo poket kiss",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/BRILLO POKET KISS.jpg"
+},
+{
+  id:125,
+  name:"brillo espejo",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bya bya brillo espejo.png"
+},
+{
+  id:126,
+  name:"cera en barra bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Cera en barra Bloomshell_.png"
+},
+{
+  id:127,
+  name:"cinta levanta bustos",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Cinta levanta busto Bloomshell_.png"
+},
+{
+  id:128,
+  name:"contorno en barra",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png",
+  
+  images:[
+    "imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png",
+    "imagenes/BLOOMSHELL/Contorno en barra define bronzy_.png",
+    "imagenes/BLOOMSHELL/Contorno en barra bloom define %233 dark.png"
+  ],
+
+  variants: [
+    {
+      name:"#1 ",
+      image:"imagenes/BLOOMSHELL/Contorno en barra bloom define %231 contour.png"
+    },
+    {
+      name:"#3 dark",
+      image:"imagenes/BLOOMSHELL/Contorno en barra bloom define %233 dark.png"
+    },
+    {
+      name:"bronzy",
+      image:"imagenes/BLOOMSHELL/Contorno en barra define bronzy_.png"
+    }
+  ]
+},
+{
+  id:129,
+  name:"crema bloom",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Crema bloom repair _.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Crema bloom repair _.png",
+    "imagenes/BLOOMSHELL/Crema en gel bloom essential.png"
+  ],
+
+  variants:[
+    {
+      name:"bloom repair",
+      image:"imagenes/BLOOMSHELL/Crema bloom repair _.png"
+    },
+    {
+      name:"bloom essential",
+      image:"imagenes/BLOOMSHELL/Crema en gel bloom essential.png"
+    }
+  ]
+},
 
 
 
