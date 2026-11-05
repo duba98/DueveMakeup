@@ -118,7 +118,7 @@ const products = [
   image:"imagenes/BLOOMSHELL/Bloom dulce duo tint_.png"
 },
 {
-  id:108,
+  id:109,
   name:"Bloom esplendor tono 1",
   price:0,
   category:"maquillaje",
@@ -127,7 +127,7 @@ const products = [
 },
 
 {
-  id: 109,
+  id: 110,
   name: "Bloom Gelei Berry",
   price: 0,
   category: "maquillaje",
@@ -158,7 +158,7 @@ const products = [
 },
 
 {
-  id:110,
+  id:111,
   name:"bloom hydra 2 en 1",
   price:0,
   category:"maquillaje",
@@ -167,7 +167,7 @@ const products = [
   variants: ["#1", "#2", "#3", "#4"]
 },
 {
-  id:111,
+  id:112,
   name:"bloom jelly fusion",
   price:0,
   category:"maquillaje",
@@ -175,7 +175,7 @@ const products = [
   image:"imagenes/BLOOMSHELL/Bloom jelly fusión.png"
 },
 {
-  id:112,
+  id:113,
   name:"bloom lip kit",
   price:0,
   category:"maquillaje",
@@ -197,7 +197,7 @@ const products = [
   ]
 },
 {
-  id:113,
+  id:114,
   name:"BLOOM OIL CONTROl",
   price:0,
   category:"maquillaje",
@@ -205,7 +205,7 @@ const products = [
   image:"imagenes/BLOOMSHELL/BLOOM OIL CONTROl.jpg",
 },
 {
-  id:113,
+  id:115,
   name:"bloom oil stop",
   price:0,
   category:"maquillaje",
@@ -213,7 +213,7 @@ const products = [
   image:"imagenes/BLOOMSHELL/Bloom oil stop_.png"
 },
 {
-  id:114,
+  id:116,
   name:"brocha de bloomshell",
   price:0,
   category:"maquillaje",
@@ -221,7 +221,7 @@ const products = [
   image:"imagenes/BLOOMSHELL/Bloom pincel perfect_.png"
 },
 {
-  id:115,
+  id:117,
   name:"bloom rolon XL",
   price:0,
   category:"maquillaje",
@@ -229,7 +229,7 @@ const products = [
   image:"imagenes/BLOOMSHELL/Bloom rolon xl.png"
 },
 {
-  id:116,
+  id:118,
   name:"borla bloomshell corazon ",
   price:0,
   category:"maquillaje",
@@ -247,7 +247,7 @@ const products = [
   ]
 },
 {
-  id:117,
+  id:119,
   name:"brillo glossy ",
   price:0,
   category:"maquillaje",
@@ -277,7 +277,7 @@ const products = [
   ]
 },
 {
-  id:118,
+  id:120,
   name:"brillo hidratante",
   price:0,
   category:"maquillaje",
@@ -285,14 +285,14 @@ const products = [
   image:"imagenes/BLOOMSHELL/Brillo hidratante bloom gelee.png"
 },
 {
-  id:119,
+  id:121,
   name:"brillo labial bloom bombon",
   price:0,
   category:"bloomshell",
   image:"imagenes/BLOOMSHELL/Brillo labial bloom bombon_.jpg"
 },
 {
-  id:120,
+  id:122,
   name:"brillo labial podwer kiss",
   price:0,
   category:"maquillaje",
