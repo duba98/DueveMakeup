@@ -135,7 +135,7 @@ const products = [
   images: [
     "imagenes/BLOOMSHELL/bloom gelei berry.png",
     "imagenes/BLOOMSHELL/Bloom gelei cherry.png",
-    "imagenes/BLOOMSHELL/Bloom gelei pink.png",
+    "imagenes/BLOOMSHELL/Bloom gelei pink.png"
   ],
   variants: ["berry", "cherry", "pink"]
 },
@@ -164,6 +164,7 @@ const products = [
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
   images: [
+    "imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
     "imagenes/BLOOMSHELL/Bloom lip kit tono 4.jpg"
   ],
   variants:["tono #3", "tono #4"]
@@ -208,6 +209,7 @@ const products = [
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
   images:[
+    "imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
     "imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
   ],
   variants:["X1", "X3"],
