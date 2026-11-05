@@ -273,27 +273,27 @@ const products = [
   variants: [
     {
       name: "Negro",
-      image: "imagenes/PROSA/Archivo_000.png"
-    },
-    {
-      name: "Gris",
-      image: "imagenes/PROSA/Archivo_001.png"
-    },
-    {
-      name: "Morado",
-      image: "imagenes/PROSA/Archivo_002.png"
-    },
-    {
-      name: "Café",
-      image: "imagenes/PROSA/Archivo_003.png"
-    },
-    {
-      name: "Plata",
       image: "imagenes/PROSA/Archivo_004.png"
     },
     {
-      name: "Fucsia",
+      name: "Gris",
+      image: "imagenes/PROSA/Archivo_000.png"
+    },
+    {
+      name: "Morado",
+      image: "imagenes/PROSA/Archivo_001.png"
+    },
+    {
+      name: "Café",
       image: "imagenes/PROSA/Archivo_005.png"
+    },
+    {
+      name: "Plata",
+      image: "imagenes/PROSA/Archivo_002.png"
+    },
+    {
+      name: "Fucsia",
+      image: "imagenes/PROSA/Archivo_003.png"
     },
     {
       name: "Vino tinto",
