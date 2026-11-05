@@ -185,7 +185,16 @@ const products = [
     "imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
     "imagenes/BLOOMSHELL/Bloom lip kit tono 4.jpg"
   ],
-  variants:["tono #3", "tono #4"]
+  variants:[
+    {
+      name:"tono 3",
+      image:"imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg"
+    },
+    {
+      name:"tono 4",
+      image:"imagenes/BLOOMSHELL/Bloom lip kit tono 4.jpg"
+    }
+  ]
 },
 {
   id:113,
@@ -241,24 +250,58 @@ const products = [
 
 
   // MAQUILLAJE - PROSA
-  {
-    id: 1000,
-    name: "Pestañina Prosa",
-    price: 0,
-    category: "maquillaje",
-    brand: "prosa",
-    image: "imagenes/PROSA/Archivo_000.png",
-    images: [
-      "imagenes/PROSA/Archivo_000.png",
-      "imagenes/PROSA/Archivo_001.png",
-      "imagenes/PROSA/Archivo_002.png",
-      "imagenes/PROSA/Archivo_003.png",
-      "imagenes/PROSA/Archivo_004.png",
-      "imagenes/PROSA/Archivo_005.png",
-      "imagenes/PROSA/Archivo_007.png"
-    ],
-    variants: ["Negro", "Gris", "Morado", "Café", "plata", "fucsia", "vino tinto"]
-  },
+  
+{
+  id: 1000,
+  name: "Pestañina Prosa",
+  price: 0,
+  category: "maquillaje",
+  brand: "prosa",
+
+  image: "imagenes/PROSA/Archivo_000.png",
+
+  images: [
+    "imagenes/PROSA/Archivo_000.png",
+    "imagenes/PROSA/Archivo_001.png",
+    "imagenes/PROSA/Archivo_002.png",
+    "imagenes/PROSA/Archivo_003.png",
+    "imagenes/PROSA/Archivo_004.png",
+    "imagenes/PROSA/Archivo_005.png",
+    "imagenes/PROSA/Archivo_007.png"
+  ],
+
+  variants: [
+    {
+      name: "Negro",
+      image: "imagenes/PROSA/Archivo_000.png"
+    },
+    {
+      name: "Gris",
+      image: "imagenes/PROSA/Archivo_001.png"
+    },
+    {
+      name: "Morado",
+      image: "imagenes/PROSA/Archivo_002.png"
+    },
+    {
+      name: "Café",
+      image: "imagenes/PROSA/Archivo_003.png"
+    },
+    {
+      name: "Plata",
+      image: "imagenes/PROSA/Archivo_004.png"
+    },
+    {
+      name: "Fucsia",
+      image: "imagenes/PROSA/Archivo_005.png"
+    },
+    {
+      name: "Vino tinto",
+      image: "imagenes/PROSA/Archivo_007.png"
+    }
+  ]
+},
+
   {
     id: 1001,
     name: "Aceite para pestañas",
