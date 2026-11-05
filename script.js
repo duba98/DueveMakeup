@@ -246,6 +246,36 @@ const products = [
     }
   ]
 },
+{
+  id:117,
+  name:"brillo glossy ",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Brillo glossy color %232.png",
+  variants: [
+    {
+      name:"tono 2",
+      image:"imagenes/BLOOMSHELL/Brillo glossy color %232.png"
+    },
+    {
+      name:"tono 3",
+      image:"imagenes/BLOOMSHELL/Brillo glossy color %233.png"
+    },
+    {
+      name:"tono 4",
+      image:"imagenes/BLOOMSHELL/Brillo glossy color tono 4.png"
+    },
+    {
+      name:"tono 5",
+      image:"imagenes/BLOOMSHELL/Brillo glossy color %235.png"
+    },
+    {
+      name:"tono 6",
+      image:"imagenes/BLOOMSHELL/Brillo glossy color tono 6.png"
+    }
+  ]
+},
 
 
 
