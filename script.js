@@ -132,12 +132,20 @@ const products = [
   category:"maquillaje",
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom gelei berry.png",
-  images: [
-    "imagenes/BLOOMSHELL/bloom gelei berry.png",
-    "imagenes/BLOOMSHELL/Bloom gelei cherry.png",
-    "imagenes/BLOOMSHELL/Bloom gelei pink.png"
-  ],
-  variants: ["berry", "cherry", "pink"]
+  variant:[
+    {
+      name:"berry",
+      image:"imagenes/BLOOMSHELL/Bloom gelei berry.png"
+    },
+    {
+      name:"cherry",
+      image:"imagenes/BLOOMSHELL/Bloom gelei cherry.png"
+    },
+    {
+      name:"pink",
+      image:"imagenes/BLOOMSHELL/Bloom gelei pink.png"
+    }
+  ]
 },
 {
   id:110,
