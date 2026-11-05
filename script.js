@@ -125,28 +125,38 @@ const products = [
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom esplendor tono 1.png"
 },
+
 {
-  id:109,
-  name:"bloom gelei berry",
-  price:0,
-  category:"maquillaje",
-  brand:"bloomshell",
-  image:"imagenes/BLOOMSHELL/Bloom gelei berry.png",
-  variant:[
+  id: 109,
+  name: "Bloom Gelei Berry",
+  price: 0,
+  category: "maquillaje",
+  brand: "bloomshell",
+
+  image: "imagenes/BLOOMSHELL/Bloom gelei berry.png",
+
+  images: [
+    "imagenes/BLOOMSHELL/Bloom gelei berry.png",
+    "imagenes/BLOOMSHELL/Bloom gelei cherry.png",
+    "imagenes/BLOOMSHELL/Bloom gelei pink.png"
+  ],
+
+  variants: [
     {
-      name:"berry",
-      image:"imagenes/BLOOMSHELL/Bloom gelei berry.png"
+      name: "Berry",
+      image: "imagenes/BLOOMSHELL/Bloom gelei berry.png"
     },
     {
-      name:"cherry",
-      image:"imagenes/BLOOMSHELL/Bloom gelei cherry.png"
+      name: "Cherry",
+      image: "imagenes/BLOOMSHELL/Bloom gelei cherry.png"
     },
     {
-      name:"pink",
-      image:"imagenes/BLOOMSHELL/Bloom gelei pink.png"
+      name: "Pink",
+      image: "imagenes/BLOOMSHELL/Bloom gelei pink.png"
     }
   ]
 },
+
 {
   id:110,
   name:"bloom hydra 2 en 1",
