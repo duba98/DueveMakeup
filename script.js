@@ -182,8 +182,37 @@ const products = [
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
-  image:"imagenes/BLOOMSHELL/Bloom oil stop_.png",
+  image:"imagenes/BLOOMSHELL/Bloom oil stop_.png"
 },
+{
+  id:114,
+  name:"brocha de bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom pincel perfect_.png"
+},
+{
+  id:115,
+  name:"bloom rolon XL",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Bloom rolon xl.png"
+},
+{
+  id:116,
+  name:"borla bloomshell corazon ",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  image:"imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
+  images:[
+    "imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
+  ],
+  variants:["X1", "X3"],
+},
+
 
 
   // MAQUILLAJE - PROSA
