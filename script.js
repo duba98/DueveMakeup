@@ -989,6 +989,7 @@ document.querySelectorAll(".brand-btn").forEach(button => {
 // 9. ABRIR PRODUCTO AMPLIADO Y SELECCIONAR VARIANTE
 // ==================================================
 
+
 function openProductModal(productId) {
   const product = products.find(
     item => item.id === Number(productId)
@@ -1001,10 +1002,9 @@ function openProductModal(productId) {
 
   $("#detailProductName").textContent = product.name;
   $("#detailProductPrice").textContent = moneyCOP(product.price);
-
   $("#detailQuantity").value = 1;
 
-  // Cargar la galería aquí, una sola vez.
+  // Cargar galería de imágenes.
   renderProductGallery(product);
 
   const variantsContainer = $("#detailVariants");
@@ -1012,27 +1012,62 @@ function openProductModal(productId) {
 
   if (product.variants?.length) {
     const label = document.createElement("p");
-
-    label.textContent = "Selecciona el color:";
+    label.textContent = "Selecciona el color o presentación:";
     variantsContainer.appendChild(label);
 
     product.variants.forEach(variant => {
+
+      // Compatibilidad con variantes antiguas y nuevas.
+      const variantName =
+        typeof variant === "string"
+          ? variant
+          : variant.name || variant.label || "";
+
       const button = document.createElement("button");
 
       button.type = "button";
       button.className = "variant-option";
-      button.textContent = variant;
+      button.textContent = variantName;
       button.setAttribute("aria-pressed", "false");
 
       button.addEventListener("click", () => {
-        selectedDetailVariant = variant;
 
+        // Guardar solamente el nombre de la variante.
+        selectedDetailVariant = variantName;
+
+        // Cambiar imagen si la variante tiene una imagen propia.
+        if (typeof variant === "object" && variant.image) {
+          const mainImage = $("#detailProductImage");
+
+          if (mainImage) {
+            mainImage.src = variant.image;
+            mainImage.alt = `${product.name} - ${variantName}`;
+          }
+
+          // Actualizar selección de miniaturas, si existen.
+          const thumbnails = $("#detailImageThumbnails");
+
+          if (thumbnails) {
+            thumbnails.querySelectorAll(".detail-thumbnail")
+              .forEach(img => {
+                img.classList.toggle(
+                  "selected",
+                  img.getAttribute("src") === variant.image
+                );
+              });
+          }
+        }
+
+        // Marcar botón seleccionado.
         variantsContainer.querySelectorAll(".variant-option")
           .forEach(option => {
             const selected = option === button;
 
             option.classList.toggle("selected", selected);
-            option.setAttribute("aria-pressed", String(selected));
+            option.setAttribute(
+              "aria-pressed",
+              String(selected)
+            );
           });
       });
 
@@ -1043,6 +1078,7 @@ function openProductModal(productId) {
   productModal.classList.add("active");
   productModal.setAttribute("aria-hidden", "false");
 }
+
 
 function closeProductModal() {
   productModal.classList.remove("active");
