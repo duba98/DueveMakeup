@@ -759,7 +759,7 @@ const products = [
     },
     {
       name:"llavero espejo bloom mimosa",
-      image:"imagenes/BLOOMSHELL/Llavero+espejo bloom mimosa.jpg"
+      image:"imagenes/BLOOMSHELL/Llavero+espejo flor mimosa.jpg"
     }
   ]
 },
