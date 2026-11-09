@@ -458,7 +458,7 @@ const products = [
   category:"maquillaje",
   brand:"bloomshell",
 
-  image:"image/BLOOMSHELL/Estuche Bloomshell_.png"
+  image:"imagenes/BLOOMSHELL/Estuche Bloomshell_.png"
 },
 {
   id:132,
@@ -501,12 +501,12 @@ const products = [
   category:"maquillaje",
   brand:"bloomshell",
 
-  image:"imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png",
+  image:"imagenes/BLOOMSHELL/Iluminador Bloom glow %231.png",
 
   images:[
-    "imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png",
-    "imagenes/BLOOMSHELL/Iluminador bloom glow #3.png",
-    "imagenes/BLOOMSHELL/Iluminador bloom glow #4.png"
+    "imagenes/BLOOMSHELL/Iluminador Bloom glow %231.png",
+    "imagenes/BLOOMSHELL/Iluminador bloom glow %233.png",
+    "imagenes/BLOOMSHELL/Iluminador bloom glow %234.png"
   ],
 
   variants:[
