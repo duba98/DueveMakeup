@@ -512,15 +512,15 @@ const products = [
   variants:[
     {
       name:"iluminador #1",
-      image:"imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png"
+      image:"imagenes/BLOOMSHELL/Iluminador Bloom glow %231.png"
     },
     {
       name:"iluminador #3",
-      image:"imagenes/BLOOMSHELL/Iluminador bloom glow #3.png"
+      image:"imagenes/BLOOMSHELL/Iluminador bloom glow %233.png"
     },
     {
       name:"iluminador #4",
-      image:"imagenes/BLOOMSHELL/Iluminador bloom glow #4.png"
+      image:"imagenes/BLOOMSHELL/Iluminador bloom glow %234.png"
     }
   ]
 },
