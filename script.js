@@ -614,7 +614,7 @@ const products = [
   brand:"bloomshell",
 
   image:"imagenes/BLOOMSHELL/Lápiz para ojos negro_(1).png",
-  "imagenes/BLOOMSHELL/Lápiz para ojos negro_.png",
+  
 
   images:[
     "imagenes/BLOOMSHELL/Lápiz para ojos negro_(1).png",
