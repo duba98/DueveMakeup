@@ -602,7 +602,7 @@ const products = [
     },
     {
       name:"lapiz delineador rose",
-      image:"imagenes/BLOOMSHELL/Lápiz delineador labios rose 03.png"
+      image:"imagenes/BLOOMSHELL/Lápiz delineador labios rose %233.png"
     }
   ]
 },
