@@ -621,6 +621,148 @@ const products = [
     "imagenes/BLOOMSHELL/Lápiz para ojos negro_.png"
   ]
 },
+{
+  id:141,
+  name:"limpiador bloom",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Limpiador bloom lumi gel.jpg"
+},
+{
+  id:142,
+  name:"lip balm ",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Lip balm bloom latte.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Lip balm bloom latte.png",
+    "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %231.png",
+    "imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %232.png",
+    "imagenes/BLOOMSHELL/Lip balm sparkle kiss %233.png",
+    "imagenes/BLOOMSHELL/Lip balm sparkle kiss %234.png"
+  ],
+
+  variants:[
+    {
+      name:"bloom latte",
+      image:"imagenes/BLOOMSHELL/Lip balm bloom latte.png"
+    },
+    {
+      name:"bloom sparkle #1",
+      image:"imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %231.png"
+    },
+    {
+      name:"bloom sparkle #2",
+      image:"imagenes/BLOOMSHELL/Lip balm bloom sparkle kiss %232.png"
+    },
+    {
+      name:"bloom sparkle #3",
+      image:"imagenes/BLOOMSHELL/Lip balm sparkle kiss %233.png"
+    },
+    {
+      name:"bloom sparkle #4",
+      image:"imagenes/BLOOMSHELL/Lip balm sparkle kiss %234.png"
+    }
+  ]
+},
+{
+  id:143,
+  name:"lip bloom coco",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Lip bloom coco nut.png"
+},
+{
+  id:144,
+  name:"lip gloss fusion",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Lip gloss bloom fusión.png"
+},
+{
+  id:145,
+  name:"lip oil",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Lip oil bloom cherry_.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Lip oil bloom cherry_.png",
+    "imagenes/BLOOMSHELL/LIP OIL BLOOM SUBLIME XL.jpg",
+    "imagenes/BLOOMSHELL/Lip oil mimosa xl.jpg"
+  ],
+
+  variants:[
+    {
+      name:"lip oil bloom cherry",
+      image:"imagenes/BLOOMSHELL/Lip oil bloom cherry_.png"
+    },
+    {
+      name:"lip oil bloom sublime",
+      image:"imagenes/BLOOMSHELL/LIP OIL BLOOM SUBLIME XL.jpg"
+    },
+    {
+      name:"lip oil bloom mimosa",
+      image:"imagenes/BLOOMSHELL/Lip oil mimosa xl.jpg"
+    }
+  ]
+},
+{
+  id:146,
+  name:"llaveros bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/LLAVERO BLOOM LATTE KISS.jpg",
+
+  images:[
+    "imagenes/BLOOMSHELL/LLAVERO BLOOM LATTE KISS.jpg",
+    "imagenes/BLOOMSHELL/Llavero bloom lush petan_.png",
+    "imagenes/BLOOMSHELL/Llavero dúo mimosa+mini.png",
+    "imagenes/BLOOMSHELL/Llavero dúo nude.jpg",
+    "imagenes/BLOOMSHELL/Llavero dúo shell tint+mini mimosa_.jpg",
+    "imagenes/BLOOMSHELL/Llavero+espejo bloom mimosa.jpg"
+  ],
+
+  variants:[
+    {
+      name:"latte kiss",
+      image:"imagenes/BLOOMSHELL/LLAVERO BLOOM LATTE KISS.jpg"
+    },
+    {
+      name:"lush petan",
+      image:"imagenes/BLOOMSHELL/Llavero bloom lush petan_.png"
+    },
+    {
+      name:"mimosa mini",
+      image:"imagenes/BLOOMSHELL/Llavero dúo mimosa+mini.png"
+    },
+    {
+      name:"duo nude",
+      image:"imagenes/BLOOMSHELL/Llavero dúo nude.jpg"
+    },
+    {
+      name:"duo shell tint + mini mimosa",
+      image:"imagenes/BLOOMSHELL/Llavero dúo shell tint+mini mimosa_.jpg"
+    },
+    {
+      name:"llavero espejo bloom mimosa",
+      image:"imagenes/BLOOMSHELL/Llavero+espejo bloom mimosa.jpg"
+    }
+  ]
+},
 
 
   // MAQUILLAJE - PROSA
