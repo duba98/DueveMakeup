@@ -588,7 +588,7 @@ const products = [
   images:[
     "imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg",
     "imagenes/BLOOMSHELL/Lápiz delineador labios nude 04.png",
-    "imagenes/BLOOMSHELL/Lápiz delineador labios rose 03.png"
+    "imagenes/BLOOMSHELL/Lápiz delineador labios rose %233.png"
   ],
 
   variants:[
