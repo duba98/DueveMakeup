@@ -234,15 +234,26 @@ const products = [
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
+
   image:"imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
+
+  images:["imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png",
+    "imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png",
+    "imagenes/BLOOMSHELL/Kit borla Bloomshell x7.png"
+  ],
+
   variants: [
     {
-      name:"X1",
+      name:"borla X1",
       image:"imagenes/BLOOMSHELL/Borla Bloomshell corazón_.png"
     },
     {
-      name:"X3",
+      name:"borlas X3",
       image:"imagenes/BLOOMSHELL/Borlas x3 Bloomshell_.png"
+    },
+    {
+      name:"borlas x7",
+      image:"imagenes/BLOOMSHELL/Kit borla Bloomshell x7.png"
     }
   ]
 },
@@ -415,7 +426,200 @@ const products = [
     }
   ]
 },
+{
+  id:130,
+  name:"contorno duo",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
 
+  image:"imagenes/BLOOMSHELL/Dúo contorno Bloomshell deep_.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Dúo contorno Bloomshell deep_.png",
+    "imagenes/BLOOMSHELL/Dúo contorno Bloomshell toasted_.png"
+  ],
+
+  variants:[
+    {
+      name:"deep",
+      image:"imagenes//BLOOMSHELL/Dúo contorno Bloomshell deep_.png"
+    },
+    {
+      name:"toasted",
+      image:"imagenes/BLOOMSHELL/Dúo contorno Bloomshell toasted_.png"
+    }
+  ]
+},
+{
+  id:131,
+  name:"estuche bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"image/BLOOMSHELL/Estuche Bloomshell_.png"
+},
+{
+  id:132,
+  name:"fijador bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/FIJADOR BLOOM 120ml.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/FIJADOR BLOOM 120ml.png",
+    "imagenes/BLOOMSHELL/FIJADOR BLOOM FIX MINI 46ml.jpg"
+  ],
+
+  variants:[
+    { 
+      name: "fijador 120ml",
+      image: "imagenes/BLOOMSHELL/FIJADOR BLOOM 120ml.png"
+    },
+    {
+      name: "fijador mini",
+      image: "imagenes/BLOOMSHELL/FIJADOR BLOOM FIX MINI 46ml.jpg"
+    }
+  ]
+},
+{
+  id:133,
+  name:"fijador hidratante",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Fijador hidratante mist fix.jpg"
+},
+{
+  id:134,
+  name:"iluminador bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png",
+    "imagenes/BLOOMSHELL/Iluminador bloom glow #3.png",
+    "imagenes/BLOOMSHELL/Iluminador bloom glow #4.png"
+  ],
+
+  variants:[
+    {
+      name:"iluminador #1",
+      image:"imagenes/BLOOMSHELL/Iluminador Bloom glow #1.png"
+    },
+    {
+      name:"iluminador #3",
+      image:"imagenes/BLOOMSHELL/Iluminador bloom glow #3.png"
+    },
+    {
+      name:"iluminador #4",
+      image:"imagenes/BLOOMSHELL/Iluminador bloom glow #4.png"
+    }
+  ]
+},
+{
+  id:135,
+  name:"iluminador crema",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Iluminador crema bloom cosmic_.jpg"
+},
+{
+  id:136,
+  name:"kit mini favorito x6",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Kit mini favoritos x6.png"
+},
+{
+  id:137,
+  name:"kit mini infaltable x6",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Kit mini infaltables x6.png"
+},
+{
+  id:138,
+  name:"laminador de cejas",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/LAMINADOR DE CEJAS XL.jpg",
+
+  images:[
+    "imagenes/BLOOMSHELL/LAMINADOR DE CEJAS XL.jpg",
+    "imagenes/BLOOMSHELL/Laminador de cejas_.jpg"
+  ],
+
+  variants:[
+    {
+      name:"laminador de cejas xl",
+      image:"imagenes/BLOOMSHELL/LAMINADOR DE CEJAS XL.jpg"
+    },
+    {
+      name:"laminador de cejas",
+      image:"imagenes/BLOOMSHELL/Laminador de cejas_.jpg"
+    }
+  ]
+},
+{
+  id:139,
+  name:"lapiz delineador",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg",
+
+  images:[
+    "imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg",
+    "imagenes/BLOOMSHELL/Lápiz delineador labios nude 04.png",
+    "imagenes/BLOOMSHELL/Lápiz delineador labios rose 03.png"
+  ],
+
+  variants:[
+    {
+      name:"lapiz delineador cafe",
+      image:"imagenes/BLOOMSHELL/Lápiz delineador labios coofe 02.jpg"
+    },
+    {
+      name:"lapiz delineador nude",
+      image:"imagenes/BLOOMSHELL/Lápiz delineador labios nude 04.png"
+    },
+    {
+      name:"lapiz delineador rose",
+      image:"imagenes/BLOOMSHELL/Lápiz delineador labios rose 03.png"
+    }
+  ]
+},
+{
+  id:139,
+  name:"lapiz para ojos negro",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/BLOOMSHELL/Lápiz para ojos negro_(1).png",
+
+  images:[
+    "imagenes/BLOOMSHELL/Lápiz para ojos negro_(1).png",
+    "imagenes/BLOOMSHELL/Lápiz para ojos negro_.png"
+  ]
+},
 
 
   // MAQUILLAJE - PROSA
@@ -515,6 +719,8 @@ const products = [
   //MAQUILLAJE SAGUI
   //MAQUILLAJE SAMY
   //MAQUILLAJE VOGUE
+  //maquillaje lula
+  //maquillaje majikal
   // CAPILAR MARIANA ZAPATA
   {
     id: 10001,
