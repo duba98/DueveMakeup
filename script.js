@@ -770,7 +770,7 @@ const products = [
 {
   id: 1000,
   name: "Pestañina Prosa",
-  price: 0,
+  price: 19000,
   category: "maquillaje",
   brand: "prosa",
 
@@ -821,7 +821,7 @@ const products = [
   {
     id: 1001,
     name: "Aceite para pestañas",
-    price: 0,
+    price: 23000,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_006.png"
@@ -829,7 +829,7 @@ const products = [
   {
     id: 1002,
     name: "Tratamiento para pestañas",
-    price: 0,
+    price: 20000,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_008.png"
@@ -837,7 +837,7 @@ const products = [
   {
     id: 1003,
     name: "Pestañina a prueba de agua",
-    price: 0,
+    price: 19000,
     category: "maquillaje",
     brand: "prosa",
     image: "imagenes/PROSA/Archivo_009.png"
