@@ -893,12 +893,108 @@ const products = [
   },
   // CAPILAR RITUAL BOTANICO
   {
-    id: 10004,
-    name: "Producto Ritual Botánico (completar)",
+    id: 30000,
+    name: "keratina ritual botanico 120ml",
     price: 0,
     category: "capilar",
     brand: "ritual botanico",
-    image: "imagenes/sin-imagen.png"
+    image: "imagenes/Ritual Botánico/KERATINA RITUAL BOTANICO X 120 ml.jpg"
+  },
+  {
+    id:30001,
+    name:"keratina ritual botanico 250ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/KERATINA RITUAL BOTANICO X 250 ml.jpg"
+  },
+  {
+    id:30002,
+    name:"keratina ritual botanico 1000ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/KERATINA RITUAL BOTANICO X 1000 ml.jpg"
+  },
+  {
+    id:30003,
+    name:"mantequilla corporal ritual botanico",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/MANTEQUILLA CORPORAL RITUAL BOTANICO X 240 ml.png"
+  },
+  {
+    id:30004,
+    name:"mascarilla bomba ritual botanico",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/MASCARILLA BOMBA RITUAL BOTANICO X 400 ML.jpg"
+  },
+  {
+    id:30005,
+    name:"shampoo ritual botanico romero y eucalipto 400ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/SH RITUAL BOTANICO ROMERO Y EUCALIPTO X 400 ml.jpg"
+  },
+  {
+    id:30006,
+    name:"shampoo ritual botanico jalea real 400ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/SH RITUAL BOTANICO X 400 ml - JALEA REAL.jpg"
+  },
+  {
+    id:30007,
+    name:"shampoo ritual botanico aji control caida 400ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/SHAMPOO RITUAL BOTANICO AJI CONTROL CAIDA.jpg"
+  },
+  {
+    id:30008,
+    name:"shampoo ritual botanico cebolla y argan 400ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/SHAMPOO RITUAL BOTANICO CEBOLLA Y ARGAN X 400 ML.jpg"
+  },
+  {
+    id:30009,
+    name:"termoprotector ritual botanico 120ml rosado",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/TERMOPROTECTOR RITUAL BOTANICO X 120 ML - ROSADO.jpg"
+  },
+  {
+    id:30010,
+    name:"termoprotector ritual botanico 120ml azul",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/TERMOPROTECTOR RITUAL BOTANICO X 120 ML AZUL.jpg"
+  },
+  {
+    id:30011,
+    name:"tratamiento intensivo plex ritual botanico 400ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/TRATAMIENTO INTENSIVO PLEX RITUAL BOTANICO X 400 ML.jpg"
+  },
+  {
+    id:30012,
+    name:"tratamiento ritual botanico jalea real 400ml",
+    price:0,
+    category:"capilar",
+    brand:"ritual botanico",
+    image:"imagenes/Ritual Botánico/TRATAMIENTO RITUAL BOTANICO X 400 ml - JALEA REAL.jpg"
   },
   // CAPILAR CLICK HAIR
   {
@@ -990,6 +1086,9 @@ const products = [
     brand: "ponto",
     image: "imagenes/sin-imagen.png"
   },
+  //capilar maria salome
+  //capilar ganier
+
 
   // LOCIONES HOMBRE
   {
