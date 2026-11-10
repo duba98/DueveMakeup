@@ -1088,6 +1088,14 @@ const products = [
   },
   //capilar maria salome
   //capilar ganier
+  {
+    id:50000,
+    name:"acondicionador ganier de aguacate 300ml",
+    price:0,
+    category:"capilar",
+    brand:"ganier",
+    image:"imagenes/Garnier/ACONDICIONADOR GARNIER FRUCTIS AGUACATE X 300 ml.png"
+  },
 
 
   // LOCIONES HOMBRE
