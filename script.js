@@ -763,8 +763,71 @@ const products = [
     }
   ]
 },
+//bloomshell#2
+
+{
+  id:200,
+  name:"paleta bloom luxury",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Paleta bloom luxury coral %232.png",
+
+  images:[
+    "imagenes/bloomshell%232/Paleta bloom luxury coral %232.png",
+    "imagenes/bloomshell%232/Paleta bloom luxury magenta %233.png",
+    "imagenes/bloomshell%232/Paleta bloom luxury pink %231_.png",
+    "imagenes/bloomshell%232/Paleta bloom luxury vino %234.png"
+  ],
+  
+  variants:[
+    {
+      name:"luxury coral",
+      image:"imagenes/bloomshell%232/Paleta bloom luxury coral %232.png"
+    },
+    {
+      name:"luxury magenta",
+      image:"imagenes/bloomshell%232/Paleta bloom luxury magenta %233.png"
+    },
+    {
+      name:"luxury pink",
+      image:"imagenes/bloomshell%232/Paleta bloom luxury pink %231_.png"
+    },
+    {
+      name:"luxury vino",
+      image:"imagenes/bloomshell%232/Paleta bloom luxury vino %234.png"
+    }
+  ]
+  },
+{
+  id:201,
+  name:"paleta bloom nude",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Paleta bloom nude %231.png",
+
+  images:[
+    "imagenes/bloomshell%232/Paleta bloom nude %231.png",
+    "imagenes/bloomshell%232/Paleta bloom nude %232.png"
+  ],
+
+  variants:[
+    {
+      name:"bloom nude #1",
+      images:"imagenes/bloomshell%232/Paleta bloom nude %231.png"
+    },
+    {
+      name:"bloom nude #2",
+      images:"imagenes/bloomshell%232/Paleta bloom nude %232.png"
+    }
+  ]
+},
 
 
+  
   // MAQUILLAJE - PROSA
   
 {
