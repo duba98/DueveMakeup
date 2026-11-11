@@ -825,7 +825,49 @@ const products = [
     }
   ]
 },
+{
+  id:202,
+  name:"paleta bloom vibes",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
 
+  image:"imagenes/bloomshell%232/Paleta bloom vibes %231.png",
+
+  images:[
+    "imagenes/bloomshell%232/Paleta bloom vibes %231.png",
+    "imagenes/bloomshell%232/Paleta bloom vibes %232.png"
+  ],
+
+  variants:[
+    {
+      name:"bloom vibes #1",
+      images:"imagenes/bloomshell%232/Paleta bloom vibes %231.png"
+    },
+    {
+      name:"bloom vibes #2",
+      images:"imagenes/bloomshell%232/Paleta bloom vibes %232.png"
+    }
+  ]
+},
+{
+  id:203,
+  name:"paleta de rubores dolce bouquet",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Paleta de rubores dolce bouquet.png"
+},
+{
+  id:204,
+  name:"paleta kiss love",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Paleta kiss love x6.png"
+},
 
   
   // MAQUILLAJE - PROSA
