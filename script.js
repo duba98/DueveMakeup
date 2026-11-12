@@ -1794,15 +1794,14 @@ const products = [
 
     image:"imagenes/María Salomé/CREMA PEINAR SALOME X350.png"
   },
-  {
+ {
     id:200003,
     name:"shampoo azul 400ml + 200ml",
     price:0,
     category:"capilar",
     brand:"maria salome",
-
-    image:"imagenes/María Salomé/SHAMPOO SALOME AZUL X 400 + 200.png"
-  },
+    image:"imagenes/Mar%C3%ADa%20Salom%C3%A9/SHAMPOO%20SALOME%20AZUL%20X%20400%20%2B%20200.png"
+},
   {
     id:200004,
     name:"shampoo salome keratina x 400 ml",
