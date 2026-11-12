@@ -1052,7 +1052,7 @@ const products = [
 },
 {
   id:216,
-  name:"polvo sulto mini 4 en 1",
+  name:"polvo suelto mini 4 en 1",
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
@@ -1061,7 +1061,7 @@ const products = [
 },
 {
   id:217,
-  name:"polvo mino bloomshell traslucido",
+  name:"polvo mini bloomshell traslucido",
   price:0,
   category:"maquillaje",
   brand:"bloomshell",
