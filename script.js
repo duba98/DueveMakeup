@@ -868,6 +868,170 @@ const products = [
 
   image:"imagenes/bloomshell%232/Paleta kiss love x6.png"
 },
+{
+  id:205,
+  name:"papel de arroz beautiful face",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  
+  image:"imagenes/bloomshell%232/Papel de arroz beutiful face.jpg"
+},
+{
+  id:206,
+  name:"papel matificante con polvo suelto",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Papel matificante con polvo suelto %231.png",
+
+  images:[
+    "imagenes/bloomshell%232/Papel matificante con polvo suelto %231.png",
+    "imagenes/bloomshell%232/Papel matificante con polvo suelto %232_.png"
+  ],
+
+  variants:[
+    {
+      name:"papel matificante con polvo suelto #1",
+      image:"imagenes/bloomshell%232/Papel matificante con polvo suelto %231.png"
+    },
+    {
+      name:"papel matificante con polvo suelto #2",
+      image:"imagenes/bloomshell%232/Papel matificante con polvo suelto %232_.png"
+    }
+  ]
+},
+{
+  id:207,
+  name:"parches bye bye",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Parches bye bye_.png"
+},
+{
+  id:208,
+  name:"parches faciales x24",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Parches faciales x24.png"
+},
+{
+  id:209,
+  name:"pestañina coofe bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Pestañina coofe Bloomshell exclusive.png"
+},
+{
+  id:210,
+  name:"pestañina lash resistente",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Pestañina lash resistente_.jpg"
+},
+{
+  id:211,
+  name:"polvo 2 en 1 bloom pequeño",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo 2 en 1 bloom pqñ %231.png",
+
+  images:[
+    "imagenes/bloomshell%232/Polvo 2 en 1 bloom pqñ %231.png",
+    "imagenes/bloomshell%232/Polvo 2 en 1 pqñ %232 rosado.png",
+    "imagenes/bloomshell%232/Polvo 2 en 1 pqñ %233 banana_.png"
+  ],
+
+  variants:[
+    {
+      name:"polvo 2 en 1 #1",
+      image:"imagenes/bloomshell%232/Polvo 2 en 1 bloom pqñ %231.png"
+    },
+    {
+      name:"polvo 2 en 1 #2",
+      image:"imagenes/bloomshell%232/Polvo 2 en 1 pqñ %232 rosado.png"
+    },
+    {
+      name:"polvo 2 en 1 #3",
+      image:"imagenes/bloomshell%232/Polvo 2 en 1 pqñ %233 banana_.png"
+    }
+  ]
+},
+{
+  id:212,
+  name:"polvo compacto fusion",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo compacto fusión.png"
+},
+{
+  id:213,
+  name:"polvo compacto soft",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo compacto soft %231 ivory_.png",
+
+  images:[
+    "imagenes/bloomshell%232/Polvo compacto soft %231 ivory_.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %232 beige.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %233 natural.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %234 nude.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %235 sand_.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %236 golden_.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %237 honey_.png",
+    "imagenes/bloomshell%232/Polvo compacto soft %238 mocha_.png"
+  ],
+
+  variants:[
+    {
+      name:"polvo compacto #1",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %231 ivory_.png"
+    },
+    {
+      name:"polvo compacto #2",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %232 beige.png"
+    },
+    {
+      name:"polvo compacto #3",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %233 natural.png"
+    },
+    {
+      name:"polvo compacto #4",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %234 nude.png"
+    },
+    {
+      name:"polvo compacto #5",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %235 sand_.png"
+    },
+    {
+      name:"polvo compacto #6",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %236 golden_.png"
+    },
+    {
+      name:"polvo compacto #7",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %237 honey_.png"
+    },
+    {
+      name:"polvo compacto #8",
+      image:"imagenes/bloomshell%232/Polvo compacto soft %238 mocha_.png"
+    }
+  ]
+},
 
   
   // MAQUILLAJE - PROSA
