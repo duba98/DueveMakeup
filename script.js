@@ -1032,7 +1032,454 @@ const products = [
     }
   ]
 },
+{
+  id:214,
+  name:"polvo suelto 4 en 1",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
 
+  image:"imagenes/bloomshell%232/Polvo suelto 4 en 1.png"
+},
+{
+  id:215,
+  name:"polvo suelto banana grande",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo suelto banana grande_.jpg"
+},
+{
+  id:216,
+  name:"polvo sulto mini 4 en 1",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo suelto mini 4 en 1.png"
+},
+{
+  id:217,
+  name:"polvo mino bloomshell traslucido",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo suelto mini Bloomshell traslúcido_.png"
+},
+{
+  id:218,
+  name:"polvo suelto mini iluminous banana",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo suelto mini luminous banana malla_.png"
+},
+{
+  id:219,
+  name:"polvo suelto traslucido grande",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Polvo suelto traslúcido grande.jpg"
+},
+{
+  id:220,
+  name:"primer bloom poros invisible",
+  price:0,
+  category:"maquillaje:",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/PRIMER BLOOM POROS INVISIBLES.jpg"
+},
+{
+  id:221,
+  name:"primer bloom puff",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Primer bloom puff.png"
+},
+{
+  id:222,
+  name:"primer bloom pumplig",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/PRIMER BLOOM PUMPLING.png"
+},
+{
+  id:223,
+  name:"primer en crema bloom pink",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+  
+  image:"imagenes/bloomshell%232/Primer en crema bloom pink.png",
+
+  images:[
+    "imagenes/bloomshell%232/Primer en crema bloom pink.png",
+    "imagenes/bloomshell%232/Primer en crema bloom purple.png"
+  ],
+
+  variants:[
+    {
+      name:"bloom pink",
+      image:"imagenes/bloomshell%232/Primer en crema bloom pink.png",
+    },
+    {
+      name:"bloom purple",
+      image:"imagenes/bloomshell%232/Primer en crema bloom purple.png"
+    }
+  ]
+},
+{
+  id:224,
+  name:"rubor bloom touch",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor bloom touch huellita_.png",
+
+  images:[
+    "imagenes/bloomshell%232/Rubor bloom touch huellita_.png",
+    "imagenes/bloomshell%232/Rubor bloom touch love_.png"
+  ],
+
+  variants:[
+    {
+      name:"touch huellita",
+      image:"imagenes/bloomshell%232/Rubor bloom touch huellita_.png"
+    },
+    {
+      name:"touch love",
+      image:"imagenes/bloomshell%232/Rubor bloom touch love_.png"
+    }
+  ]
+},
+{
+  id:225,
+  name:"rubor en barra blosson",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor en barra cherry blosson %232.png",
+
+  images:[
+    "imagenes/bloomshell%232/Rubor en barra cherry blosson %232.png",
+    "imagenes/bloomshell%232/Rubor en barra cherry blosson %233.png",
+    "imagenes/bloomshell%232/Rubor en barra cherry blosson %234.png",
+    "imagenes/bloomshell%232/Rubro en barra cherry blosson %232.png"
+  ],
+
+  variants:[
+    {
+      name:"blosson #1",
+      image:"imagenes/bloomshell%232/Rubro en barra cherry blosson %232.png"
+    },
+    {
+      name:"blosson #2",
+      image:"imagenes/bloomshell%232/Rubor en barra cherry blosson %232.png"
+    },
+    {
+      name:"blosson #3",
+      image:"imagenes/bloomshell%232/Rubor en barra cherry blosson %233.png"
+    },
+    {
+      name:"blosson #4",
+      image:"imagenes/bloomshell%232/Rubor en barra cherry blosson %234.png"
+    }
+  ]
+},
+{
+  id:226,
+  name:"rubor liquido bloom floral",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor líquido bloom floral %232.png",
+
+  images:[
+    "imagenes/bloomshell%232/Rubor líquido bloom floral %232.png",
+    "imagenes/bloomshell%232/Rubor líquido bloom floral %233.png",
+    "imagenes/bloomshell%232/Rubor líquido bloom floral %234.png",
+    "imagenes/bloomshell%232/Rubor líquido bloom floral %235.png",
+    "imagenes/bloomshell%232/Rubor líquido bloom floral %236.png"  
+  ],
+
+  variants:[
+    {
+      name:"bloom floral #2",
+      image:"imagenes/bloomshell%232/Rubor líquido bloom floral %232.png"
+    },
+    {
+      name:"bloom floral #3",
+      image:"imagenes/bloomshell%232/Rubor líquido bloom floral %233.png"
+    },
+    {
+      name:"bloom floral #4",
+      image:"imagenes/bloomshell%232/Rubor líquido bloom floral %234.png"
+    },
+    {
+      name:"bloom floral #5",
+      image:"imagenes/bloomshell%232/Rubor líquido bloom floral %235.png"
+    },
+    {
+      name:"bloom floral #6",
+      image:"imagenes/bloomshell%232/Rubor líquido bloom floral %236.png"
+    }
+  ]
+},
+{
+  id:227,
+  name:"rubor liquido magico",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor líquido mágico_.png"
+},
+{
+  id:228,
+  name:"rubor iluminoso shell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor luminoso shell %231 pink.png",
+
+  images:[
+    "imagenes/bloomshell%232/Rubor luminoso shell %231 pink.png",
+    "imagenes/bloomshell%232/Rubor luminoso shell %232 luminoso.png",
+    "imagenes/bloomshell%232/Rubor luminoso shell %233 sunsell.png"
+  ],
+
+  variants:[
+    {
+      name:"shell #1",
+      image:"imagenes/bloomshell%232/Rubor luminoso shell %231 pink.png"
+    },
+    {
+      name:"shell #2",
+      image:"imagenes/bloomshell%232/Rubor luminoso shell %232 luminoso.png"
+    },
+    {
+      name:"shell #3",
+      image:"imagenes/bloomshell%232/Rubor luminoso shell %233 sunsell.png"
+    }
+  ]
+},
+{
+  id:229,
+  name:"rubor matte shell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor matte shell blush baby %235_.png",
+
+  images:[
+    "imagenes/bloomshell%232/Rubor matte shell blush baby %235_.png",
+    "imagenes/bloomshell%232/Rubor matte shell terracota %236.png"
+  ],
+
+  variants:[
+    {
+      name:"shell #5",
+      image:"imagenes/bloomshell%232/Rubor matte shell blush baby %235_.png"
+    },
+    {
+      name:"shell #6",
+      image:"imagenes/bloomshell%232/Rubor matte shell terracota %236.png"
+    }
+  ]
+},
+{
+  id:230,
+  name:"rubor trio bloom",
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Rubor trío pink %231.jpg",
+
+  images:[
+    "imagenes/bloomshell%232/Rubor trío pink %231.jpg",
+    "imagenes/bloomshell%232/Rubor trío peach %232.png",
+    "imagenes/bloomshell%232/Rubor trío terracota %233.png",
+    "imagenes/bloomshell%232/Rubor trío melón %234.png",
+    "imagenes/bloomshell%232/Rubor trío sandía %235.png",
+    "imagenes/bloomshell%232/Rubor trío cherry %236.png",
+    "imagenes/bloomshell%232/Rubor trío purple %237.png",
+    "imagenes/bloomshell%232/Rubor trío %238 magenta_.png",
+    "imagenes/bloomshell%232/Rubor trío vino %239.png"
+  ],
+
+  variants:[
+    {
+      name:"rubor trio #1",
+      image:"imagenes/bloomshell%232/Rubor trío pink %231.jpg"
+    },
+     {
+      name:"rubor trio #2",
+      image:"imagenes/bloomshell%232/Rubor trío peach %232.png"
+    },
+     {
+      name:"rubor trio #3",
+      image: "imagenes/bloomshell%232/Rubor trío terracota %233.png"
+    },
+     {
+      name:"rubor trio #4",
+      image:"imagenes/bloomshell%232/Rubor trío melón %234.png"
+    },
+     {
+      name:"rubor trio #5",
+      image:"imagenes/bloomshell%232/Rubor trío sandía %235.png"
+    },
+     {
+      name:"rubor trio #6",
+      image:"imagenes/bloomshell%232/Rubor trío cherry %236.png"
+    },
+     {
+      name:"rubor trio #7",
+      image:"imagenes/bloomshell%232/Rubor trío purple %237.png"
+    },
+     {
+      name:"rubor trio #8",
+      image:"imagenes/bloomshell%232/Rubor trío %238 magenta_.png"
+    },
+     {
+      name:"rubor trio #9",
+      image:"imagenes/bloomshell%232/Rubor trío vino %239.png"
+    }
+  ]
+},
+{
+  id:231,
+  name:"serum bloom balance",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Serum bloom balance_.jpg"
+},
+{
+  id:232,
+  name:"serum reparador de labios",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/SERUM REPARADOR DE LABIOS_.png"
+},
+{
+  id:233,
+  name:"Shimmer blooming glow",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Shimmer blooming glow_.png"
+},
+ {
+  id:234,
+  name:"sombra bloom seductor",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Sombra bloom seductor rose %231.png",
+
+  images:[
+    "imagenes/bloomshell%232/Sombra bloom seductor rose %231.png",
+    "imagenes/bloomshell%232/Sombra bloom seductor gold %232.png",
+    "imagenes/bloomshell%232/Sombra bloom seductor pink %233.png"
+  ],
+  
+  variants:[
+    {
+      name:"sombra bloom #1",
+      image:"imagenes/bloomshell%232/Sombra bloom seductor rose %231.png"
+    },
+    {
+      name:"sombra bloom #2",
+      image:"imagenes/bloomshell%232/Sombra bloom seductor gold %232.png"
+    },
+    {
+      name:"sombra bloom #3",
+      image:"imagenes/bloomshell%232/Sombra bloom seductor pink %233.png"
+    }
+  ]
+ },
+ {
+  id:235,
+  name:"sombra individual matte bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Sombra individual matte bloom %231.png",
+
+  images:[
+    "imagenes/bloomshell%232/Sombra individual matte bloom %231.png",
+    "imagenes/bloomshell%232/Sombra individual matte bloom %232.png",
+    "imagenes/bloomshell%232/Sombre individual matte bloom %233.png",
+    "imagenes/bloomshell%232/Sombra individual matte bloom %234.png"
+  ],
+
+  variants:[
+    {
+      name:"#1",
+      image:"imagenes/bloomshell%232/Sombra individual matte bloom %231.png"
+    },
+    {
+      name:"#2",
+      image:"imagenes/bloomshell%232/Sombra individual matte bloom %232.png"
+    },
+    {
+      name:"#3",
+      image:"imagenes/bloomshell%232/Sombre individual matte bloom %233.png"
+    },
+    {
+      name:"#4",
+      image:"imagenes/bloomshell%232/Sombra individual matte bloom %234.png"
+    }
+  ]
+ },
+ {
+  id:236,
+  name:"tinta de labios bloom bow",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Tinta de labios bloom bow_.png"
+ },
+ {
+  id:237,
+  name:"tonico bloom",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Tónico bloom repair mist.png"
+ },
+ {
+  id:238,
+  name:"voluminizador bloomshell",
+  price:0,
+  category:"maquillaje",
+  brand:"bloomshell",
+
+  image:"imagenes/bloomshell%232/Voluminizador Bloomshell_.png"
+ },
   
   // MAQUILLAJE - PROSA
   
