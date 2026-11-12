@@ -1484,7 +1484,7 @@ const products = [
   // MAQUILLAJE - PROSA
   
 {
-  id: 1000,
+  id: 300,
   name: "Pestañina Prosa",
   price: 19000,
   category: "maquillaje",
@@ -1535,7 +1535,7 @@ const products = [
 },
 
   {
-    id: 1001,
+    id: 301,
     name: "Aceite para pestañas",
     price: 23000,
     category: "maquillaje",
@@ -1543,7 +1543,7 @@ const products = [
     image: "imagenes/PROSA/Archivo_006.png"
   },
   {
-    id: 1002,
+    id: 302,
     name: "Tratamiento para pestañas",
     price: 20000,
     category: "maquillaje",
@@ -1551,7 +1551,7 @@ const products = [
     image: "imagenes/PROSA/Archivo_008.png"
   },
   {
-    id: 1003,
+    id: 303,
     name: "Pestañina a prueba de agua",
     price: 19000,
     category: "maquillaje",
@@ -1568,7 +1568,7 @@ const products = [
   //MAQUILLAJE RAQUEL
   //MQUILLAJE RUBIROSE
   {
-    id:1151,
+    id:4000,
     name:"labial matte",
     price:0,
     category:"maquillaje",
@@ -1580,7 +1580,7 @@ const products = [
   //MAQUILLAJE VOGUE
   //maquillaje lula
   //maquillaje majikal
-  // CAPILAR MARIANA ZAPATA
+  // CAPILAR MARIANA ZAPATA (10000)
   //{
     //id: 10001,
     //name: "Shampoo Mariana Zapata (completar)",
@@ -1591,7 +1591,7 @@ const products = [
   //},
   //CAPILAR ANYELUZ
   //{
-    //id: 10002,
+    //id: 20000,
     //name: "Producto Anyeluz (completar)",
     //price: 0,
     //category: "capilar",
@@ -1600,7 +1600,7 @@ const products = [
   //},
   // CAPILAR MILAGROS
   //{
-    //id: 10003,
+    //id: 30000,
     //name: "Producto Milagros (completar)",
     //price: 0,
     //category: "capilar",
@@ -1609,7 +1609,7 @@ const products = [
   //},
   // CAPILAR RITUAL BOTANICO
   {
-    id: 30000,
+    id: 40000,
     name: "keratina ritual botanico 120ml",
     price: 0,
     category: "capilar",
@@ -1617,7 +1617,7 @@ const products = [
     image: "imagenes/Ritual Botánico/KERATINA RITUAL BOTANICO X 120 ml.jpg"
   },
   {
-    id:30001,
+    id:40001,
     name:"keratina ritual botanico 250ml",
     price:0,
     category:"capilar",
@@ -1625,7 +1625,7 @@ const products = [
     image:"imagenes/Ritual Botánico/KERATINA RITUAL BOTANICO X 250 ml.jpg"
   },
   {
-    id:30002,
+    id:40002,
     name:"keratina ritual botanico 1000ml",
     price:0,
     category:"capilar",
@@ -1633,7 +1633,7 @@ const products = [
     image:"imagenes/Ritual Botánico/KERATINA RITUAL BOTANICO X 1000 ml.jpg"
   },
   {
-    id:30003,
+    id:40003,
     name:"mantequilla corporal ritual botanico",
     price:0,
     category:"capilar",
@@ -1641,7 +1641,7 @@ const products = [
     image:"imagenes/Ritual Botánico/MANTEQUILLA CORPORAL RITUAL BOTANICO X 240 ml.png"
   },
   {
-    id:30004,
+    id:40004,
     name:"mascarilla bomba ritual botanico",
     price:0,
     category:"capilar",
@@ -1649,7 +1649,7 @@ const products = [
     image:"imagenes/Ritual Botánico/MASCARILLA BOMBA RITUAL BOTANICO X 400 ML.jpg"
   },
   {
-    id:30005,
+    id:40005,
     name:"shampoo ritual botanico romero y eucalipto 400ml",
     price:0,
     category:"capilar",
@@ -1657,7 +1657,7 @@ const products = [
     image:"imagenes/Ritual Botánico/SH RITUAL BOTANICO ROMERO Y EUCALIPTO X 400 ml.jpg"
   },
   {
-    id:30006,
+    id:40006,
     name:"shampoo ritual botanico jalea real 400ml",
     price:0,
     category:"capilar",
@@ -1665,7 +1665,7 @@ const products = [
     image:"imagenes/Ritual Botánico/SH RITUAL BOTANICO X 400 ml - JALEA REAL.jpg"
   },
   {
-    id:30007,
+    id:40007,
     name:"shampoo ritual botanico aji control caida 400ml",
     price:0,
     category:"capilar",
@@ -1673,7 +1673,7 @@ const products = [
     image:"imagenes/Ritual Botánico/SHAMPOO RITUAL BOTANICO AJI CONTROL CAIDA.jpg"
   },
   {
-    id:30008,
+    id:40008,
     name:"shampoo ritual botanico cebolla y argan 400ml",
     price:0,
     category:"capilar",
@@ -1681,7 +1681,7 @@ const products = [
     image:"imagenes/Ritual Botánico/SHAMPOO RITUAL BOTANICO CEBOLLA Y ARGAN X 400 ML.jpg"
   },
   {
-    id:30009,
+    id:40009,
     name:"termoprotector ritual botanico 120ml rosado",
     price:0,
     category:"capilar",
@@ -1689,7 +1689,7 @@ const products = [
     image:"imagenes/Ritual Botánico/TERMOPROTECTOR RITUAL BOTANICO X 120 ML - ROSADO.jpg"
   },
   {
-    id:30010,
+    id:40010,
     name:"termoprotector ritual botanico 120ml azul",
     price:0,
     category:"capilar",
@@ -1697,7 +1697,7 @@ const products = [
     image:"imagenes/Ritual Botánico/TERMOPROTECTOR RITUAL BOTANICO X 120 ML AZUL.jpg"
   },
   {
-    id:30011,
+    id:40011,
     name:"tratamiento intensivo plex ritual botanico 400ml",
     price:0,
     category:"capilar",
@@ -1705,14 +1705,14 @@ const products = [
     image:"imagenes/Ritual Botánico/TRATAMIENTO INTENSIVO PLEX RITUAL BOTANICO X 400 ML.jpg"
   },
   {
-    id:30012,
+    id:40012,
     name:"tratamiento ritual botanico jalea real 400ml",
     price:0,
     category:"capilar",
     brand:"ritual botanico",
     image:"imagenes/Ritual Botánico/TRATAMIENTO RITUAL BOTANICO X 400 ml - JALEA REAL.jpg"
   },
-  // CAPILAR CLICK HAIR
+  // CAPILAR CLICK HAIR(50000)
   //{
     //id: 10005,
     //name: "Producto Click Hair (completar)",
@@ -1721,7 +1721,7 @@ const products = [
     //brand: "click hair",
     //image: "imagenes/sin-imagen.png"
   //},
-  //CAPILAR KABA
+  //CAPILAR KABA(60000)
   //{
     //id: 10006,
     //name: "Producto Kaba (completar)",
@@ -1730,7 +1730,7 @@ const products = [
     //brand: "kaba",
     //image: "imagenes/sin-imagen.png"
   //},
-  // CAPILAR POCION
+  // CAPILAR POCION(70000)
   //{
     //id: 10007,
     //name: "Producto Pocion (completar)",
@@ -1739,7 +1739,7 @@ const products = [
     //brand: "pocion",
     //image: "imagenes/sin-imagen.png"
   //},
-  // CAPILAR MENTA HAIR
+  // CAPILAR MENTA HAIR(80000)
   //{
     //id: 10008,
     //name: "Producto Menta Hair (completar)",
@@ -1748,7 +1748,7 @@ const products = [
     //brand: "menta hair",
     //image: "imagenes/sin-imagen.png"
   //},
-  // CAPILAR LECHE PAL PELO
+  // CAPILAR LECHE PAL PELO(90000)
   //{
     //id: 10009,
     //name: "Producto Leche Pal Pelo (completar)",
@@ -1757,7 +1757,7 @@ const products = [
     //brand: "leche pal pelo",
     //image: "imagenes/sin-imagen.png"
   //},
-  // CAPILAR MAGIC HAIR
+  // CAPILAR MAGIC HAIR(100000)
   //{
     //id: 10010,
     //name: "Producto Magic Hair (completar)",
@@ -1766,7 +1766,7 @@ const products = [
     //brand: "magic hair",
     //image: "imagenes/sin-imagen.png"
   //},
-  // CAPILAR MARIA SALOME
+  // CAPILAR MARIA SALOME(200000)
   //{
     //id: 10011,
     //name: "Producto María Salomé (completar)",
@@ -1775,7 +1775,7 @@ const products = [
     //brand: "maria salome",
     //image: "imagenes/sin-imagen.png"
   //},
-  // CAPILAR LEHIT
+  // CAPILAR LEHIT(300000)
   //{
     //id: 10012,
     //name: "Producto Lehit (completar)",
@@ -1784,28 +1784,28 @@ const products = [
     //brand: "lehit",
     //image: "imagenes/sin-imagen.png"
   //},
-  //CAPILAR ELVIVE
+  //CAPILAR ELVIVE(400000)
   //{
-    //id: 10013,
+    //id: 400000,
     //name: "Producto Elvive (completar)",
     //price: 0,
     //category: "capilar",
     //brand: "elvive",
     //image: "imagenes/sin-imagen.png"
   //},
-  //CAPILAR PONTO
+  //CAPILAR PONTO(500000)
   //{
-    //id: 10014,
+    //id: 500000,
     //name: "Producto Ponto (completar)",
     //price: 0,
     //category: "capilar",
     //brand: "ponto",
     //image: "imagenes/sin-imagen.png"
   //},
-  //capilar maria salome
-  //capilar ganier
+  //capilar maria salome(600000)
+  //capilar ganier(700000)
   {
-    id:50000,
+    id:700000,
     name:"acondicionador ganier de aguacate 300ml",
     price:0,
     category:"capilar",
@@ -1814,18 +1814,18 @@ const products = [
   },
 
 
-  // LOCIONES HOMBRE
+  // LOCIONES HOMBRE(800000)
   {
-    id: 201,
+    id: 800000,
     name: "Asad Lattafa",
     price: 0,
     category: "lociones",
     brand: "hombre",
     image: "imagenes/locionhombre/asad-lattafa.png"
   },
-  // LOCIONES MUJER
+  // LOCIONES MUJER(900000)
   //{
-    //id: 202,
+    //id: 900000,
     //name: "Loción para mujer (completar)",
     //price: 0,
     //category: "lociones",
