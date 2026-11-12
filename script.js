@@ -1801,7 +1801,7 @@ const products = [
     category:"capilar",
     brand:"maria salome",
 
-    image:"imagenes/María Salomé/CHAMPÚ SALOME AZUL X 400 + 200.png"
+    image:"imagenes/María Salomé/SHAMPOO SALOME AZUL X 400 + 200.png"
   },
   {
     id:200004,
