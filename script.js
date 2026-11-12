@@ -1134,32 +1134,32 @@ const products = [
   //maquillaje lula
   //maquillaje majikal
   // CAPILAR MARIANA ZAPATA
-  {
-    id: 10001,
-    name: "Shampoo Mariana Zapata (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "mariana zapata",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10001,
+    //name: "Shampoo Mariana Zapata (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "mariana zapata",
+    //image: "imagenes/sin-imagen.png"
+  //},
   //CAPILAR ANYELUZ
-  {
-    id: 10002,
-    name: "Producto Anyeluz (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "anyeluz",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10002,
+    //name: "Producto Anyeluz (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "anyeluz",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR MILAGROS
-  {
-    id: 10003,
-    name: "Producto Milagros (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "milagros",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10003,
+    //name: "Producto Milagros (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "milagros",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR RITUAL BOTANICO
   {
     id: 30000,
@@ -1266,95 +1266,95 @@ const products = [
     image:"imagenes/Ritual Botánico/TRATAMIENTO RITUAL BOTANICO X 400 ml - JALEA REAL.jpg"
   },
   // CAPILAR CLICK HAIR
-  {
-    id: 10005,
-    name: "Producto Click Hair (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "click hair",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10005,
+    //name: "Producto Click Hair (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "click hair",
+    //image: "imagenes/sin-imagen.png"
+  //},
   //CAPILAR KABA
-  {
-    id: 10006,
-    name: "Producto Kaba (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "kaba",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10006,
+    //name: "Producto Kaba (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "kaba",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR POCION
-  {
-    id: 10007,
-    name: "Producto Pocion (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "pocion",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10007,
+    //name: "Producto Pocion (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "pocion",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR MENTA HAIR
-  {
-    id: 10008,
-    name: "Producto Menta Hair (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "menta hair",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10008,
+    //name: "Producto Menta Hair (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "menta hair",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR LECHE PAL PELO
-  {
-    id: 10009,
-    name: "Producto Leche Pal Pelo (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "leche pal pelo",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10009,
+    //name: "Producto Leche Pal Pelo (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "leche pal pelo",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR MAGIC HAIR
-  {
-    id: 10010,
-    name: "Producto Magic Hair (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "magic hair",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10010,
+    //name: "Producto Magic Hair (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "magic hair",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR MARIA SALOME
-  {
-    id: 10011,
-    name: "Producto María Salomé (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "maria salome",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10011,
+    //name: "Producto María Salomé (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "maria salome",
+    //image: "imagenes/sin-imagen.png"
+  //},
   // CAPILAR LEHIT
-  {
-    id: 10012,
-    name: "Producto Lehit (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "lehit",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10012,
+    //name: "Producto Lehit (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "lehit",
+    //image: "imagenes/sin-imagen.png"
+  //},
   //CAPILAR ELVIVE
-  {
-    id: 10013,
-    name: "Producto Elvive (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "elvive",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10013,
+    //name: "Producto Elvive (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "elvive",
+    //image: "imagenes/sin-imagen.png"
+  //},
   //CAPILAR PONTO
-  {
-    id: 10014,
-    name: "Producto Ponto (completar)",
-    price: 0,
-    category: "capilar",
-    brand: "ponto",
-    image: "imagenes/sin-imagen.png"
-  },
+  //{
+    //id: 10014,
+    //name: "Producto Ponto (completar)",
+    //price: 0,
+    //category: "capilar",
+    //brand: "ponto",
+    //image: "imagenes/sin-imagen.png"
+  //},
   //capilar maria salome
   //capilar ganier
   {
@@ -1377,14 +1377,14 @@ const products = [
     image: "imagenes/locionhombre/asad-lattafa.png"
   },
   // LOCIONES MUJER
-  {
-    id: 202,
-    name: "Loción para mujer (completar)",
-    price: 0,
-    category: "lociones",
-    brand: "mujer",
-    image: "imagenes/sin-imagen.png"
-  }
+  //{
+    //id: 202,
+    //name: "Loción para mujer (completar)",
+    //price: 0,
+    //category: "lociones",
+    //brand: "mujer",
+    //image: "imagenes/sin-imagen.png"
+  //}
 ];
 
 // ==================================================
