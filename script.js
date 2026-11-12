@@ -1767,14 +1767,105 @@ const products = [
     //image: "imagenes/sin-imagen.png"
   //},
   // CAPILAR MARIA SALOME(200000)
-  //{
-    //id: 10011,
-    //name: "Producto María Salomé (completar)",
-    //price: 0,
-    //category: "capilar",
-    //brand: "maria salome",
-    //image: "imagenes/sin-imagen.png"
-  //},
+  {
+    id: 200000,
+    name: "acondicionador salome azul 400ml",
+    price: 0,
+    category: "capilar",
+    brand: "maria salome",
+
+    image: "imagenes/María Salomé/ACONDICIONADOR SALOME AZUL X 400 ml.png"
+  },
+  {
+    id:200001,
+    name:"acondicionador salome keratina 400ml",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/ACONDICIONADOR SALOME KERATINA X 400 ml.png"
+  },
+  {
+    id:200002,
+    name:"crema de peinar salome 350ml",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/CREMA PEINAR SALOME X350.png"
+  },
+  {
+    id:200003,
+    name:"shampoo azul 400ml + 200ml",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME AZUL X 400 + 200.png"
+  },
+  {
+    id:200004,
+    name:"shampoo salome keratina x 400 ml",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME KERATINA X 400.png"
+  },
+  {
+    id:200005,
+    name:"shampoo salome x 400ml accion diaria",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME KERATINA X 400.png"
+  },
+  {
+    id:200006,
+    name:"shampoo salome x 400ml anticaida",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME X 400 ANTICAIDA.png"
+  },
+  {
+    id:200007,
+    name:"shampoo salome x 400ml control caspa",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME X 400 CONTROL CASPA.png"
+  },
+  {
+    id:200008,
+    name:"shampoo salome x400ml hombres 2 en 1",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME X 400 HOMBRES 2 EN 1.png"
+  },
+  {
+    id:200009,
+    name:"shampoo salome x400ml sensitive",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/SHAMPOO SALOME X 400 SENSITIVE.png"
+  },
+  {
+    id:200010,
+    name:"tonico salome locion x 320ml",
+    price:0,
+    category:"capilar",
+    brand:"maria salome",
+
+    image:"imagenes/María Salomé/TONICO SALOME LOCION x 320.jpg"
+  },
   // CAPILAR LEHIT(300000)
   //{
     //id: 10012,
