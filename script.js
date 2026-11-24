@@ -1585,7 +1585,7 @@ const products = [
   price:48000,
   category:"maquillaje",
   brand:"majikal",
-  image:"imagenes/majikal/Archivo_000.png"
+  image:"imagenes/Majikal/Archivo_000.png"
   },
   // CAPILAR MARIANA ZAPATA (10000)
   //{
