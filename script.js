@@ -1946,6 +1946,17 @@ const productsGrid = $("#productsGrid");
 const catalogTitle = $("#catalogTitle");
 const catalogSubtitle = $("#catalogSubtitle");
 
+// BUSQUEDA GLOBAL
+let searchTerm = "";
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
 const cartButton = $("#cartButton");
 const cartDrawer = $("#cartDrawer");
 const closeCartButton = $("#closeCart");
@@ -2255,19 +2266,27 @@ function renderProducts(filter = "all", brand = null) {
 
   productsGrid.innerHTML = "";
 
-  const filteredProducts = products.filter(product => {
+const filteredProducts = products.filter(product => {
+
+    // BUSQUEDA GLOBAL POR NOMBRE
+    if (searchTerm) {
+        return normalizeSearch(product.name)
+            .includes(searchTerm);
+    }
+
+    // FILTROS NORMALES
     if (filter === "all") return true;
 
     const sameCategory =
-      normalize(product.category) === normalize(filter);
+        normalize(product.category) === normalize(filter);
 
     if (brand) {
-      return sameCategory &&
-        normalize(product.brand) === normalize(brand);
+        return sameCategory &&
+            normalize(product.brand) === normalize(brand);
     }
 
     return sameCategory;
-  });
+});
 
   if (catalogTitle) {
     if (brand) {
@@ -2394,6 +2413,48 @@ function setActiveFilter(filter, brand = null) {
 // ==================================================
 // 8. MODALES DE CATEGORÍAS
 // ==================================================
+
+
+// ==========================================
+// BUSCADOR GLOBAL DUEVE MAKEUP
+// ==========================================
+
+const searchToggle = document.getElementById("searchToggle");
+const searchInput = document.getElementById("searchInput");
+
+if (searchToggle && searchInput) {
+
+    // ABRIR Y CERRAR BUSCADOR
+    searchToggle.addEventListener("click", () => {
+
+        searchInput.classList.toggle("active");
+
+        if (searchInput.classList.contains("active")) {
+            searchInput.focus();
+        } else {
+            searchInput.value = "";
+            searchTerm = "";
+            renderProducts("all");
+        }
+    });
+
+    // BUSCAR MIENTRAS ESCRIBES
+    searchInput.addEventListener("input", () => {
+
+        searchTerm = normalizeSearch(searchInput.value);
+
+        // Busca en todas las categorías y marcas
+        renderProducts("all");
+
+        if (searchTerm) {
+            document.getElementById("productos")
+                ?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+        }
+    });
+}
 
 function openModal(modal) {
   if (!modal) return;
