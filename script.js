@@ -1580,6 +1580,13 @@ const products = [
   //MAQUILLAJE VOGUE
   //maquillaje lula
   //maquillaje majikal
+  {id:9000,
+  name:"polvo suelto cuatro tonos",
+  price:48000,
+  category:"maquillaje",
+  brand:"majikal",
+  image:"imagenes/majikal/Archivo_000.png"
+  },
   // CAPILAR MARIANA ZAPATA (10000)
   //{
     //id: 10001,
@@ -2972,50 +2979,6 @@ async function checkout() {
     }
   }
 }
-
-// =====================================
-// BUSCADOR GLOBAL DUEVE MAKEUP
-// =====================================
-
-const searchToggle = document.getElementById("searchToggle");
-const searchInput = document.getElementById("searchInput");
-
-// Abrir y cerrar buscador
-searchToggle.addEventListener("click", () => {
-    searchInput.classList.toggle("active");
-
-    if (searchInput.classList.contains("active")) {
-        searchInput.focus();
-    } else {
-        searchInput.value = "";
-        renderProducts();
-    }
-});
-
-// Normalizar texto para ignorar tildes y mayúsculas
-function normalizeSearch(text) {
-    return String(text || "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .trim();
-}
-
-// Buscar productos
-searchInput.addEventListener("input", function () {
-    const searchTerm = normalizeSearch(this.value);
-
-    if (!searchTerm) {
-        renderProducts();
-        return;
-    }
-
-    const results = products.filter(product =>
-        normalizeSearch(product.name).includes(searchTerm)
-    );
-
-    renderProducts(results);
-});
 
 checkoutButton?.addEventListener("click", checkout);
 
