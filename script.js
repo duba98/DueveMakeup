@@ -30,7 +30,7 @@ const products = [
   {
     id: 3,
     name: "Iluminador Atenea Sublime",
-    price: 0,
+    price: 32000,
     category: "maquillaje",
     brand: "atenea",
     image: "imagenes/atenea/ILUMINADOR ATENEA SUBLIME.png"
@@ -129,7 +129,7 @@ const products = [
 {
   id: 110,
   name: "Bloom Gelei Berry",
-  price: 0,
+  price: 16000,
   category: "maquillaje",
   brand: "bloomshell",
 
@@ -177,7 +177,7 @@ const products = [
 {
   id:113,
   name:"bloom lip kit",
-  price:0,
+  price:21000,
   category:"maquillaje",
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom lip kit tono 3_.jpg",
@@ -223,7 +223,7 @@ const products = [
 {
   id:117,
   name:"bloom rolon XL",
-  price:0,
+  price:18000,
   category:"maquillaje",
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Bloom rolon xl.png"
@@ -260,7 +260,7 @@ const products = [
 {
   id:119,
   name:"brillo glossy ",
-  price:0,
+  price:15000,
   category:"maquillaje",
   brand:"bloomshell",
   image:"imagenes/BLOOMSHELL/Brillo glossy color %232.png",
@@ -2972,6 +2972,50 @@ async function checkout() {
     }
   }
 }
+
+// =====================================
+// BUSCADOR GLOBAL DUEVE MAKEUP
+// =====================================
+
+const searchToggle = document.getElementById("searchToggle");
+const searchInput = document.getElementById("searchInput");
+
+// Abrir y cerrar buscador
+searchToggle.addEventListener("click", () => {
+    searchInput.classList.toggle("active");
+
+    if (searchInput.classList.contains("active")) {
+        searchInput.focus();
+    } else {
+        searchInput.value = "";
+        renderProducts();
+    }
+});
+
+// Normalizar texto para ignorar tildes y mayúsculas
+function normalizeSearch(text) {
+    return String(text || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+}
+
+// Buscar productos
+searchInput.addEventListener("input", function () {
+    const searchTerm = normalizeSearch(this.value);
+
+    if (!searchTerm) {
+        renderProducts();
+        return;
+    }
+
+    const results = products.filter(product =>
+        normalizeSearch(product.name).includes(searchTerm)
+    );
+
+    renderProducts(results);
+});
 
 checkoutButton?.addEventListener("click", checkout);
 
